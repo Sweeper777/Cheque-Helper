@@ -1,0 +1,174 @@
+import Foundation
+
+class EnglishChequeConverter {
+        
+    private func getTheWord(i: Int) -> String {
+        switch i {
+        case 0: return ""
+        case 1: return "thousand"
+        case 2: return "million"
+        case 3: return "billion"
+        case 4: return "trillion"
+        case 5: return "quadrillion"
+        default: return ""
+        }
+    }
+    
+    private func get1DigitString (i: Int) -> String {
+        switch i {
+        case 1:
+            return "one"
+        case 2:
+            return "two"
+        case 3:
+            return "three"
+        case 4:
+            return "four"
+        case 5:
+            return "five"
+        case 6:
+            return "six"
+        case 7:
+            return "seven"
+        case 8:
+            return "eight"
+        case 9:
+            return "nine"
+        case 10:
+            return "ten"
+        case 80:
+            return "eighty"
+        case 60, 70, 90:
+            return get1DigitString (i / 10) + "ty"
+        case 20:
+            return "twenty"
+        case 30:
+            return "thirty"
+        case 40:
+            return "forty"
+        case 50:
+            return "fifty"
+        default:
+            return "";
+        }
+    }
+    
+    private func get2DigitString (i: Int) -> String{
+        if i % 10 == 0 || String(i).characters.count == 1 {
+            return get1DigitString(i)
+        }
+        
+        let s = String(i)
+        let tensDigit = StringUtils.getDigitFrom(s, at: 0)
+        let onesDigit = StringUtils.getDigitFrom(s, at: 1)
+        
+        if tensDigit != 1 {
+            return get1DigitString (tensDigit * 10) + "-" + get1DigitString (onesDigit)
+        }
+        
+        switch i {
+        case 11:
+            return "eleven"
+        case 12:
+            return "twelve"
+        case 13:
+            return "thirteen"
+        case 14:
+            return "fourteen"
+        case 15:
+            return "fifteen"
+        case 18:
+            return "eighteen"
+        case 16, 17, 19:
+            return get1DigitString (onesDigit) + "teen";
+        default:
+            return "";
+        }
+    }
+    
+    private func get3DigitString (number: String) -> String {
+        let last2Digits = String ((number as NSString).substringFromIndex(1))
+        return get1DigitString(StringUtils.getDigitFrom(number, at: 0)) + " hundred " + get2DigitString(Int(last2Digits)!)
+    }
+    
+    private func get1To3DigitString (s: String) -> String{
+        let i = Int(s)!
+        let number = String(i)
+        
+        switch number.characters.count {
+        case 1:
+            return get1DigitString(Int(number)!)
+        case 2:
+            return get2DigitString(Int(number)!)
+        case 3:
+            return get3DigitString(number)
+        default:
+            return ""
+        }
+    }
+    
+    func convertNumberString (var number: String) -> String {
+        let parsedNumber = NSDecimalNumber (string: number)
+        if parsedNumber == NSDecimalNumber.notANumber() {
+            return "Please enter a valid amount"
+        }
+        
+        if parsedNumber.compare(NSDecimalNumber(string: "999999999999999999")) == NSComparisonResult.OrderedDescending ||
+            parsedNumber.compare(NSDecimalNumber.one()) == NSComparisonResult.OrderedAscending{
+                return "The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1"
+        }
+        
+        number = parsedNumber.description
+        
+        let twoParts = StringUtils.split(number, at: ".")
+        var integerPart = twoParts[0]
+        var decimalPart = twoParts.count == 1 ? "" : twoParts[1]
+        
+        var integerString: String
+        var decimalString: String
+        
+        if (0..<4).contains(integerPart.characters.count) {
+            integerString = get1To3DigitString(integerPart) + " "
+        } else if integerPart == "" {
+            integerString = ""
+        } else {
+            var commaTimes = integerPart.characters.count / 3
+            if integerPart.characters.count % 3 == 0 {
+                commaTimes--
+            }
+            
+            var groups = [String](count: commaTimes + 1, repeatedValue: "")
+            integerPart = String(integerPart.characters.reverse())
+            
+            for var i = 0 ; i < groups.count ; i++ {
+                if integerPart.characters.count >= i * 3 + 3 {
+                    groups[i] = StringUtils.substring(integerPart, start: i * 3, end: i * 3 + 3)
+                } else {
+                    groups[i] = StringUtils.substring(integerPart, start: i * 3)
+                }
+                groups[i] = String (groups[i].characters.reverse())
+                groups[i] = Int(groups[i]) == 0 ? "" : get1To3DigitString (groups[i]) + " " + getTheWord (i) + " "
+            }
+            groups = groups.reverse()
+            
+            integerString = ""
+            for group in groups {
+                integerString += group
+            }
+        }
+        
+        if decimalPart == "" || Int(decimalPart) == 0 || Int(decimalPart) == nil {
+            decimalString = "and no cents only"
+        } else {
+            if decimalPart.characters.count >= 2 {
+                decimalPart = StringUtils.substring(decimalPart, start: 0, end: 2)
+            } else {
+                decimalPart += "0"
+            }
+            
+            decimalString = "and " + get2DigitString (Int(decimalPart)!) + (Int(decimalPart) == 1 ? " cent only" : " cents only")
+        }
+        
+        return StringUtils.toProper(integerString + (integerString == "one " ? "dollar " : "dollars ") + decimalString)
+    }
+}
