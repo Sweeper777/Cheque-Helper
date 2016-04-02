@@ -11,6 +11,9 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         result.font = UIFont (name: "Kailasa", size: CGFloat.init(integerLiteral: 36))
         adBanner.rootViewController = self
+        adBanner.adUnitID = "ca-app-pub-top secret"
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
         adBanner.loadRequest(GADRequest())
     }
 
