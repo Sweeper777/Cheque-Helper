@@ -32,7 +32,7 @@ class StringUtils {
     
     static func toProper (str: String) -> String {
         var strArr = split(str, at: " ")
-        for var i = 0 ; i < strArr.count ; i++ {
+        for i in 0  ..< strArr.count  {
             var s = strArr[i]
             
             if s == "" || s == "and" {

@@ -49,7 +49,8 @@ class ChineseChequeConverter {
         }
     }
     
-    private func convertInteger (var number: String) -> String! {
+    private func convertInteger (x: String) -> String! {
+        var number = x
         if number.characters.count < 5 {
             if number.characters.count == 1 {
                 return convertNumber(StringUtils.getDigitFrom(number, at: 0))
@@ -63,7 +64,7 @@ class ChineseChequeConverter {
             }
             
             var addZero = false
-            for var i = 0 ; i < number.characters.count ; i++ {
+            for i in 0  ..< number.characters.count  {
                 if number.characters[number.characters.startIndex.advancedBy(i)] == "0" {
                     addZero = true
                     continue
@@ -81,7 +82,7 @@ class ChineseChequeConverter {
             var secondPart = StringUtils.substring(number, start: charsToRead)
             
             var addZero = false
-            for var i = 0 ; i < secondPart.characters.count ; i++ {
+            for i in 0  ..< secondPart.characters.count  {
                 if i == secondPart.characters.count - 1 && secondPart.characters[secondPart.characters.startIndex.advancedBy(i)] == "0" {
                     addZero = false
                     continue
@@ -97,14 +98,15 @@ class ChineseChequeConverter {
             
             var thatWordIndex = 3 + number.characters.count / 4
             if charsToRead == 4 {
-                thatWordIndex--
+                thatWordIndex -= 1
             }
             let thatWord = getThatWord(thatWordIndex)
             return convertInteger (firstPart) + thatWord + (addZero ? "零" : "") + (Int64(secondPart) == 0 ? "" : convertInteger (secondPart));
         }
     }
     
-    func convertNumberString (var number: String) -> String {
+    func convertNumberString (x: String) -> String {
+        var number = x
         let parsedNumber = NSDecimalNumber (string: number)
         if parsedNumber == NSDecimalNumber.notANumber() {
             return "請輸入正確格式的幣值！"

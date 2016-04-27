@@ -107,7 +107,8 @@ class EnglishChequeConverter {
         }
     }
     
-    func convertNumberString (var number: String) -> String {
+    func convertNumberString (x: String) -> String {
+        var number = x
         let parsedNumber = NSDecimalNumber (string: number)
         if parsedNumber == NSDecimalNumber.notANumber() {
             return "Please enter a valid amount"
@@ -134,13 +135,13 @@ class EnglishChequeConverter {
         } else {
             var commaTimes = integerPart.characters.count / 3
             if integerPart.characters.count % 3 == 0 {
-                commaTimes--
+                commaTimes -= 1
             }
             
             var groups = [String](count: commaTimes + 1, repeatedValue: "")
             integerPart = String(integerPart.characters.reverse())
             
-            for var i = 0 ; i < groups.count ; i++ {
+            for i in 0  ..< groups.count  {
                 if integerPart.characters.count >= i * 3 + 3 {
                     groups[i] = StringUtils.substring(integerPart, start: i * 3, end: i * 3 + 3)
                 } else {
