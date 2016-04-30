@@ -1,531 +1,1211 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A31C32C20000040A4E /* AppDelegate.swift */; };
-		5AE908A61C32C20000040A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A51C32C20000040A4E /* ViewController.swift */; };
-		5AE908A91C32C20000040A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908A71C32C20000040A4E /* Main.storyboard */; };
-		5AE908AB1C32C20000040A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908AA1C32C20000040A4E /* Assets.xcassets */; };
-		5AE908AE1C32C20000040A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */; };
-		5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */; };
-		5AE908D51C32D90100040A4E /* Chinese Check Converter Java Code.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */; };
-		5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
-		5AE908D91C32DB3C00040A4E /* ChineseChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */; };
-		5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */; };
-		5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5AE908B51C32C20000040A4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AE908981C32C20000040A4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AE9089F1C32C20000040A4E;
-			remoteInfo = "Cheque Helper";
-		};
-		5AE908C01C32C20000040A4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AE908981C32C20000040A4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AE9089F1C32C20000040A4E;
-			remoteInfo = "Cheque Helper";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		5AE908A01C32C20000040A4E /* Cheque Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheque Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AE908A31C32C20000040A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AE908A51C32C20000040A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5AE908A81C32C20000040A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5AE908AA1C32C20000040A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5AE908AD1C32C20000040A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5AE908AF1C32C20000040A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AE908B41C32C20000040A4E /* Cheque HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheque HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AE908BF1C32C20000040A4E /* Cheque HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheque HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnglishChequeConverter.swift; sourceTree = "<group>"; };
-		5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "Chinese Check Converter Java Code.rtf"; path = "Cheque Helper/Chinese Check Converter Java Code.rtf"; sourceTree = "<group>"; };
-		5AE908D61C32D9A800040A4E /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
-		5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChineseChequeConverter.swift; sourceTree = "<group>"; };
-		5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		5AE9089D1C32C20000040A4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908B11C32C20000040A4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908BC1C32C20000040A4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		5AE908971C32C20000040A4E = {
-			isa = PBXGroup;
-			children = (
-				5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */,
-				5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */,
-				5AE908A21C32C20000040A4E /* Cheque Helper */,
-				5AE908A11C32C20000040A4E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		5AE908A11C32C20000040A4E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5AE908A01C32C20000040A4E /* Cheque Helper.app */,
-				5AE908B41C32C20000040A4E /* Cheque HelperTests.xctest */,
-				5AE908BF1C32C20000040A4E /* Cheque HelperUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5AE908A21C32C20000040A4E /* Cheque Helper */ = {
-			isa = PBXGroup;
-			children = (
-				5AE908A31C32C20000040A4E /* AppDelegate.swift */,
-				5AE908A71C32C20000040A4E /* Main.storyboard */,
-				5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */,
-				5AE908A51C32C20000040A4E /* ViewController.swift */,
-				5AE908AA1C32C20000040A4E /* Assets.xcassets */,
-				5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */,
-				5AE908AF1C32C20000040A4E /* Info.plist */,
-				5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */,
-				5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */,
-				5AE908D61C32D9A800040A4E /* StringUtils.swift */,
-			);
-			path = "Cheque Helper";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		5AE9089F1C32C20000040A4E /* Cheque Helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AE908C81C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque Helper" */;
-			buildPhases = (
-				5AE9089C1C32C20000040A4E /* Sources */,
-				5AE9089D1C32C20000040A4E /* Frameworks */,
-				5AE9089E1C32C20000040A4E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Cheque Helper";
-			productName = "Cheque Helper";
-			productReference = 5AE908A01C32C20000040A4E /* Cheque Helper.app */;
-			productType = "com.apple.product-type.application";
-		};
-		5AE908B31C32C20000040A4E /* Cheque HelperTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AE908CB1C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque HelperTests" */;
-			buildPhases = (
-				5AE908B01C32C20000040A4E /* Sources */,
-				5AE908B11C32C20000040A4E /* Frameworks */,
-				5AE908B21C32C20000040A4E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AE908B61C32C20000040A4E /* PBXTargetDependency */,
-			);
-			name = "Cheque HelperTests";
-			productName = "Cheque HelperTests";
-			productReference = 5AE908B41C32C20000040A4E /* Cheque HelperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5AE908BE1C32C20000040A4E /* Cheque HelperUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AE908CE1C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque HelperUITests" */;
-			buildPhases = (
-				5AE908BB1C32C20000040A4E /* Sources */,
-				5AE908BC1C32C20000040A4E /* Frameworks */,
-				5AE908BD1C32C20000040A4E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AE908C11C32C20000040A4E /* PBXTargetDependency */,
-			);
-			name = "Cheque HelperUITests";
-			productName = "Cheque HelperUITests";
-			productReference = 5AE908BF1C32C20000040A4E /* Cheque HelperUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		5AE908981C32C20000040A4E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Mulang Su";
-				TargetAttributes = {
-					5AE9089F1C32C20000040A4E = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = E9MW74DJ4Y;
-					};
-					5AE908B31C32C20000040A4E = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 7V7HHZ93M3;
-						TestTargetID = 5AE9089F1C32C20000040A4E;
-					};
-					5AE908BE1C32C20000040A4E = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 7V7HHZ93M3;
-						TestTargetID = 5AE9089F1C32C20000040A4E;
-					};
-				};
-			};
-			buildConfigurationList = 5AE9089B1C32C20000040A4E /* Build configuration list for PBXProject "Cheque Helper" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 5AE908971C32C20000040A4E;
-			productRefGroup = 5AE908A11C32C20000040A4E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				5AE9089F1C32C20000040A4E /* Cheque Helper */,
-				5AE908B31C32C20000040A4E /* Cheque HelperTests */,
-				5AE908BE1C32C20000040A4E /* Cheque HelperUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		5AE9089E1C32C20000040A4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AE908AE1C32C20000040A4E /* LaunchScreen.storyboard in Resources */,
-				5AE908D51C32D90100040A4E /* Chinese Check Converter Java Code.rtf in Resources */,
-				5AE908AB1C32C20000040A4E /* Assets.xcassets in Resources */,
-				5AE908A91C32C20000040A4E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908B21C32C20000040A4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908BD1C32C20000040A4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		5AE9089C1C32C20000040A4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */,
-				5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */,
-				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
-				5AE908A61C32C20000040A4E /* ViewController.swift in Sources */,
-				5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */,
-				5AE908D91C32DB3C00040A4E /* ChineseChequeConverter.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908B01C32C20000040A4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AE908BB1C32C20000040A4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5AE908B61C32C20000040A4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AE9089F1C32C20000040A4E /* Cheque Helper */;
-			targetProxy = 5AE908B51C32C20000040A4E /* PBXContainerItemProxy */;
-		};
-		5AE908C11C32C20000040A4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AE9089F1C32C20000040A4E /* Cheque Helper */;
-			targetProxy = 5AE908C01C32C20000040A4E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5AE908A71C32C20000040A4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AE908A81C32C20000040A4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AE908AD1C32C20000040A4E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		5AE908C61C32C20000040A4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		5AE908C71C32C20000040A4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5AE908C91C32C20000040A4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Cheque Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5AE908CA1C32C20000040A4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Cheque Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		5AE908CC1C32C20000040A4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Cheque HelperTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sumulang.Cheque-HelperTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper";
-			};
-			name = Debug;
-		};
-		5AE908CD1C32C20000040A4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Cheque HelperTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sumulang.Cheque-HelperTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper";
-			};
-			name = Release;
-		};
-		5AE908CF1C32C20000040A4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Cheque HelperUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sumulang.Cheque-HelperUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Cheque Helper";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		5AE908D01C32C20000040A4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Cheque HelperUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "sumulang.Cheque-HelperUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Cheque Helper";
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		5AE9089B1C32C20000040A4E /* Build configuration list for PBXProject "Cheque Helper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AE908C61C32C20000040A4E /* Debug */,
-				5AE908C71C32C20000040A4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AE908C81C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque Helper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AE908C91C32C20000040A4E /* Debug */,
-				5AE908CA1C32C20000040A4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AE908CB1C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque HelperTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AE908CC1C32C20000040A4E /* Debug */,
-				5AE908CD1C32C20000040A4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AE908CE1C32C20000040A4E /* Build configuration list for PBXNativeTarget "Cheque HelperUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AE908CF1C32C20000040A4E /* Debug */,
-				5AE908D01C32C20000040A4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 5AE908981C32C20000040A4E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>17933B4CCE7F69C9F55F5D40</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C96F543BFED056BD8A6AE910</string>
+				<string>F08C586334FD7681C783D67F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>573A5FED21AB3AE1AF981CF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908971C32C20000040A4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5AE908D41C32D90100040A4E</string>
+				<string>5AF4963F1C86ADD200CA116B</string>
+				<string>5AE908A21C32C20000040A4E</string>
+				<string>5AE908A11C32C20000040A4E</string>
+				<string>17933B4CCE7F69C9F55F5D40</string>
+				<string>D40C2B935E9C1F62012CDFCA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908981C32C20000040A4E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0720</string>
+				<key>LastUpgradeCheck</key>
+				<string>0720</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Mulang Su</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>5AE9089F1C32C20000040A4E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2</string>
+						<key>DevelopmentTeam</key>
+						<string>E9MW74DJ4Y</string>
+					</dict>
+					<key>5AE908B31C32C20000040A4E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2</string>
+						<key>DevelopmentTeam</key>
+						<string>7V7HHZ93M3</string>
+						<key>TestTargetID</key>
+						<string>5AE9089F1C32C20000040A4E</string>
+					</dict>
+					<key>5AE908BE1C32C20000040A4E</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2</string>
+						<key>DevelopmentTeam</key>
+						<string>7V7HHZ93M3</string>
+						<key>TestTargetID</key>
+						<string>5AE9089F1C32C20000040A4E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>5AE9089B1C32C20000040A4E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>5AE908971C32C20000040A4E</string>
+			<key>productRefGroup</key>
+			<string>5AE908A11C32C20000040A4E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>5AE9089F1C32C20000040A4E</string>
+				<string>5AE908B31C32C20000040A4E</string>
+				<string>5AE908BE1C32C20000040A4E</string>
+			</array>
+		</dict>
+		<key>5AE9089B1C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5AE908C61C32C20000040A4E</string>
+				<string>5AE908C71C32C20000040A4E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5AE9089C1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5AE908D71C32D9A800040A4E</string>
+				<string>5AF2C2541C48E52800F22BB8</string>
+				<string>5AE908D31C32C26D00040A4E</string>
+				<string>5AE908A61C32C20000040A4E</string>
+				<string>5AE908A41C32C20000040A4E</string>
+				<string>5AE908D91C32DB3C00040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE9089D1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5AF496401C86ADD200CA116B</string>
+				<string>7AC3AD4B23B3C1381324AF27</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE9089E1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5AE908AE1C32C20000040A4E</string>
+				<string>5AE908D51C32D90100040A4E</string>
+				<string>5AE908AB1C32C20000040A4E</string>
+				<string>5AE908A91C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE9089F1C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5AE908C81C32C20000040A4E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A58306D09A3636E9C5F3C0AB</string>
+				<string>5AE9089C1C32C20000040A4E</string>
+				<string>5AE9089D1C32C20000040A4E</string>
+				<string>5AE9089E1C32C20000040A4E</string>
+				<string>64A6581DE95F21D4A29E085E</string>
+				<string>573A5FED21AB3AE1AF981CF0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Cheque Helper</string>
+			<key>productName</key>
+			<string>Cheque Helper</string>
+			<key>productReference</key>
+			<string>5AE908A01C32C20000040A4E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>5AE908A01C32C20000040A4E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Cheque Helper.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5AE908A11C32C20000040A4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5AE908A01C32C20000040A4E</string>
+				<string>5AE908B41C32C20000040A4E</string>
+				<string>5AE908BF1C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A21C32C20000040A4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5AE908A31C32C20000040A4E</string>
+				<string>5AE908A71C32C20000040A4E</string>
+				<string>5AF2C2531C48E52800F22BB8</string>
+				<string>5AE908A51C32C20000040A4E</string>
+				<string>5AE908AA1C32C20000040A4E</string>
+				<string>5AE908AC1C32C20000040A4E</string>
+				<string>5AE908AF1C32C20000040A4E</string>
+				<string>5AE908D21C32C26D00040A4E</string>
+				<string>5AE908D81C32DB3C00040A4E</string>
+				<string>5AE908D61C32D9A800040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Cheque Helper</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A31C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A41C32C20000040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908A31C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908A51C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A61C32C20000040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908A51C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908A71C32C20000040A4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5AE908A81C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A81C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908A91C32C20000040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908A71C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908AA1C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908AB1C32C20000040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908AA1C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908AC1C32C20000040A4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5AE908AD1C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908AD1C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908AE1C32C20000040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908AC1C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908AF1C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908B01C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908B11C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908B21C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908B31C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5AE908CB1C32C20000040A4E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5AE908B01C32C20000040A4E</string>
+				<string>5AE908B11C32C20000040A4E</string>
+				<string>5AE908B21C32C20000040A4E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>5AE908B61C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Cheque HelperTests</string>
+			<key>productName</key>
+			<string>Cheque HelperTests</string>
+			<key>productReference</key>
+			<string>5AE908B41C32C20000040A4E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>5AE908B41C32C20000040A4E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Cheque HelperTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5AE908B51C32C20000040A4E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5AE908981C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>5AE9089F1C32C20000040A4E</string>
+			<key>remoteInfo</key>
+			<string>Cheque Helper</string>
+		</dict>
+		<key>5AE908B61C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>5AE9089F1C32C20000040A4E</string>
+			<key>targetProxy</key>
+			<string>5AE908B51C32C20000040A4E</string>
+		</dict>
+		<key>5AE908BB1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908BC1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908BD1C32C20000040A4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE908BE1C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5AE908CE1C32C20000040A4E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5AE908BB1C32C20000040A4E</string>
+				<string>5AE908BC1C32C20000040A4E</string>
+				<string>5AE908BD1C32C20000040A4E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>5AE908C11C32C20000040A4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Cheque HelperUITests</string>
+			<key>productName</key>
+			<string>Cheque HelperUITests</string>
+			<key>productReference</key>
+			<string>5AE908BF1C32C20000040A4E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>5AE908BF1C32C20000040A4E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Cheque HelperUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5AE908C01C32C20000040A4E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5AE908981C32C20000040A4E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>5AE9089F1C32C20000040A4E</string>
+			<key>remoteInfo</key>
+			<string>Cheque Helper</string>
+		</dict>
+		<key>5AE908C11C32C20000040A4E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>5AE9089F1C32C20000040A4E</string>
+			<key>targetProxy</key>
+			<string>5AE908C01C32C20000040A4E</string>
+		</dict>
+		<key>5AE908C61C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5AE908C71C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5AE908C81C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5AE908C91C32C20000040A4E</string>
+				<string>5AE908CA1C32C20000040A4E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5AE908C91C32C20000040A4E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C96F543BFED056BD8A6AE910</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>YES</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque Helper/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.CheckHelper</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SKIP_INSTALL</key>
+				<string>NO</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5AE908CA1C32C20000040A4E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F08C586334FD7681C783D67F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>YES</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque Helper/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.CheckHelper</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SKIP_INSTALL</key>
+				<string>NO</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5AE908CB1C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5AE908CC1C32C20000040A4E</string>
+				<string>5AE908CD1C32C20000040A4E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5AE908CC1C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque HelperTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>sumulang.Cheque-HelperTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5AE908CD1C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque HelperTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>sumulang.Cheque-HelperTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5AE908CE1C32C20000040A4E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5AE908CF1C32C20000040A4E</string>
+				<string>5AE908D01C32C20000040A4E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5AE908CF1C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque HelperUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>sumulang.Cheque-HelperUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>Cheque Helper</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5AE908D01C32C20000040A4E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>Cheque HelperUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>sumulang.Cheque-HelperUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>Cheque Helper</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5AE908D21C32C26D00040A4E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EnglishChequeConverter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908D31C32C26D00040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908D21C32C26D00040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908D41C32D90100040A4E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.rtf</string>
+			<key>name</key>
+			<string>Chinese Check Converter Java Code.rtf</string>
+			<key>path</key>
+			<string>Cheque Helper/Chinese Check Converter Java Code.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908D51C32D90100040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908D41C32D90100040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908D61C32D9A800040A4E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>StringUtils.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908D71C32D9A800040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908D61C32D9A800040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AE908D81C32DB3C00040A4E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ChineseChequeConverter.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE908D91C32DB3C00040A4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE908D81C32DB3C00040A4E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AF2C2531C48E52800F22BB8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>HelpViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AF2C2541C48E52800F22BB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AF2C2531C48E52800F22BB8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5AF4963F1C86ADD200CA116B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>GoogleMobileAds.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AF496401C86ADD200CA116B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AF4963F1C86ADD200CA116B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>64A6581DE95F21D4A29E085E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7AC3AD4B23B3C1381324AF27</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E227BC08CF79CAE3EFE3054E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A58306D09A3636E9C5F3C0AB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C96F543BFED056BD8A6AE910</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Cheque Helper.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D40C2B935E9C1F62012CDFCA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E227BC08CF79CAE3EFE3054E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E227BC08CF79CAE3EFE3054E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Cheque_Helper.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F08C586334FD7681C783D67F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Cheque Helper.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>5AE908981C32C20000040A4E</string>
+</dict>
+</plist>
