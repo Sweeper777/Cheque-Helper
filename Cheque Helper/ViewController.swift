@@ -30,12 +30,16 @@ class ViewController: UIViewController{
         if languageChoice.selectedSegmentIndex == 0 {
             displayEnglishResult()
             tfAmount.placeholder = "Enter Amount"
-            btnConvert.titleLabel?.text = "Convert!"
+            btnConvert.setTitle("Convert!", forState: .Normal)
+            btnConvert.setTitle("Convert!", forState: .Highlighted)
+            btnConvert.setTitle("Convert!", forState: .Selected)
             title = "Cheque Helper"
         } else {
             displayChineseResult()
             tfAmount.placeholder = "輸入幣值"
-            btnConvert.titleLabel?.text = "轉換！"
+            btnConvert.setTitle(" 轉換！", forState: .Normal)
+            btnConvert.setTitle(" 轉換！", forState: .Highlighted)
+            btnConvert.setTitle(" 轉換！", forState: .Selected)
             title = "支票小幫手"
         }
         view.endEditing(true)

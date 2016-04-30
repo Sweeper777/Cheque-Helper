@@ -56,17 +56,36 @@
                                     <segment title="English"/>
                                     <segment title="中文"/>
                                 </segments>
+                                <color key="tintColor" red="0.23132071430000001" green="0.48063303969999999" blue="0.23132071430000001" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="changedLanguage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Djj-bM-zSj"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-U2-cSO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-U2-cSO" customClass="SwiftyButton" customModule="SwiftyButton">
                                 <rect key="frame" x="521" y="72" width="59" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="Cxg-WV-YhK"/>
                                     <constraint firstAttribute="height" constant="30" id="hcV-MW-ClZ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Convert!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.3529411764705882" green="0.73333333333333328" blue="0.3529411764705882" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedColor">
+                                        <color key="value" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.23132071429853213" green="0.48063303970917226" blue="0.23132071429853213" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="convertClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUa-Gi-bKm"/>
                                 </connections>
