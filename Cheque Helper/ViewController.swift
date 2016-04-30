@@ -8,13 +8,16 @@ class ViewController: UIViewController{
     @IBOutlet var btnConvert: UIButton!
     @IBOutlet var adBanner: GADBannerView!
     
+    var englishFont: UIFont!
+    
     override func viewDidLoad() {
-        result.font = UIFont (name: "Kailasa", size: CGFloat.init(integerLiteral: 36))
         adBanner.rootViewController = self
         adBanner.adUnitID = "ca-app-pub-top secret"
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
         adBanner.loadRequest(GADRequest())
+        
+        englishFont = result.font
     }
 
     @IBAction func convertClicked(sender: UIButton) {
@@ -34,6 +37,7 @@ class ViewController: UIViewController{
             btnConvert.setTitle("Convert!", forState: .Highlighted)
             btnConvert.setTitle("Convert!", forState: .Selected)
             title = "Cheque Helper"
+            result.font = englishFont
         } else {
             displayChineseResult()
             tfAmount.placeholder = "輸入幣值"
@@ -41,6 +45,7 @@ class ViewController: UIViewController{
             btnConvert.setTitle(" 轉換！", forState: .Highlighted)
             btnConvert.setTitle(" 轉換！", forState: .Selected)
             title = "支票小幫手"
+            result.font = UIFont(name: "Helvetica", size: 25)
         }
         view.endEditing(true)
     }

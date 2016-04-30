@@ -101,7 +101,7 @@
                                 <rect key="frame" x="20" y="146" width="560" height="380"/>
                                 <color key="backgroundColor" red="0.792156862745098" green="1" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bBk-fk-J5a" appends="YES" id="KnB-ef-Nh6"/>
