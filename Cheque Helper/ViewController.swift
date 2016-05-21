@@ -12,7 +12,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         adBanner.rootViewController = self
-        adBanner.adUnitID = "ca-app-pub-top secret"
+        adBanner.adUnitID = adUnitID
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
         adBanner.loadRequest(GADRequest())
