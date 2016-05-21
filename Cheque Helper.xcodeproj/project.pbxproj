@@ -19,6 +19,7 @@
 		5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */; };
 		5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */; };
 		5AF791B31CF068CC007165AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF791B21CF068CC007165AF /* GoogleService-Info.plist */; };
+		5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF791B41CF06DF9007165AF /* SecretStuff.swift */; };
 		7AC3AD4B23B3C1381324AF27 /* Pods_Cheque_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E227BC08CF79CAE3EFE3054E /* Pods_Cheque_Helper.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		5AF791B21CF068CC007165AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5AF791B41CF06DF9007165AF /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		C96F543BFED056BD8A6AE910 /* Pods-Cheque Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		E227BC08CF79CAE3EFE3054E /* Pods_Cheque_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheque_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08C586334FD7681C783D67F /* Pods-Cheque Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */,
 				5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */,
 				5AE908D61C32D9A800040A4E /* StringUtils.swift */,
+				5AF791B41CF06DF9007165AF /* SecretStuff.swift */,
 			);
 			path = "Cheque Helper";
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			files = (
 				5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */,
 				5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */,
+				5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */,
 				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
 				5AE908A61C32C20000040A4E /* ViewController.swift in Sources */,
 				5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */,
