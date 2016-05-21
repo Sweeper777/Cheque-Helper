@@ -1,6 +1,30 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Firebase
+
+Copyright 2016 Google Inc.
+
+## FirebaseAnalytics
+
+Copyright 2016 Google Inc.
+
+## FirebaseInstanceID
+
+Copyright 2016 Google Inc.
+
+## GoogleInterchangeUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleSymbolUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleUtilities
+
+Copyright 2015 Google Inc.
+
 ## PureLayout
 
 This code is distributed under the terms and conditions of the MIT license.

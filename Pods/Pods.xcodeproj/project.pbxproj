@@ -10,6 +10,32 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>005D9CA6100BC044CFA5D03D63C0F834</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>PureLayout.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0066335271C3DA0A1F28793210D2A4EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SwiftyButton.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>01D6A2E9A099260F31288719FE812B5A</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -24,6 +50,21 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>02B66BD4475044BB8FD613E8DDDA9276</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8914A12330EDD67A1A77D19F0A6FBD3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleInterchangeUtilities</string>
+			<key>path</key>
+			<string>GoogleInterchangeUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>03071F12C7CB5B4161C7C73A162F365C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -37,23 +78,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0E1A07D0C8EA97FE8544B4007943A52D</key>
+		<key>04D5802C4E9A59AA50A83AEAC08D7F3C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ALView+PureLayout.h</string>
 			<key>path</key>
-			<string>SwiftyButton-dummy.m</string>
+			<string>PureLayout/PureLayout/ALView+PureLayout.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0E9389E2C869AF4D92E32081FCA64AC3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5ABFBE003EDF53A3B624DB01DCE52A1D</string>
+			<string>B6A0F6CF9A465DE1D5375130235C426C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -75,26 +118,6 @@
 			<key>targetProxy</key>
 			<string>1C8F6C3A6901658AC43448AB723F66EB</string>
 		</dict>
-		<key>10280584BC73FCA622C5588729891E86</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D045F1A066C9660FBFF3CC21FAE019C5</string>
-				<string>A94661800482FD10E1DE2FB789BC8E5D</string>
-				<string>B488860B2776566BEED1D13700E2B6C2</string>
-				<string>0E1A07D0C8EA97FE8544B4007943A52D</string>
-				<string>763B9E253676554F03498CC245CB66DC</string>
-				<string>6B3C0315C60D94411DDA86BFCBEDCFAE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/SwiftyButton</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>11B3C48B02A0A6CFA33B7AF685E753FD</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -109,10 +132,47 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>15F7C7C7C8807640CC51649E6FEE1DA1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftyButton-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>16CA787BBCE4A4E80696B189C94F9512</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>04D5802C4E9A59AA50A83AEAC08D7F3C</string>
+				<string>57D46D6FC17BEF297C4611AB3E974852</string>
+				<string>ACBDEEBB033561651B5E5EC4D140BABB</string>
+				<string>A93AD64BDF35BAB67B33AE853F6B3252</string>
+				<string>FDF51ED7DF3A20314642AEC8E18EDAFA</string>
+				<string>3667BC1B2D59649049390A51DAEE4467</string>
+				<string>B6A0F6CF9A465DE1D5375130235C426C</string>
+				<string>B25297A6F51A42F969CABC4903B43FC1</string>
+				<string>2DAABB760BFE7207970F07CAFEEBDC86</string>
+				<string>905A5BACE1F454BC47AF5331556FE732</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>PureLayout</string>
+			<key>path</key>
+			<string>PureLayout</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>171B41202544808125C181685D2C7F7A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1B2B4D71520E3D17D1579C4A652C27EB</string>
+			<string>B25297A6F51A42F969CABC4903B43FC1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -126,7 +186,7 @@
 		<key>18178F4F6A19054570729894C014903E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6B3C0315C60D94411DDA86BFCBEDCFAE</string>
+			<string>77C7403C0007D6DE4657B3D9CE88D241</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -137,18 +197,14 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1B2B4D71520E3D17D1579C4A652C27EB</key>
+		<key>181DE57D7DAF39E2562E05AF58997F7C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PureLayout+Internal.h</string>
 			<key>path</key>
-			<string>PureLayout/PureLayout/PureLayout+Internal.h</string>
+			<string>SwiftyButton.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -165,18 +221,29 @@
 			<key>remoteInfo</key>
 			<string>SwiftyButton</string>
 		</dict>
-		<key>1F9DC80B70A53DA3903B3FCBF3649674</key>
+		<key>209488E838E436101649649636A01CCB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SwiftyButton.swift</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>SwiftyButton/SwiftyButton.swift</string>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>221E31DCD0E373CEE2A9BDA2A4ED397D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PureLayout-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -198,7 +265,7 @@
 		<key>231EE973D0E50FB01892BAA4640626C4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E1C8A5ECB579AC17414D55189B4BFAA1</string>
+			<string>FDF51ED7DF3A20314642AEC8E18EDAFA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -208,19 +275,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>23E865BEF03BAEF71CF3409BC329B6E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -251,6 +305,21 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>2DAABB760BFE7207970F07CAFEEBDC86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PureLayoutDefines.h</string>
+			<key>path</key>
+			<string>PureLayout/PureLayout/PureLayoutDefines.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>32868DFA8E3F4ABFAAC5BC8228B3EF4C</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -264,25 +333,25 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>3A88D15A69D207F376CC3231DC2078DF</key>
+		<key>3667BC1B2D59649049390A51DAEE4467</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>NSArray+PureLayout.h</string>
+			<string>NSLayoutConstraint+PureLayout.m</string>
 			<key>path</key>
-			<string>PureLayout/PureLayout/NSArray+PureLayout.h</string>
+			<string>PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3B4325A4BCFF2C8E109191E6622764E3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B97A0C08ED0C66E3C119C0C0E96253A9</string>
+			<string>005D9CA6100BC044CFA5D03D63C0F834</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -334,19 +403,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>3C62EBD6CA6C6B0044BF9B089EB30C02</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0E87D0A73D863D33290D98CEA4CA293</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CustomContent</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3CAA3867715F7E6412D7609EDB449C30</key>
 		<dict>
@@ -442,21 +498,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>3FEE0B80089EC621A976D732A8C6B333</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ALView+PureLayout.m</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/ALView+PureLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>4330D92AA37E46D69F1D9A17C6949FE5</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -483,24 +524,54 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>4589B3F53CB549FA53EE72B10C0827F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C686A4C69D3DFFC04D4D8C99D8C501C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleSymbolUtilities</string>
+			<key>path</key>
+			<string>GoogleSymbolUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>45F37E2BDCD0B72533E050D88B35AF40</key>
 		<dict>
 			<key>fileRef</key>
-			<string>53EDF5D89BBDB5D994B9BC629D5A6C26</string>
+			<string>3667BC1B2D59649049390A51DAEE4467</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>48C93B2262BA41005D2F5FE79B61DD06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftyButton+ResizableImage.swift</string>
+			<key>path</key>
+			<string>SwiftyButton/SwiftyButton+ResizableImage.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>495853B2EAD9B7A1D2AB1770D4AADB8E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>94363771FA15F166D00DCB720F0ABB50</string>
+			<string>A93AD64BDF35BAB67B33AE853F6B3252</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>4B193E57E6AAA6D51A69B3E096F96DCC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B488860B2776566BEED1D13700E2B6C2</string>
+			<string>0066335271C3DA0A1F28793210D2A4EE</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -555,10 +626,23 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>4CE0191C1E978AAF12D5BBA772285C40</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleUtilities.framework</string>
+			<key>path</key>
+			<string>Frameworks/GoogleUtilities.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4D51349542A706347BAFED51BA382636</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B97A0C08ED0C66E3C119C0C0E96253A9</string>
+			<string>005D9CA6100BC044CFA5D03D63C0F834</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -611,6 +695,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>4E5B00EA11714BED586AD7C38D1ED0FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A06E5E486440B6F671B5572D6693E1DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4EF9F3775B3E05CE9864091BC75C9891</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -636,6 +733,19 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>4F0565054C6DAFB5744CB70B5C56EE78</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleSymbolUtilities.framework</string>
+			<key>path</key>
+			<string>Frameworks/GoogleSymbolUtilities.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>50F8A8212DFE6D2122D56A695948D10C</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -651,21 +761,6 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>53EDF5D89BBDB5D994B9BC629D5A6C26</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSLayoutConstraint+PureLayout.m</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>564284813CCC4960F746BD7EEDAD33DA</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -679,42 +774,40 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>56BE4F9406FF7FDA6915A33A719BA74A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4CE0191C1E978AAF12D5BBA772285C40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57D46D6FC17BEF297C4611AB3E974852</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>ALView+PureLayout.m</string>
+			<key>path</key>
+			<string>PureLayout/PureLayout/ALView+PureLayout.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5A93DC322ABA34E30D98AA03C916C33A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0E1A07D0C8EA97FE8544B4007943A52D</string>
+			<string>C9FFB716C58A77B54D26BB1F6FC862E3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>5ABFBE003EDF53A3B624DB01DCE52A1D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PureLayout.h</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/PureLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C473885C9D03A6A3DFA25ADBCB4B9C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PureLayoutDefines.h</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/PureLayoutDefines.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5ECDEDC5A99303B58203F93527E792A2</key>
 		<dict>
@@ -729,6 +822,34 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>5FA01DB0EDD701F42729247E032C2E9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PureLayout-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>616804B94EF590A565E33B4F9F0D9AE9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Firebase.h</string>
+			<key>path</key>
+			<string>Headers/Firebase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6463A2E20D0846D38EECD4E31984037A</key>
 		<dict>
@@ -769,30 +890,6 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>675305517B1708FB1926A5114BA27B51</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>85C0A60D95D6DDEEE1E2682453C8622F</string>
-				<string>3FEE0B80089EC621A976D732A8C6B333</string>
-				<string>3A88D15A69D207F376CC3231DC2078DF</string>
-				<string>94363771FA15F166D00DCB720F0ABB50</string>
-				<string>E1C8A5ECB579AC17414D55189B4BFAA1</string>
-				<string>53EDF5D89BBDB5D994B9BC629D5A6C26</string>
-				<string>5ABFBE003EDF53A3B624DB01DCE52A1D</string>
-				<string>1B2B4D71520E3D17D1579C4A652C27EB</string>
-				<string>5C473885C9D03A6A3DFA25ADBCB4B9C1</string>
-				<string>9C6A79023C1162CBED6F33DF55B1BB4C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PureLayout</string>
-			<key>path</key>
-			<string>PureLayout</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>67A53A9ECA5A76ECC3D3377315726456</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -809,32 +906,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>6B3C0315C60D94411DDA86BFCBEDCFAE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SwiftyButton-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6BC8E7EB1AA972EDD8DA32A91FA28C18</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PureLayout-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>6EA39151C853207A607D70E2F059E82A</key>
 		<dict>
 			<key>children</key>
@@ -845,6 +916,19 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F00AE4501137464738578B91EE95B6F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C420236683390C39FB96A585B077A6CE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CustomContent</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -875,7 +959,7 @@
 		<key>713ED7C30A39387CF5E8C57B0D2ABF4D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3A88D15A69D207F376CC3231DC2078DF</string>
+			<string>ACBDEEBB033561651B5E5EC4D140BABB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -885,19 +969,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>763B9E253676554F03498CC245CB66DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SwiftyButton-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>769F1067684DC1C1D1C653D9418C2E4A</key>
 		<dict>
@@ -974,10 +1045,23 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>77C7403C0007D6DE4657B3D9CE88D241</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SwiftyButton-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>78F1452A4FE26F974A8551F8AE9A3A3B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5C473885C9D03A6A3DFA25ADBCB4B9C1</string>
+			<string>2DAABB760BFE7207970F07CAFEEBDC86</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1000,19 +1084,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B63386BD6ACA2FE305EB8DA993E9992</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PureLayout-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1043,13 +1114,28 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>7CF6B26E1F7DEF169BF46509526E6E74</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DD1AAEC77CA940FB5F2A17BCAB451F96</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Firebase</string>
+			<key>path</key>
+			<string>Firebase</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>7B8692115B83CF0603FBB14AC029C28F</string>
-				<string>ACBB3CDCA26390135A5578B5C1BE6C45</string>
+				<string>DC15A80FE9D58C40FB33003F3C3FBD44</string>
 				<string>7B15CB7F0B1F917B75AF715C4D48B9DC</string>
 				<string>6EA39151C853207A607D70E2F059E82A</string>
 			</array>
@@ -1061,21 +1147,36 @@
 		<key>7F5215B0FA919370A21F035819F2D1C5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7B63386BD6ACA2FE305EB8DA993E9992</string>
+			<string>CFDFF2D0E338978572EFADE16CDA0A31</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>83A2FD1A1556DEC92A88D60FEB685D67</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C0E87D0A73D863D33290D98CEA4CA293</string>
+			<string>C420236683390C39FB96A585B077A6CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>84931342275D988C3168675F747D6BF2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56BE4F9406FF7FDA6915A33A719BA74A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleUtilities</string>
+			<key>path</key>
+			<string>GoogleUtilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>84F1496861A0592B70B8865B0DC497D0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A8059F0A69CC9D134B1C2BFED051BDDD</string>
+			<string>5FA01DB0EDD701F42729247E032C2E9E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1086,7 +1187,20 @@
 				</array>
 			</dict>
 		</dict>
-		<key>85C0A60D95D6DDEEE1E2682453C8622F</key>
+		<key>8914A12330EDD67A1A77D19F0A6FBD3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>90355B012BF599CFF90A5D6304095803</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F378809185745B4FFA50C946DF36A37</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1095,9 +1209,42 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>ALView+PureLayout.h</string>
+			<string>FIRInstanceID.h</string>
 			<key>path</key>
-			<string>PureLayout/PureLayout/ALView+PureLayout.h</string>
+			<string>Headers/Public/FIRInstanceID.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90355B012BF599CFF90A5D6304095803</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleInterchangeUtilities.framework</string>
+			<key>path</key>
+			<string>Frameworks/GoogleInterchangeUtilities.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>905A5BACE1F454BC47AF5331556FE732</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>209488E838E436101649649636A01CCB</string>
+				<string>A49F8B5455F91FB880980B20D07073E1</string>
+				<string>005D9CA6100BC044CFA5D03D63C0F834</string>
+				<string>CFDFF2D0E338978572EFADE16CDA0A31</string>
+				<string>221E31DCD0E373CEE2A9BDA2A4ED397D</string>
+				<string>5FA01DB0EDD701F42729247E032C2E9E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/PureLayout</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1117,7 +1264,7 @@
 		<key>9244424949B5ACB56451B5CCC7001F3E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>85C0A60D95D6DDEEE1E2682453C8622F</string>
+			<string>04D5802C4E9A59AA50A83AEAC08D7F3C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1127,21 +1274,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>94363771FA15F166D00DCB720F0ABB50</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSArray+PureLayout.m</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/NSArray+PureLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>97A8E6F2390013F549A6646FD4BA7E2A</key>
 		<dict>
@@ -1163,47 +1295,38 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>9C6A79023C1162CBED6F33DF55B1BB4C</key>
+		<key>9C686A4C69D3DFFC04D4D8C99D8C501C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>23E865BEF03BAEF71CF3409BC329B6E9</string>
-				<string>B562FDDD1703C3EBE0ED0170472AD5AA</string>
-				<string>B97A0C08ED0C66E3C119C0C0E96253A9</string>
-				<string>7B63386BD6ACA2FE305EB8DA993E9992</string>
-				<string>6BC8E7EB1AA972EDD8DA32A91FA28C18</string>
-				<string>A8059F0A69CC9D134B1C2BFED051BDDD</string>
+				<string>4F0565054C6DAFB5744CB70B5C56EE78</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A06E5E486440B6F671B5572D6693E1DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseInstanceID.framework</string>
 			<key>path</key>
-			<string>../Target Support Files/PureLayout</string>
+			<string>Frameworks/FirebaseInstanceID.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A1111DF5F7078771373593CBEEA41DD3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1F9DC80B70A53DA3903B3FCBF3649674</string>
+			<string>A3D2813CF778D83146020B96FA084DE9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>A1523E916823611FD9C5210A5C05EC05</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SwiftyButton+ResizableImage.swift</string>
-			<key>path</key>
-			<string>SwiftyButton/SwiftyButton+ResizableImage.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A313467BD8EE4655F72FFE44C6667B67</key>
 		<dict>
@@ -1219,12 +1342,54 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>A3D2813CF778D83146020B96FA084DE9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftyButton.swift</string>
+			<key>path</key>
+			<string>SwiftyButton/SwiftyButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A4098DB1EE540C8FA892C68F970D208F</key>
 		<dict>
 			<key>fileRef</key>
 			<string>E84C999ABBE32F73727284A89F246F05</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>A49F8B5455F91FB880980B20D07073E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PureLayout.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A5A3415EF5A21D5EE0A8864F26DEC630</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8F378809185745B4FFA50C946DF36A37</string>
+				<string>4E5B00EA11714BED586AD7C38D1ED0FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FirebaseInstanceID</string>
+			<key>path</key>
+			<string>FirebaseInstanceID</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
 		<dict>
@@ -1325,7 +1490,22 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A8059F0A69CC9D134B1C2BFED051BDDD</key>
+		<key>A93AD64BDF35BAB67B33AE853F6B3252</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSArray+PureLayout.m</string>
+			<key>path</key>
+			<string>PureLayout/PureLayout/NSArray+PureLayout.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ACBDEEBB033561651B5E5EC4D140BABB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1333,33 +1513,25 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSArray+PureLayout.h</string>
 			<key>path</key>
-			<string>PureLayout-umbrella.h</string>
+			<string>PureLayout/PureLayout/NSArray+PureLayout.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A94661800482FD10E1DE2FB789BC8E5D</key>
+		<key>B25297A6F51A42F969CABC4903B43FC1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SwiftyButton.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACBB3CDCA26390135A5578B5C1BE6C45</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>675305517B1708FB1926A5114BA27B51</string>
-				<string>BB3961552D9B470C5A2F587FB9125570</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>PureLayout+Internal.h</string>
+			<key>path</key>
+			<string>PureLayout/PureLayout/PureLayout+Internal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1377,40 +1549,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B488860B2776566BEED1D13700E2B6C2</key>
+		<key>B6A0F6CF9A465DE1D5375130235C426C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PureLayout.h</string>
 			<key>path</key>
-			<string>SwiftyButton.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B562FDDD1703C3EBE0ED0170472AD5AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PureLayout.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B97A0C08ED0C66E3C119C0C0E96253A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>PureLayout.xcconfig</string>
+			<string>PureLayout/PureLayout/PureLayout.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1431,21 +1581,16 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BB3961552D9B470C5A2F587FB9125570</key>
+		<key>BD5160F2CD9C6F367A5352F740D97BF6</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>1F9DC80B70A53DA3903B3FCBF3649674</string>
-				<string>A1523E916823611FD9C5210A5C05EC05</string>
-				<string>3C62EBD6CA6C6B0044BF9B089EB30C02</string>
-				<string>10280584BC73FCA622C5588729891E86</string>
+				<string>D1F42AA1D3F9FD0DD1D9835AAC0757CB</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>SwiftyButton</string>
-			<key>path</key>
-			<string>SwiftyButton</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1476,21 +1621,6 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>C0E87D0A73D863D33290D98CEA4CA293</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>SwiftyCustomContentButton.swift</string>
-			<key>path</key>
-			<string>SwiftyButton/SwiftyCustomContentButton.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C3B9BA6C287EA0ACE75688EC657C9999</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1509,6 +1639,21 @@
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>C420236683390C39FB96A585B077A6CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftyCustomContentButton.swift</string>
+			<key>path</key>
+			<string>SwiftyButton/SwiftyCustomContentButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C47D2C265FB71498FEC2C09299C483B9</key>
 		<dict>
@@ -1534,6 +1679,54 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C9A7DD614F4085DBEDD471FD6FC93FF9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D2136232ADE5089CF8F96C8B739DF411</string>
+				<string>181DE57D7DAF39E2562E05AF58997F7C</string>
+				<string>0066335271C3DA0A1F28793210D2A4EE</string>
+				<string>C9FFB716C58A77B54D26BB1F6FC862E3</string>
+				<string>15F7C7C7C8807640CC51649E6FEE1DA1</string>
+				<string>77C7403C0007D6DE4657B3D9CE88D241</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SwiftyButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9FFB716C58A77B54D26BB1F6FC862E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SwiftyButton-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB15984C2FA00168B01AB7B9C8368C02</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BD5160F2CD9C6F367A5352F740D97BF6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FirebaseAnalytics</string>
+			<key>path</key>
+			<string>FirebaseAnalytics</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CC795E57290652DF243C3D85E1E79F75</key>
 		<dict>
 			<key>fileRef</key>
@@ -1541,7 +1734,33 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D045F1A066C9660FBFF3CC21FAE019C5</key>
+		<key>CFDFF2D0E338978572EFADE16CDA0A31</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PureLayout-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1F42AA1D3F9FD0DD1D9835AAC0757CB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>FirebaseAnalytics.framework</string>
+			<key>path</key>
+			<string>Frameworks/FirebaseAnalytics.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2136232ADE5089CF8F96C8B739DF411</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1620,6 +1839,57 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DC15A80FE9D58C40FB33003F3C3FBD44</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7CF6B26E1F7DEF169BF46509526E6E74</string>
+				<string>CB15984C2FA00168B01AB7B9C8368C02</string>
+				<string>A5A3415EF5A21D5EE0A8864F26DEC630</string>
+				<string>02B66BD4475044BB8FD613E8DDDA9276</string>
+				<string>4589B3F53CB549FA53EE72B10C0827F5</string>
+				<string>84931342275D988C3168675F747D6BF2</string>
+				<string>16CA787BBCE4A4E80696B189C94F9512</string>
+				<string>DFD0A4804B547818DEB765B8069B8DC3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DD1AAEC77CA940FB5F2A17BCAB451F96</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>616804B94EF590A565E33B4F9F0D9AE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Analytics</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFD0A4804B547818DEB765B8069B8DC3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A3D2813CF778D83146020B96FA084DE9</string>
+				<string>48C93B2262BA41005D2F5FE79B61DD06</string>
+				<string>6F00AE4501137464738578B91EE95B6F</string>
+				<string>C9A7DD614F4085DBEDD471FD6FC93FF9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SwiftyButton</string>
+			<key>path</key>
+			<string>SwiftyButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E0EAF7FE2AC3985CAC254E9DA5B25F46</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1630,21 +1900,6 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-Cheque Helper-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1C8A5ECB579AC17414D55189B4BFAA1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSLayoutConstraint+PureLayout.h</string>
-			<key>path</key>
-			<string>PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1664,14 +1919,14 @@
 		<key>EAA5879454881112275807403CDA0139</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A1523E916823611FD9C5210A5C05EC05</string>
+			<string>48C93B2262BA41005D2F5FE79B61DD06</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>ED8B4987C30128EDBCC2351B73E75FD2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3FEE0B80089EC621A976D732A8C6B333</string>
+			<string>57D46D6FC17BEF297C4611AB3E974852</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1735,7 +1990,7 @@
 		<key>F8BAD4BCE50B30420E55DEB2AFF5E34F</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B488860B2776566BEED1D13700E2B6C2</string>
+			<string>0066335271C3DA0A1F28793210D2A4EE</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1870,6 +2125,21 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
+		</dict>
+		<key>FDF51ED7DF3A20314642AEC8E18EDAFA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSLayoutConstraint+PureLayout.h</string>
+			<key>path</key>
+			<string>PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

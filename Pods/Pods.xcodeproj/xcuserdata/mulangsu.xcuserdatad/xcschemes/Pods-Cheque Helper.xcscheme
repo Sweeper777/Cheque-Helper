@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '41EDE4C54101A3F9AAA3F886'
+               BlueprintIdentifier = '38E9B265C4B7FFF346287ED7'
                BlueprintName = 'Pods-Cheque Helper'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Cheque_Helper.framework'>
