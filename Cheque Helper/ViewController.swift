@@ -19,6 +19,18 @@ class ViewController: UIViewController{
         
         englishFont = result.font
     }
+    
+    func showRateMsg() {
+        let alert = UIAlertController(title: NSLocalizedString("Enjoying Math Toolbox?", comment: ""), message: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Rate!", comment: ""), style: .Default) { _ in
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
+            })
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Send Feedback", comment: ""), style: .Default) { _ in
+            UIApplication.sharedApplication().openURL(NSURL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!)
+            })
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Maybe Later", comment: ""), style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
 
     @IBAction func convertClicked(sender: UIButton) {
         if languageChoice.selectedSegmentIndex == 0 {
@@ -26,6 +38,11 @@ class ViewController: UIViewController{
         } else {
             displayChineseResult()
         }
+        
+        if arc4random_uniform(100) < 20 {
+            performSelector(#selector(showRateMsg), withObject: self, afterDelay: Double(arc4random_uniform(10)))
+        }
+        
         view.endEditing(true)
     }
     
