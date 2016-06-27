@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "Cheque Helper"; ObjectID = "Br6-sp-XVC"; */
+"Br6-sp-XVC.title" = "Cheque Helper";
+
+/* Class = "UITextView"; text = "Please enter a valid amount"; ObjectID = "Dmd-aO-D2u"; */
+"Dmd-aO-D2u.text" = "Please enter a valid amount";
+
+/* Class = "UIBarButtonItem"; title = "?"; ObjectID = "IIg-Tc-T5X"; */
+"IIg-Tc-T5X.title" = "?";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "IYp-Di-UY8"; */
+"IYp-Di-UY8.title" = " ";
+
+/* Class = "UISegmentedControl"; J7K-OX-Ry8.segmentTitles[0] = "English"; ObjectID = "J7K-OX-Ry8"; */
+"J7K-OX-Ry8.segmentTitles[0]" = "English";
+
+/* Class = "UISegmentedControl"; J7K-OX-Ry8.segmentTitles[1] = "中文"; ObjectID = "J7K-OX-Ry8"; */
+"J7K-OX-Ry8.segmentTitles[1]" = "中文";
+
+/* Class = "UITextField"; placeholder = "Enter Amount"; ObjectID = "WLm-jY-d2q"; */
+"WLm-jY-d2q.placeholder" = "Enter Amount";
+
+/* Class = "UIViewController"; title = "Help"; ObjectID = "cOj-45-oQd"; */
+"cOj-45-oQd.title" = "Help";
+
+/* Class = "UIButton"; normalTitle = "Convert!"; ObjectID = "jPV-U2-cSO"; */
+"jPV-U2-cSO.normalTitle" = "Convert!";
+
+/* Class = "UINavigationItem"; title = "Help"; ObjectID = "nIB-5p-xZo"; */
+"nIB-5p-xZo.title" = "Help";
