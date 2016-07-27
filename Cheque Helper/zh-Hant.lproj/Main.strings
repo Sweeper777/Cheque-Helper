@@ -1,6 +1,6 @@
 
 /* Class = "UINavigationItem"; title = "Cheque Helper"; ObjectID = "Br6-sp-XVC"; */
-"Br6-sp-XVC.title" = "Cheque Helper";
+"Br6-sp-XVC.title" = "支票小幫手";
 
 /* Class = "UITextView"; text = "Please enter a valid amount"; ObjectID = "Dmd-aO-D2u"; */
 "Dmd-aO-D2u.text" = "Please enter a valid amount";
@@ -18,13 +18,13 @@
 "J7K-OX-Ry8.segmentTitles[1]" = "中文";
 
 /* Class = "UITextField"; placeholder = "Enter Amount"; ObjectID = "WLm-jY-d2q"; */
-"WLm-jY-d2q.placeholder" = "Enter Amount";
+"WLm-jY-d2q.placeholder" = "輸入幣值";
 
 /* Class = "UIViewController"; title = "Help"; ObjectID = "cOj-45-oQd"; */
-"cOj-45-oQd.title" = "Help";
+"cOj-45-oQd.title" = "幫助";
 
 /* Class = "UIButton"; normalTitle = "Convert!"; ObjectID = "jPV-U2-cSO"; */
-"jPV-U2-cSO.normalTitle" = "Convert!";
+"jPV-U2-cSO.normalTitle" = "轉換！";
 
 /* Class = "UINavigationItem"; title = "Help"; ObjectID = "nIB-5p-xZo"; */
-"nIB-5p-xZo.title" = "Help";
+"nIB-5p-xZo.title" = "幫助";

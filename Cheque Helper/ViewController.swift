@@ -49,18 +49,18 @@ class ViewController: UIViewController{
     @IBAction func changedLanguage(sender: UISegmentedControl) {
         if languageChoice.selectedSegmentIndex == 0 {
             displayEnglishResult()
-            tfAmount.placeholder = "Enter Amount"
-            btnConvert.setTitle("Convert!", forState: .Normal)
-            btnConvert.setTitle("Convert!", forState: .Highlighted)
-            btnConvert.setTitle("Convert!", forState: .Selected)
-            title = "Cheque Helper"
+//            tfAmount.placeholder = "Enter Amount"
+//            btnConvert.setTitle("Convert!", forState: .Normal)
+//            btnConvert.setTitle("Convert!", forState: .Highlighted)
+//            btnConvert.setTitle("Convert!", forState: .Selected)
+//            title = "Cheque Helper"
             result.font = englishFont
         } else {
             displayChineseResult()
-            tfAmount.placeholder = "輸入幣值"
-            btnConvert.setTitle(" 轉換！", forState: .Normal)
-            btnConvert.setTitle(" 轉換！", forState: .Highlighted)
-            btnConvert.setTitle(" 轉換！", forState: .Selected)
+//            tfAmount.placeholder = "輸入幣值"
+//            btnConvert.setTitle(" 轉換！", forState: .Normal)
+//            btnConvert.setTitle(" 轉換！", forState: .Highlighted)
+//            btnConvert.setTitle(" 轉換！", forState: .Selected)
             title = "支票小幫手"
             result.font = UIFont(name: "Helvetica", size: 25)
         }
