@@ -32,18 +32,16 @@ class ViewController: UIViewController{
         self.presentViewController(alert, animated: true, completion: nil)
     }
 
-    @IBAction func convertClicked(sender: UIButton) {
+    @IBAction func textChanged(sender: UITextField) {
         if languageChoice.selectedSegmentIndex == 0 {
             displayEnglishResult()
         } else {
             displayChineseResult()
         }
         
-        if arc4random_uniform(100) < 20 {
+        if arc4random_uniform(100) < 3 {
             performSelector(#selector(showRateMsg), withObject: self, afterDelay: Double(arc4random_uniform(10)))
         }
-        
-        view.endEditing(true)
     }
     
     @IBAction func changedLanguage(sender: UISegmentedControl) {
