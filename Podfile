@@ -4,7 +4,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Cheque Helper' do
-    pod 'SwiftyButton'
     pod 'Firebase'
 end
 

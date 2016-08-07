@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PureLayout.xcscheme</key>
+		<key>Pods-Cheque HelperTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftyButton.xcscheme</key>
+		<key>Pods-Cheque HelperUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4EF9F3775B3E05CE9864091BC75C9891</key>
+		<key>7BD8C29EBB1057EF95A3671011CC0E4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>671B5ACBF1B83036BD8CEAD5733922D6</key>
+		<key>942CA5D02E1832773222EEB910E83E4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDC30DD35FCE0DA729A57E04A66BA65B</key>
+		<key>FC57B06179F009A28142FC18427FE214</key>
 		<dict>
 			<key>primary</key>
 			<true/>
