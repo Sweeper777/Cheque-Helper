@@ -67,7 +67,7 @@ class ViewController: UIViewController{
 //            btnConvert.setTitle(" 轉換！", forState: .Normal)
 //            btnConvert.setTitle(" 轉換！", forState: .Highlighted)
 //            btnConvert.setTitle(" 轉換！", forState: .Selected)
-            title = "支票小幫手"
+//            title = "支票小幫手"
             result.font = UIFont(name: "Helvetica", size: 25)
         }
         view.endEditing(true)
