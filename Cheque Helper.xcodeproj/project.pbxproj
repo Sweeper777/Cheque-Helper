@@ -18,7 +18,6 @@
 		5AE908D51C32D90100040A4E /* Chinese Check Converter Java Code.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */; };
 		5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
 		5AE908D91C32DB3C00040A4E /* ChineseChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */; };
-		5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */; };
 		5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */; };
 		5AF791B31CF068CC007165AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF791B21CF068CC007165AF /* GoogleService-Info.plist */; };
 		5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF791B41CF06DF9007165AF /* SecretStuff.swift */; };
@@ -67,7 +66,6 @@
 		5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "Chinese Check Converter Java Code.rtf"; path = "Cheque Helper/Chinese Check Converter Java Code.rtf"; sourceTree = "<group>"; };
 		5AE908D61C32D9A800040A4E /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChineseChequeConverter.swift; sourceTree = "<group>"; };
-		5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		5AF791B21CF068CC007165AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5AF791B41CF06DF9007165AF /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				5AE908A71C32C20000040A4E /* Main.storyboard */,
 				5AFB36611D20ED2D00C7AF51 /* Localizable.strings */,
 				5AFB36671D20ED5000C7AF51 /* InfoPlist.strings */,
-				5AF2C2531C48E52800F22BB8 /* HelpViewController.swift */,
 				5AE908A51C32C20000040A4E /* ViewController.swift */,
 				5AE908AA1C32C20000040A4E /* Assets.xcassets */,
 				5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */,
@@ -465,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */,
-				5AF2C2541C48E52800F22BB8 /* HelpViewController.swift in Sources */,
 				5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */,
 				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
 				5AE908A61C32C20000040A4E /* ViewController.swift in Sources */,

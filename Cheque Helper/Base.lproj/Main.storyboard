@@ -103,14 +103,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cheque Helper" id="Br6-sp-XVC">
                         <barButtonItem key="backBarButtonItem" title=" " id="IYp-Di-UY8"/>
-                        <barButtonItem key="rightBarButtonItem" title="?" id="IIg-Tc-T5X">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="WVT-mA-wLZ" kind="popoverPresentation" popoverAnchorBarButtonItem="IIg-Tc-T5X" id="Isu-Pv-txd">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="adBanner" destination="r1J-fG-QxE" id="ycK-S1-1KF"/>
@@ -127,70 +119,6 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-190" y="355"/>
-        </scene>
-        <!--Help-->
-        <scene sceneID="8yl-dU-eQt">
-            <objects>
-                <viewController title="Help" id="cOj-45-oQd" customClass="HelpViewController" customModule="Cheque_Helper" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gka-l1-sWB"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tip-MT-4Pl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uaO-rh-g78">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPN-if-nLf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oPN-if-nLf" secondAttribute="trailing" id="EOX-r5-TLl"/>
-                            <constraint firstItem="oPN-if-nLf" firstAttribute="top" secondItem="uaO-rh-g78" secondAttribute="top" id="Vlx-27-RcK"/>
-                            <constraint firstItem="oPN-if-nLf" firstAttribute="bottom" secondItem="Tip-MT-4Pl" secondAttribute="top" id="a78-ou-TKE"/>
-                            <constraint firstItem="oPN-if-nLf" firstAttribute="leading" secondItem="uaO-rh-g78" secondAttribute="leading" id="wDV-VG-rye"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Help" id="nIB-5p-xZo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bOu-tt-4uP">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="doneClicked:" destination="cOj-45-oQd" id="4lB-l6-iMg"/>
-                                <segue destination="hwj-c4-yST" kind="unwind" unwindAction="unwindToMain:" id="ygD-Gw-snh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="oPN-if-nLf" id="k7E-YN-xOM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVk-67-3ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="hwj-c4-yST" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="1269" y="347"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sJn-Vx-FDb">
-            <objects>
-                <navigationController id="WVT-mA-wLZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QAh-SI-aPV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="cOj-45-oQd" kind="relationship" relationship="rootViewController" id="g7d-ln-eZj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ght-ec-KUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="558" y="347"/>
         </scene>
     </scenes>
 </document>
