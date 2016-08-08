@@ -1,5 +1,7 @@
 import UIKit
 import GoogleMobileAds
+import DoneToolbarSwift
+import EZSwiftExtensions
 
 class ViewController: UIViewController{
     @IBOutlet var tfAmount: UITextField!
@@ -18,6 +20,12 @@ class ViewController: UIViewController{
         adBanner.loadRequest(GADRequest())
         
         englishFont = result.font
+        
+        let toolbar = ToolbarWithDone(viewsWithToolbar: [tfAmount])
+        toolbar.barTintColor = UIColor(hexString: "5abb5a")
+        toolbar.tintColor = UIColor.whiteColor()
+        
+        tfAmount.inputAccessoryView = toolbar
     }
     
     func showRateMsg() {
