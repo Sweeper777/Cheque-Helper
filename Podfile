@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'Cheque Helper' do
     pod 'Firebase'
+    pod 'DoneToolbarSwift'
+    pod 'EZSwiftExtensions'
 end
 
 target 'Cheque HelperTests' do

@@ -1,0 +1,6 @@
+framework module DoneToolbarSwift {
+  umbrella header "DoneToolbarSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

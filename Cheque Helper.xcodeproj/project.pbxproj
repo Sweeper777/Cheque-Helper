@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0810F81D580BDD005C585A /* DoneToolbarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */; };
+		5A0810FA1D580C8D005C585A /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */; };
 		5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A31C32C20000040A4E /* AppDelegate.swift */; };
 		5AE908A61C32C20000040A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A51C32C20000040A4E /* ViewController.swift */; };
 		5AE908A91C32C20000040A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908A71C32C20000040A4E /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		10BF22A13482131EFF0659A0 /* Pods-Cheque HelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque HelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque HelperTests/Pods-Cheque HelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		225B2994CBA8B171115452F7 /* Pods-Cheque Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		42B9061555633924D6A1D726 /* Pods_Cheque_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheque_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DoneToolbarSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Cheque_Helper-aeiqqxztchxtzidacugqifgodwxv/Build/Products/Release-iphonesimulator/DoneToolbarSwift/DoneToolbarSwift.framework"; sourceTree = "<group>"; };
+		5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "Pods/../build/Release-iphoneos/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
 		5AE908A01C32C20000040A4E /* Cheque Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheque Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE908A31C32C20000040A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AE908A51C32C20000040A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0810FA1D580C8D005C585A /* EZSwiftExtensions.framework in Frameworks */,
+				5A0810F81D580BDD005C585A /* DoneToolbarSwift.framework in Frameworks */,
 				5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */,
 				75D3AC989233B3E214D79B9D /* Pods_Cheque_Helper.framework in Frameworks */,
 			);
@@ -164,6 +170,8 @@
 		EAB239AF9A15A0D447D67ED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */,
+				5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */,
 				42B9061555633924D6A1D726 /* Pods_Cheque_Helper.framework */,
 				FEE5CE1B7846B65FE45F0634 /* Pods_Cheque_HelperTests.framework */,
 				092A5228017A3225A2FF025B /* Pods_Cheque_HelperUITests.framework */,
@@ -627,6 +635,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/EZSwiftExtensions",
 				);
 				INFOPLIST_FILE = "Cheque Helper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -651,6 +660,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/EZSwiftExtensions",
 				);
 				INFOPLIST_FILE = "Cheque Helper/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

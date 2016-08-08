@@ -1,4 +1,6 @@
 PODS:
+  - DoneToolbarSwift (1.0.0)
+  - EZSwiftExtensions (1.5)
   - Firebase (3.2.0):
     - Firebase/Core (= 3.2.0)
   - Firebase/Analytics (3.2.0):
@@ -18,9 +20,13 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - DoneToolbarSwift
+  - EZSwiftExtensions
   - Firebase
 
 SPEC CHECKSUMS:
+  DoneToolbarSwift: 5bb089476bd4949fca01b714a55bbeac76909d72
+  EZSwiftExtensions: fe78d7d4ac34f5c8c36415d4acee49ba67c9732a
   Firebase: 6d4012da1598732a2b43f16d8355eca90f94ed59
   FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
   FirebaseInstanceID: d014d574053a2fe84478f12f7bae96979e7051bb
@@ -28,6 +34,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: 77a453fa8dcc9a0a6668b73178db5dd21eb7a230
+PODFILE CHECKSUM: 2a84f0e9879094e99da8fe09e79aca99ff9c6daf
 
 COCOAPODS: 1.1.0.beta.1

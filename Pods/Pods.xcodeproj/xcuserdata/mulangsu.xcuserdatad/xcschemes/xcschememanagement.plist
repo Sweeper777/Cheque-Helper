@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DoneToolbarSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EZSwiftExtensions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Cheque Helper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7BD8C29EBB1057EF95A3671011CC0E4B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>942CA5D02E1832773222EEB910E83E4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>BF529704E2D57A46A0B88D09BCBD9804</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E43BFE9082766B69DC5473F84A4B9F50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FC57B06179F009A28142FC18427FE214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD5F1FD6E13D026339133E68A4627EAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
