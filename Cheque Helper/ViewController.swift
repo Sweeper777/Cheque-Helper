@@ -43,7 +43,6 @@ class ViewController: UIViewController{
     @IBAction func textChanged(sender: UITextField) {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .DecimalStyle
-        print(formatter.groupingSeparator)
         if let amount = Int(tfAmount.text?.stringByReplacingOccurrencesOfString(formatter.groupingSeparator, withString: "") ?? "a") {
             if let formatted = formatter.stringFromNumber(amount) {
                 tfAmount.text = formatted
