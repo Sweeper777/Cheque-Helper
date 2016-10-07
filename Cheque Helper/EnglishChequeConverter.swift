@@ -2,7 +2,7 @@ import Foundation
 
 class EnglishChequeConverter {
         
-    private func getTheWord(i: Int) -> String {
+    fileprivate func getTheWord(_ i: Int) -> String {
         switch i {
         case 0: return ""
         case 1: return "thousand"
@@ -14,7 +14,7 @@ class EnglishChequeConverter {
         }
     }
     
-    private func get1DigitString (i: Int) -> String {
+    fileprivate func get1DigitString (_ i: Int) -> String {
         switch i {
         case 1:
             return "one"
@@ -53,7 +53,7 @@ class EnglishChequeConverter {
         }
     }
     
-    private func get2DigitString (i: Int) -> String{
+    fileprivate func get2DigitString (_ i: Int) -> String{
         if i % 10 == 0 || String(i).characters.count == 1 {
             return get1DigitString(i)
         }
@@ -86,12 +86,12 @@ class EnglishChequeConverter {
         }
     }
     
-    private func get3DigitString (number: String) -> String {
-        let last2Digits = String ((number as NSString).substringFromIndex(1))
-        return get1DigitString(StringUtils.getDigitFrom(number, at: 0)) + " hundred " + get2DigitString(Int(last2Digits)!)
+    fileprivate func get3DigitString (_ number: String) -> String {
+        let last2Digits = String ((number as NSString).substring(from: 1))
+        return get1DigitString(StringUtils.getDigitFrom(number, at: 0)) + " hundred " + get2DigitString(Int(last2Digits!)!)
     }
     
-    private func get1To3DigitString (s: String) -> String{
+    fileprivate func get1To3DigitString (_ s: String) -> String{
         let i = Int(s)!
         let number = String(i)
         
@@ -107,15 +107,15 @@ class EnglishChequeConverter {
         }
     }
     
-    func convertNumberString (x: String) -> String {
+    func convertNumberString (_ x: String) -> String {
         var number = x
         let parsedNumber = NSDecimalNumber (string: number)
-        if parsedNumber == NSDecimalNumber.notANumber() {
+        if parsedNumber == NSDecimalNumber.notANumber {
             return "Please enter a valid amount"
         }
         
-        if parsedNumber.compare(NSDecimalNumber(string: "999999999999999999")) == NSComparisonResult.OrderedDescending ||
-            parsedNumber.compare(NSDecimalNumber.one()) == NSComparisonResult.OrderedAscending{
+        if parsedNumber.compare(NSDecimalNumber(string: "999999999999999999")) == ComparisonResult.orderedDescending ||
+            parsedNumber.compare(NSDecimalNumber.one) == ComparisonResult.orderedAscending{
                 return "The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1"
         }
         
@@ -138,8 +138,8 @@ class EnglishChequeConverter {
                 commaTimes -= 1
             }
             
-            var groups = [String](count: commaTimes + 1, repeatedValue: "")
-            integerPart = String(integerPart.characters.reverse())
+            var groups = [String](repeating: "", count: commaTimes + 1)
+            integerPart = String(integerPart.characters.reversed())
             
             for i in 0  ..< groups.count  {
                 if integerPart.characters.count >= i * 3 + 3 {
@@ -147,10 +147,10 @@ class EnglishChequeConverter {
                 } else {
                     groups[i] = StringUtils.substring(integerPart, start: i * 3)
                 }
-                groups[i] = String (groups[i].characters.reverse())
+                groups[i] = String (groups[i].characters.reversed())
                 groups[i] = Int(groups[i]) == 0 ? "" : get1To3DigitString (groups[i]) + " " + getTheWord (i) + " "
             }
-            groups = groups.reverse()
+            groups = groups.reversed()
             
             integerString = ""
             for group in groups {

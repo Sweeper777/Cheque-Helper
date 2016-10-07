@@ -8,19 +8,19 @@
 
 import UIKit
 
-public class ToolbarWithDone: UIToolbar {
-    public var viewsWithToolbar: [UIView] = []
+open class ToolbarWithDone: UIToolbar {
+    open var viewsWithToolbar: [UIView] = []
     
-    private let DoneButtonHeight: CGFloat = 40.0
-    private let DoneButtonWidth: CGFloat  = 100.0
+    fileprivate let DoneButtonHeight: CGFloat = 40.0
+    fileprivate let DoneButtonWidth: CGFloat  = 100.0
     
     public init (viewsWithToolbar: [UIView]) {
         self.viewsWithToolbar = viewsWithToolbar
-        super.init(frame: CGRectZero)
+        super.init(frame: CGRect.zero)
         
         sizeToFit()
-        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace,target: nil, action: nil)
-        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("dismissInputView:"))
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,target: nil, action: nil)
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(ToolbarWithDone.dismissInputView(_:)))
         items = [flexBarButton, doneBarButton]
     }
     
@@ -28,9 +28,9 @@ public class ToolbarWithDone: UIToolbar {
         super.init(coder: aDecoder)
     }
     
-    public func generateInputView(view: UIView, inputHeight: CGFloat = 200) -> UIView{
-        let screenWidth = UIScreen.mainScreen().bounds.width
-        let inputView = UIView(frame: CGRectMake(0, 0, screenWidth, inputHeight + DoneButtonHeight))
+    open func generateInputView(_ view: UIView, inputHeight: CGFloat = 200) -> UIView{
+        let screenWidth = UIScreen.main.bounds.width
+        let inputView = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: inputHeight + DoneButtonHeight))
         let inputViewSize = view.frame.size.width
         
         view.frame.origin.x = screenWidth*0.5 - inputViewSize*0.5
@@ -39,7 +39,7 @@ public class ToolbarWithDone: UIToolbar {
         return inputView
     }
     
-    internal func dismissInputView(sender: UIView){
+    internal func dismissInputView(_ sender: UIView){
         for v in viewsWithToolbar {
             v.endEditing(true)
         }

@@ -1,7 +1,7 @@
 import Foundation
 
 class StringUtils {
-    static func split (s: String, at c: Character) -> [String] {
+    static func split (_ s: String, at c: Character) -> [String] {
         let sequence = s.characters.split {$0 == c}
         var finalResult: [String] = []
         for item in sequence {
@@ -10,17 +10,17 @@ class StringUtils {
         return finalResult
     }
     
-    static func substring (s: String, start: Int, end: Int) -> String{
+    static func substring (_ s: String, start: Int, end: Int) -> String{
         let ns = NSString(string: s)
-        return String(ns.substringWithRange(NSRange(start..<end)))
+        return String(ns.substring(with: NSRange(start..<end)))
     }
     
-    static func substring (s: String, start: Int) -> String {
+    static func substring (_ s: String, start: Int) -> String {
         let ns = NSString(string: s)
-        return String(ns.substringFromIndex(start))
+        return String(ns.substring(from: start))
     }
     
-    static func setCharAt (index: Int, of str: String, to c: Character) -> String{
+    static func setCharAt (_ index: Int, of str: String, to c: Character) -> String{
         var charArr = Array (str.characters)
         charArr[index] = c
         var finalString = ""
@@ -30,7 +30,7 @@ class StringUtils {
         return finalString
     }
     
-    static func toProper (str: String) -> String {
+    static func toProper (_ str: String) -> String {
         var strArr = split(str, at: " ")
         for i in 0  ..< strArr.count  {
             var s = strArr[i]
@@ -40,8 +40,8 @@ class StringUtils {
             }
             
             var firstChar = String (s.characters.first!)
-            firstChar = firstChar.uppercaseString
-            s.removeAtIndex(s.startIndex)
+            firstChar = firstChar.uppercased()
+            s.remove(at: s.startIndex)
             let newString = firstChar + s
             strArr[i] = newString
         }
@@ -54,7 +54,7 @@ class StringUtils {
         return finalString
     }
     
-    static func getDigitFrom (str: String, at index: Int) -> Int {
+    static func getDigitFrom (_ str: String, at index: Int) -> Int {
         let strArr = Array(str.characters)
         let character = String(strArr[index])
         return Int(character)!

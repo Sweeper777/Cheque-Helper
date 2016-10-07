@@ -1,7 +1,7 @@
 import Foundation
 
 class ChineseChequeConverter {
-    private func convertNumber (i: Int) -> String {
+    fileprivate func convertNumber (_ i: Int) -> String {
         switch i {
         case 0:
             return "零"
@@ -28,7 +28,7 @@ class ChineseChequeConverter {
         }
     }
     
-    private func getThatWord (index: Int) -> String {
+    fileprivate func getThatWord (_ index: Int) -> String {
         switch index {
         case 0:
             return ""
@@ -49,7 +49,7 @@ class ChineseChequeConverter {
         }
     }
     
-    private func convertInteger (x: String) -> String! {
+    fileprivate func convertInteger (_ x: String) -> String! {
         var number = x
         if number.characters.count < 5 {
             if number.characters.count == 1 {
@@ -65,7 +65,7 @@ class ChineseChequeConverter {
             
             var addZero = false
             for i in 0  ..< number.characters.count  {
-                if number.characters[number.characters.startIndex.advancedBy(i)] == "0" {
+                if number.characters[number.characters.index(number.characters.startIndex, offsetBy: i)] == "0" {
                     addZero = true
                     continue
                 }
@@ -83,12 +83,12 @@ class ChineseChequeConverter {
             
             var addZero = false
             for i in 0  ..< secondPart.characters.count  {
-                if i == secondPart.characters.count - 1 && secondPart.characters[secondPart.characters.startIndex.advancedBy(i)] == "0" {
+                if i == secondPart.characters.count - 1 && secondPart.characters[secondPart.characters.index(secondPart.characters.startIndex, offsetBy: i)] == "0" {
                     addZero = false
                     continue
                 }
                 
-                if secondPart.characters[secondPart.characters.startIndex.advancedBy(i)] == "0" {
+                if secondPart.characters[secondPart.characters.index(secondPart.characters.startIndex, offsetBy: i)] == "0" {
                     addZero = true
                     continue
                 }
@@ -105,15 +105,15 @@ class ChineseChequeConverter {
         }
     }
     
-    func convertNumberString (x: String) -> String {
+    func convertNumberString (_ x: String) -> String {
         var number = x
         let parsedNumber = NSDecimalNumber (string: number)
-        if parsedNumber == NSDecimalNumber.notANumber() {
+        if parsedNumber == NSDecimalNumber.notANumber {
             return "請輸入正確格式的幣值！"
         }
         
-        if parsedNumber.compare(NSDecimalNumber(string: "9999999999999999")) == NSComparisonResult.OrderedDescending ||
-            parsedNumber.compare(NSDecimalNumber.one()) == NSComparisonResult.OrderedAscending{
+        if parsedNumber.compare(NSDecimalNumber(string: "9999999999999999")) == ComparisonResult.orderedDescending ||
+            parsedNumber.compare(NSDecimalNumber.one) == ComparisonResult.orderedAscending{
                 return "你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！"
         }
         
@@ -133,7 +133,7 @@ class ChineseChequeConverter {
             }
             
             let jiao = String(decimalPart[decimalPart.startIndex])
-            let fen = String(decimalPart[decimalPart.startIndex.advancedBy(1)])
+            let fen = String(decimalPart[decimalPart.characters.index(decimalPart.startIndex, offsetBy: 1)])
             //print("jiao: \(jiao), fen: \(fen)")
             
             if jiao != "0" {
