@@ -111,12 +111,12 @@ class EnglishChequeConverter {
         var number = x
         let parsedNumber = NSDecimalNumber (string: number)
         if parsedNumber == NSDecimalNumber.notANumber {
-            return "Please enter a valid amount"
+            return NSLocalizedString("Please enter a valid amount", comment: "")
         }
         
         if parsedNumber.compare(NSDecimalNumber(string: "999999999999999999")) == ComparisonResult.orderedDescending ||
             parsedNumber.compare(NSDecimalNumber.one) == ComparisonResult.orderedAscending{
-                return "The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1"
+            return NSLocalizedString("The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1", comment: "")
         }
         
         number = parsedNumber.description

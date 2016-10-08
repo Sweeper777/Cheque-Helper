@@ -109,12 +109,12 @@ class ChineseChequeConverter {
         var number = x
         let parsedNumber = NSDecimalNumber (string: number)
         if parsedNumber == NSDecimalNumber.notANumber {
-            return "請輸入正確格式的幣值！"
+            return NSLocalizedString("請輸入正確格式的幣值！", comment: "")
         }
         
         if parsedNumber.compare(NSDecimalNumber(string: "9999999999999999")) == ComparisonResult.orderedDescending ||
             parsedNumber.compare(NSDecimalNumber.one) == ComparisonResult.orderedAscending{
-                return "你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！"
+            return NSLocalizedString("你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！", comment: "")
         }
         
         number = parsedNumber.description
