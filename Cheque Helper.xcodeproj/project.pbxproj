@@ -51,6 +51,10 @@
 		10BF22A13482131EFF0659A0 /* Pods-Cheque HelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque HelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque HelperTests/Pods-Cheque HelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		225B2994CBA8B171115452F7 /* Pods-Cheque Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheque Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		42B9061555633924D6A1D726 /* Pods_Cheque_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheque_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A00DF421DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		5A00DF431DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5A00DF441DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A00DF451DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DoneToolbarSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Cheque_Helper-aeiqqxztchxtzidacugqifgodwxv/Build/Products/Release-iphonesimulator/DoneToolbarSwift/DoneToolbarSwift.framework"; sourceTree = "<group>"; };
 		5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "Pods/../build/Release-iphoneos/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
 		5AE908A01C32C20000040A4E /* Cheque Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheque Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +279,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 5AE908971C32C20000040A4E;
 			productRefGroup = 5AE908A11C32C20000040A4E /* Products */;
@@ -506,6 +511,7 @@
 			children = (
 				5AE908A81C32C20000040A4E /* Base */,
 				5AFB365C1D20ED0300C7AF51 /* zh-Hant */,
+				5A00DF421DA8FA0700AD83A7 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -514,6 +520,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AE908AD1C32C20000040A4E /* Base */,
+				5A00DF431DA8FA0700AD83A7 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -522,6 +529,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AFB36601D20ED2D00C7AF51 /* zh-Hant */,
+				5A00DF441DA8FA0700AD83A7 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -530,6 +538,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AFB36661D20ED5000C7AF51 /* zh-Hant */,
+				5A00DF451DA8FA0700AD83A7 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

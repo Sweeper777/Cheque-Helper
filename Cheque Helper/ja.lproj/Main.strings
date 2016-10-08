@@ -1,0 +1,18 @@
+
+/* Class = "UINavigationItem"; title = "Cheque Helper"; ObjectID = "Br6-sp-XVC"; */
+"Br6-sp-XVC.title" = "小切手アシスタント";
+
+/* Class = "UITextView"; text = "Please enter a valid amount"; ObjectID = "Dmd-aO-D2u"; */
+"Dmd-aO-D2u.text" = "有効な金額を入力してください";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "IYp-Di-UY8"; */
+"IYp-Di-UY8.title" = " ";
+
+/* Class = "UISegmentedControl"; J7K-OX-Ry8.segmentTitles[0] = "English"; ObjectID = "J7K-OX-Ry8"; */
+"J7K-OX-Ry8.segmentTitles[0]" = "英語";
+
+/* Class = "UISegmentedControl"; J7K-OX-Ry8.segmentTitles[1] = "中文"; ObjectID = "J7K-OX-Ry8"; */
+"J7K-OX-Ry8.segmentTitles[1]" = "中国語";
+
+/* Class = "UITextField"; placeholder = "Enter Amount"; ObjectID = "WLm-jY-d2q"; */
+"WLm-jY-d2q.placeholder" = "金額を入力してください";
