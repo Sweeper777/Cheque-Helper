@@ -7,17 +7,12 @@ class ViewController: UIViewController{
     @IBOutlet var tfAmount: UITextField!
     @IBOutlet var languageChoice: UISegmentedControl!
     @IBOutlet var result: UITextView!
-    @IBOutlet var btnConvert: UIButton!
-    @IBOutlet var adBanner: GADBannerView!
     
     var englishFont: UIFont!
     
     override func viewDidLoad() {
-        adBanner.rootViewController = self
-        adBanner.adUnitID = adUnitID
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
-        adBanner.load(GADRequest())
         
         englishFont = result.font
         
