@@ -3,16 +3,20 @@ import GoogleMobileAds
 import DoneToolbarSwift
 import EZSwiftExtensions
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var tfAmount: UITextField!
     @IBOutlet var languageChoice: UISegmentedControl!
     @IBOutlet var result: UITextView!
+    var interstitialAd: GADInterstitial!
     
     var englishFont: UIFont!
     
     override func viewDidLoad() {
+        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
         
         englishFont = result.font
         
@@ -52,6 +56,10 @@ class ViewController: UIViewController{
         
         if arc4random_uniform(100) < 3 {
             perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
+        } else if arc4random_uniform(100) < 6 {
+            if interstitialAd.isReady {
+                interstitialAd.present(fromRootViewController: self)
+            }
         }
     }
     
@@ -100,6 +108,22 @@ class ViewController: UIViewController{
         } else {
             result.text = converter.convertNumberString("")
         }
+    }
+    
+    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
+        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
+    }
+    
+    func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
+        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
