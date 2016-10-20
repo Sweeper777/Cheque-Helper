@@ -25,6 +25,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         toolbar.tintColor = UIColor.white
         
         tfAmount.inputAccessoryView = toolbar
+        
+        tfAmount.becomeFirstResponder()
     }
     
     func showRateMsg() {
