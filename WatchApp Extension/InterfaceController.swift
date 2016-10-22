@@ -69,5 +69,13 @@ class InterfaceController: WKInterfaceController {
     func changeAmountText(_ closure: (String) -> String) {
         amountLbl.setText(closure(amountText))
         amountText = closure(amountText)
+        let englishConverter = EnglishChequeConverter()
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let x = formatter.number(from: amountText) {
+            convertedLbl.setText(englishConverter.convertNumberString(x.description))
+        } else {
+            convertedLbl.setText(englishConverter.convertNumberString(""))
+        }
     }
 }
