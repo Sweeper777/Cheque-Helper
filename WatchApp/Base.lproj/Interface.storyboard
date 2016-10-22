@@ -13,7 +13,7 @@
                         <label alignment="left" text="Label" id="h7f-Yx-mHg"/>
                         <table alignment="left" id="uIb-6H-V3t">
                             <items>
-                                <tableRow identifier="MyRow1" selectable="NO" id="Vfe-No-hSr" customClass="NumberPadRowController" customModule="Watch_Extension">
+                                <tableRow identifier="MyRow1" selectable="NO" id="Vfe-No-hSr" customClass="NumberPadRowController" customModule="WatchApp_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="WR4-33-hhB">
                                         <items>
                                             <group width="1" height="30" alignment="center" id="e88-fA-CM5">
@@ -32,9 +32,9 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="btn1" destination="7NQ-AC-Qa0" id="1fO-As-l6l"/>
-                                        <outlet property="btn2" destination="wwi-YS-Mha" id="8oz-gp-62u"/>
-                                        <outlet property="btn3" destination="vg9-Ra-REd" id="D9Z-L9-OKo"/>
+                                        <outlet property="btn1" destination="7NQ-AC-Qa0" id="Iqt-zT-rMQ"/>
+                                        <outlet property="btn2" destination="wwi-YS-Mha" id="oKb-oI-bT3"/>
+                                        <outlet property="btn3" destination="vg9-Ra-REd" id="N2F-7J-6pB"/>
                                     </connections>
                                 </tableRow>
                             </items>
