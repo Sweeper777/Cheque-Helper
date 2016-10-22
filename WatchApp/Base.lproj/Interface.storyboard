@@ -103,7 +103,7 @@
                                 </group>
                             </items>
                         </group>
-                        <label alignment="left" text="Label" id="aJH-55-H3e"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="aJH-55-H3e"/>
                     </items>
                     <connections>
                         <outlet property="amountLbl" destination="h7f-Yx-mHg" id="U2i-Rl-8vH"/>
