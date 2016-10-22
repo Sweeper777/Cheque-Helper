@@ -1,31 +1,28 @@
-//
-//  InterfaceController.swift
-//  WatchApp Extension
-//
-//  Created by Mulang Su on 20/10/2016.
-//  Copyright © 2016 Mulang Su. All rights reserved.
-//
-
 import WatchKit
 import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet var table: WKInterfaceTable!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    override init() {
+        super.init()
+        table.setNumberOfRows(4, withRowType: "MyRow1")
+        let row2 = table.rowController(at: 1) as! NumberPadRowController
+        let row3 = table.rowController(at: 2) as! NumberPadRowController
+        let row4 = table.rowController(at: 3) as! NumberPadRowController
+        row2.btn1.setTitle("4")
+        row2.btn2.setTitle("5")
+        row2.btn3.setTitle("6")
+        row3.btn1.setTitle("7")
+        row3.btn2.setTitle("8")
+        row3.btn3.setTitle("9")
+        row4.btn1.setTitle(".")
+        row4.btn2.setTitle("0")
+        row4.btn3.setTitle("c")
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }

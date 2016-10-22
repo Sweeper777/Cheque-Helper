@@ -16,6 +16,10 @@
 		5A19FDC61DB93E410022F794 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A19FDC51DB93E410022F794 /* ExtensionDelegate.swift */; };
 		5A19FDC81DB93E410022F794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDC71DB93E410022F794 /* Assets.xcassets */; };
 		5A19FDCC1DB93E410022F794 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5A19FDB21DB93E410022F794 /* WatchApp.app */; };
+		5A1ACC551DBB49B700F93C65 /* ChineseChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */; };
+		5A1ACC561DBB49C200F93C65 /* EnglishChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */; };
+		5A1ACC581DBB4AA100F93C65 /* NumberPadRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1ACC571DBB4AA100F93C65 /* NumberPadRowController.swift */; };
+		5A1ACC591DBB4D6500F93C65 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
 		5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A31C32C20000040A4E /* AppDelegate.swift */; };
 		5AE908A61C32C20000040A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A51C32C20000040A4E /* ViewController.swift */; };
 		5AE908A91C32C20000040A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908A71C32C20000040A4E /* Main.storyboard */; };
@@ -112,6 +116,7 @@
 		5A19FDC51DB93E410022F794 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		5A19FDC71DB93E410022F794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A19FDC91DB93E410022F794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1ACC571DBB4AA100F93C65 /* NumberPadRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPadRowController.swift; sourceTree = "<group>"; };
 		5AE908A01C32C20000040A4E /* Cheque Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheque Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE908A31C32C20000040A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AE908A51C32C20000040A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +208,7 @@
 			children = (
 				5A19FDC31DB93E410022F794 /* InterfaceController.swift */,
 				5A19FDC51DB93E410022F794 /* ExtensionDelegate.swift */,
+				5A1ACC571DBB4AA100F93C65 /* NumberPadRowController.swift */,
 				5A19FDC71DB93E410022F794 /* Assets.xcassets */,
 				5A19FDC91DB93E410022F794 /* Info.plist */,
 			);
@@ -618,6 +624,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1ACC591DBB4D6500F93C65 /* StringUtils.swift in Sources */,
+				5A1ACC581DBB4AA100F93C65 /* NumberPadRowController.swift in Sources */,
+				5A1ACC561DBB49C200F93C65 /* EnglishChequeConverter.swift in Sources */,
+				5A1ACC551DBB49B700F93C65 /* ChineseChequeConverter.swift in Sources */,
 				5A19FDC61DB93E410022F794 /* ExtensionDelegate.swift in Sources */,
 				5A19FDC41DB93E410022F794 /* InterfaceController.swift in Sources */,
 			);
@@ -1017,6 +1027,7 @@
 				5A19FDD01DB93E410022F794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A19FDD31DB93E410022F794 /* Build configuration list for PBXNativeTarget "WatchApp" */ = {
 			isa = XCConfigurationList;
@@ -1025,6 +1036,7 @@
 				5A19FDCE1DB93E410022F794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AE9089B1C32C20000040A4E /* Build configuration list for PBXProject "Cheque Helper" */ = {
 			isa = XCConfigurationList;
