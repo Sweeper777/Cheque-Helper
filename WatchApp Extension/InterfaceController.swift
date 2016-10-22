@@ -3,7 +3,9 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-    @IBOutlet var table: WKInterfaceTable!
+    @IBOutlet var amountLbl: WKInterfaceLabel!
+    @IBOutlet var convertedLbl: WKInterfaceLabel!
+    
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -11,18 +13,42 @@ class InterfaceController: WKInterfaceController {
     
     override init() {
         super.init()
-        table.setNumberOfRows(4, withRowType: "MyRow1")
-        let row2 = table.rowController(at: 1) as! NumberPadRowController
-        let row3 = table.rowController(at: 2) as! NumberPadRowController
-        let row4 = table.rowController(at: 3) as! NumberPadRowController
-        row2.btn1.setTitle("4")
-        row2.btn2.setTitle("5")
-        row2.btn3.setTitle("6")
-        row3.btn1.setTitle("7")
-        row3.btn2.setTitle("8")
-        row3.btn3.setTitle("9")
-        row4.btn1.setTitle(".")
-        row4.btn2.setTitle("0")
-        row4.btn3.setTitle("c")
+        
+    }
+    
+    @IBAction func pressed1() {
+    }
+    
+    @IBAction func pressed2() {
+    }
+    
+    @IBAction func pressed3() {
+    }
+    
+    @IBAction func pressed4() {
+    }
+    
+    @IBAction func pressed5() {
+    }
+    
+    @IBAction func pressed6() {
+    }
+    
+    @IBAction func pressed7() {
+    }
+    
+    @IBAction func pressed8() {
+    }
+    
+    @IBAction func pressed9() {
+    }
+    
+    @IBAction func pressedDot() {
+    }
+    
+    @IBAction func pressed0() {
+    }
+    
+    @IBAction func pressedC() {
     }
 }

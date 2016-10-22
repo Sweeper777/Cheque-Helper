@@ -11,37 +11,103 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Label" id="h7f-Yx-mHg"/>
-                        <table alignment="left" id="uIb-6H-V3t">
+                        <group width="1" alignment="left" layout="vertical" id="Ce9-Ao-fKU">
                             <items>
-                                <tableRow identifier="MyRow1" selectable="NO" id="Vfe-No-hSr" customClass="NumberPadRowController" customModule="WatchApp_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="WR4-33-hhB">
-                                        <items>
-                                            <group width="1" height="30" alignment="center" id="e88-fA-CM5">
-                                                <items>
-                                                    <button width="0.29999999999999999" height="1" alignment="left" title="1" id="7NQ-AC-Qa0">
-                                                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </button>
-                                                    <button width="0.29999999999999999" height="35" alignment="center" title="2" id="wwi-YS-Mha">
-                                                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </button>
-                                                    <button width="0.29999999999999999" height="35" alignment="right" title="3" id="vg9-Ra-REd">
-                                                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </button>
-                                                </items>
-                                            </group>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="btn1" destination="7NQ-AC-Qa0" id="Iqt-zT-rMQ"/>
-                                        <outlet property="btn2" destination="wwi-YS-Mha" id="oKb-oI-bT3"/>
-                                        <outlet property="btn3" destination="vg9-Ra-REd" id="N2F-7J-6pB"/>
-                                    </connections>
-                                </tableRow>
+                                <group width="1" height="30" alignment="center" id="wIK-Us-xXM">
+                                    <items>
+                                        <button width="0.29999999999999999" height="1" alignment="left" title="1" id="HQq-Nk-01z">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed1" destination="AgC-eL-Hgc" id="3U2-HT-RVV"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="center" title="2" id="pSP-nU-9CI">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed2" destination="AgC-eL-Hgc" id="G66-wz-BvW"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="right" title="3" id="kby-w7-Uzc">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed3" destination="AgC-eL-Hgc" id="Ibz-tr-hof"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="30" alignment="center" id="0Vz-HT-bJi">
+                                    <items>
+                                        <button width="0.29999999999999999" height="1" alignment="left" title="4" id="zyl-bE-ax4">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed4" destination="AgC-eL-Hgc" id="H4e-Rf-bgj"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="center" title="5" id="kbX-4s-2V9">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed5" destination="AgC-eL-Hgc" id="jsi-HL-lbB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="right" title="6" id="gKP-ll-ihi">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed6" destination="AgC-eL-Hgc" id="IlW-Hz-J1g"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="30" alignment="center" id="dph-Zg-f4W">
+                                    <items>
+                                        <button width="0.29999999999999999" height="1" alignment="left" title="7" id="CNy-Nt-Hs8">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed7" destination="AgC-eL-Hgc" id="RZe-5c-Nog"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="center" title="8" id="3WL-Wc-YXw">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed8" destination="AgC-eL-Hgc" id="PrL-nH-hFk"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="right" title="9" id="mdK-W9-yN5">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed9" destination="AgC-eL-Hgc" id="bKN-PC-rmv"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="30" alignment="center" id="n1v-dI-gV6">
+                                    <items>
+                                        <button width="0.29999999999999999" height="1" alignment="left" title="." id="EuD-6h-ema">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressedDot" destination="AgC-eL-Hgc" id="0MH-u3-C5Q"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="center" title="0" id="pcQ-37-cf6">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressed0" destination="AgC-eL-Hgc" id="b3n-AO-Sxc"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" height="35" alignment="right" title="c" id="RaH-16-KpZ">
+                                            <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="pressedC" destination="AgC-eL-Hgc" id="L9L-yz-1NQ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
-                        </table>
+                        </group>
+                        <label alignment="left" text="Label" id="aJH-55-H3e"/>
                     </items>
                     <connections>
-                        <outlet property="table" destination="uIb-6H-V3t" id="VgI-P0-5uV"/>
+                        <outlet property="amountLbl" destination="h7f-Yx-mHg" id="U2i-Rl-8vH"/>
+                        <outlet property="convertedLbl" destination="aJH-55-H3e" id="Tv6-Qe-Noa"/>
                     </connections>
                 </controller>
             </objects>
