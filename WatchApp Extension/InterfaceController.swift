@@ -19,62 +19,55 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func pressed1() {
-        amountLbl.setText(amountText + "1")
-        amountText += "1"
+        changeAmountText { $0 + "1" }
     }
     
     @IBAction func pressed2() {
-        amountLbl.setText(amountText + "2")
-        amountText += "2"
+        changeAmountText { $0 + "2" }
     }
     
     @IBAction func pressed3() {
-        amountLbl.setText(amountText + "3")
-        amountText += "3"
+        changeAmountText { $0 + "3" }
     }
     
     @IBAction func pressed4() {
-        amountLbl.setText(amountText + "4")
-        amountText += "4"
+        changeAmountText { $0 + "4" }
     }
     
     @IBAction func pressed5() {
-        amountLbl.setText(amountText + "5")
-        amountText += "5"
+        changeAmountText { $0 + "5" }
     }
     
     @IBAction func pressed6() {
-        amountLbl.setText(amountText + "6")
-        amountText += "6"
+        changeAmountText { $0 + "6" }
     }
     
     @IBAction func pressed7() {
-        amountLbl.setText(amountText + "7")
-        amountText += "7"
+        changeAmountText { $0 + "7" }
     }
     
     @IBAction func pressed8() {
-        amountLbl.setText(amountText + "8")
-        amountText += "8"
+        changeAmountText { $0 + "8" }
     }
     
     @IBAction func pressed9() {
-        amountLbl.setText(amountText + "9")
-        amountText += "9"
+        changeAmountText { $0 + "9" }
     }
     
     @IBAction func pressedDot() {
-        amountLbl.setText(amountText + ".")
-        amountText += "."
+        changeAmountText { $0 + "." }
     }
     
     @IBAction func pressed0() {
-        amountLbl.setText(amountText + "0")
-        amountText += "0"
+        changeAmountText { $0 + "0" }
     }
     
     @IBAction func pressedC() {
-        amountLbl.setText("")
-        amountText = ""
+        changeAmountText { _ in return "" }
+    }
+    
+    func changeAmountText(_ closure: (String) -> String) {
+        amountLbl.setText(closure(amountText))
+        amountText = closure(amountText)
     }
 }
