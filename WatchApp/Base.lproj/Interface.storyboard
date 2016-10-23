@@ -10,7 +10,8 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Label" id="h7f-Yx-mHg"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="h7f-Yx-mHg"/>
+                        <separator alignment="left" id="9GB-Ue-9Jj"/>
                         <group width="1" alignment="left" layout="vertical" id="Ce9-Ao-fKU">
                             <items>
                                 <group width="1" height="30" alignment="center" id="wIK-Us-xXM">
@@ -103,6 +104,7 @@
                                 </group>
                             </items>
                         </group>
+                        <separator alignment="left" id="I60-SD-cN8"/>
                         <label alignment="left" text="Label" numberOfLines="0" id="aJH-55-H3e"/>
                     </items>
                     <connections>
