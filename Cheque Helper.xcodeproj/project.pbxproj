@@ -19,7 +19,6 @@
 		5A1ACC551DBB49B700F93C65 /* ChineseChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */; };
 		5A1ACC561DBB49C200F93C65 /* EnglishChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */; };
 		5A1ACC591DBB4D6500F93C65 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
-		5A1ACC5A1DBB5F3400F93C65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB36611D20ED2D00C7AF51 /* Localizable.strings */; };
 		5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A31C32C20000040A4E /* AppDelegate.swift */; };
 		5AE908A61C32C20000040A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A51C32C20000040A4E /* ViewController.swift */; };
 		5AE908A91C32C20000040A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908A71C32C20000040A4E /* Main.storyboard */; };
@@ -384,6 +383,7 @@
 				TargetAttributes = {
 					5A19FDB11DB93E410022F794 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E9MW74DJ4Y;
 						ProvisioningStyle = Automatic;
 					};
 					5A19FDBD1DB93E410022F794 = {
@@ -446,7 +446,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A19FDC81DB93E410022F794 /* Assets.xcassets in Resources */,
-				5A1ACC5A1DBB5F3400F93C65 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +743,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
 				IBSC_MODULE = WatchApp_Extension;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper.watchkitapp;
@@ -769,6 +769,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
 				IBSC_MODULE = WatchApp_Extension;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper.watchkitapp;
