@@ -67,12 +67,18 @@ class InterfaceController: WKInterfaceController {
     }
     
     func changeAmountText(_ closure: (String) -> String) {
-        amountLbl.setText(closure(amountText))
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let number = Double(closure(amountText)) {
+            if let formatted = formatter.string(from: number as NSNumber) {
+                amountLbl.setText(formatted)
+            }
+        } else {
+            amountLbl.setText(closure(amountText))
+        }
         amountText = closure(amountText)
         let englishConverter = EnglishChequeConverter()
         let chineseChequeConverter = ChineseChequeConverter()
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
         if let x = formatter.number(from: amountText) {
             convertedLbl.setText("\(englishConverter.convertNumberString(x.description))\n\n\(chineseChequeConverter.convertNumberString(x.description))")
         } else {
