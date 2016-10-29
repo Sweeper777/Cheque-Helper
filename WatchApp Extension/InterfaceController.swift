@@ -14,7 +14,7 @@ class InterfaceController: WKInterfaceController {
     
     override init() {
         super.init()
-        amountLbl.setText("")
+        amountLbl.setText(" ")
         convertedLbl.setText(NSLocalizedString("Please enter a valid amount", comment: ""))
     }
     
