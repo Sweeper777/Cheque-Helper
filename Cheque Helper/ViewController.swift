@@ -7,6 +7,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var tfAmount: UITextField!
     @IBOutlet var languageChoice: UISegmentedControl!
     @IBOutlet var result: UITextView!
+    var showRateMsgAlreadyCalled = false
     var interstitialAd: GADInterstitial!
     
     var englishFont: UIFont!
@@ -38,7 +39,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             UIApplication.shared.openURL(URL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
             })
         alert.addAction(UIAlertAction(title: NSLocalizedString("Maybe Later", comment: ""), style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: { [weak self] in self?.showRateMsgAlreadyCalled = false })
     }
 
     @IBAction func textChanged(_ sender: UITextField) {
@@ -57,7 +58,10 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
         
         if arc4random_uniform(100) < 3 {
-            perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
+            if !showRateMsgAlreadyCalled {
+                perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
+                showRateMsgAlreadyCalled = true
+            }
         } else if arc4random_uniform(100) < 6 {
             if interstitialAd.isReady {
                 interstitialAd.present(fromRootViewController: self)
