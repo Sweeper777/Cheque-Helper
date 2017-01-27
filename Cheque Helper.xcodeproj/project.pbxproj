@@ -378,7 +378,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mulang Su";
 				TargetAttributes = {
 					5A19FDB11DB93E410022F794 = {
