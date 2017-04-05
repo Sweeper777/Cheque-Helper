@@ -69,12 +69,13 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             displayChineseResult()
         }
         
-        if arc4random_uniform(100) < 3 {
+        let randomNumber = arc4random_uniform(100)
+        if randomNumber < 3 {
             if !showRateMsgAlreadyCalled {
                 perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
                 showRateMsgAlreadyCalled = true
             }
-        } else if arc4random_uniform(100) < 6 {
+        } else if randomNumber < 6 {
             if interstitialAd.isReady {
                 interstitialAd.present(fromRootViewController: self)
             }
