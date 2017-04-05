@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD5F1FD6E13D026339133E68A4627EAB"
+               BlueprintIdentifier = "23458025084CFB20640F20A0FF5E46CC"
                BuildableName = "Pods_Cheque_Helper.framework"
                BlueprintName = "Pods-Cheque Helper"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FD5F1FD6E13D026339133E68A4627EAB"
+            BlueprintIdentifier = "23458025084CFB20640F20A0FF5E46CC"
             BuildableName = "Pods_Cheque_Helper.framework"
             BlueprintName = "Pods-Cheque Helper"
             ReferencedContainer = "container:Pods.xcodeproj">

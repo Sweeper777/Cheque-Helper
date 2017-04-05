@@ -7,6 +7,7 @@ target 'Cheque Helper' do
     pod 'Firebase'
     pod 'DoneToolbarSwift'
     pod 'EZSwiftExtensions'
+    pod 'SCLAlertView'
 end
 
 target 'Cheque HelperTests' do
