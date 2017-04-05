@@ -2,6 +2,7 @@ import UIKit
 import GoogleMobileAds
 import DoneToolbarSwift
 import EZSwiftExtensions
+import SCLAlertView
 
 class ViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var tfAmount: UITextField!
@@ -31,15 +32,26 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
     
     func showRateMsg() {
-        let alert = UIAlertController(title: NSLocalizedString("Enjoying Cheque Helper?", comment: ""), message: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Rate!", comment: ""), style: .default) { _ in
+//        let alert = UIAlertController(title: NSLocalizedString("Enjoying Cheque Helper?", comment: ""), message: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: NSLocalizedString("Rate!", comment: ""), style: .default) { _ in
+//            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
+//            })
+//        alert.addAction(UIAlertAction(title: NSLocalizedString("Send Feedback", comment: ""), style: .default) { _ in
+//            UIApplication.shared.openURL(URL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
+//            })
+//        alert.addAction(UIAlertAction(title: NSLocalizedString("Maybe Later", comment: ""), style: .default, handler: nil))
+//        self.present(alert, animated: true, completion: { [weak self] in self?.showRateMsgAlreadyCalled = false })
+        
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        alert.addButton(NSLocalizedString("Rate!", comment: "")) {
             UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
-            })
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Send Feedback", comment: ""), style: .default) { _ in
+        }
+        alert.addButton(NSLocalizedString("Send Feedback", comment: "")) {
             UIApplication.shared.openURL(URL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
-            })
-        alert.addAction(UIAlertAction(title: NSLocalizedString("Maybe Later", comment: ""), style: .default, handler: nil))
-        self.present(alert, animated: true, completion: { [weak self] in self?.showRateMsgAlreadyCalled = false })
+        }
+        alert.addButton(NSLocalizedString("Maybe Later", comment: ""), action: {})
+        _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hexString: "5abb5a")!, icon: UIImage())
+        self.showRateMsgAlreadyCalled = false
     }
 
     @IBAction func textChanged(_ sender: UITextField) {
