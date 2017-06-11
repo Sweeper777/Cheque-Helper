@@ -117,7 +117,9 @@ class ChineseChequeConverter {
             return NSLocalizedString("你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！", comment: "")
         }
         
-        number = parsedNumber.description
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        number = formatter.string(from: parsedNumber)!
         
         let twoParts = StringUtils.split(number, at: ".")
         let integerPart = twoParts[0]
