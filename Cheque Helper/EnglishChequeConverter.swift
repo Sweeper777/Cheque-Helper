@@ -119,7 +119,9 @@ class EnglishChequeConverter {
             return NSLocalizedString("The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1", comment: "")
         }
         
-        number = parsedNumber.description
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        number = formatter.string(from: parsedNumber)!
         
         let twoParts = StringUtils.split(number, at: ".")
         var integerPart = twoParts[0]
