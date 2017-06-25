@@ -1,8 +1,10 @@
 import UIKit
 import GoogleMobileAds
 import DoneToolbarSwift
-import EZSwiftExtensions
 import SCLAlertView
+import SwiftyUtils
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var tfAmount: UITextField!
@@ -27,7 +29,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         englishFont = result.font
         
         let toolbar = ToolbarWithDone(viewsWithToolbar: [tfAmount])
-        toolbar.barTintColor = UIColor(hexString: "5abb5a")
+        toolbar.barTintColor = UIColor(hex: "5abb5a")
         toolbar.tintColor = UIColor.white
         
         tfAmount.inputAccessoryView = toolbar
@@ -45,7 +47,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             UIApplication.shared.openURL(URL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
         }
         alert.addButton(NSLocalizedString("Maybe Later", comment: ""), action: {})
-        _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hexString: "5abb5a")!, icon: UIImage())
+        _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hex: "5abb5a"), icon: UIImage())
         self.showRateMsgAlreadyCalled = false
     }
 
