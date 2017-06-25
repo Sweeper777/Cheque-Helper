@@ -20,6 +20,10 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         interstitialAd.load(request)
         interstitialAd.delegate = self
         
+        if #available(iOS 9.0, *) {
+            result.font = result.font?.withSize(UIFont.preferredFont(forTextStyle: .title2).pointSize)
+        }
+        
         englishFont = result.font
         
         let toolbar = ToolbarWithDone(viewsWithToolbar: [tfAmount])
