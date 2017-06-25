@@ -1,6 +1,5 @@
 PODS:
   - DoneToolbarSwift (1.0.0)
-  - EZSwiftExtensions (1.9)
   - Firebase (4.0.2):
     - Firebase/Core (= 4.0.2)
   - Firebase/Core (4.0.2):
@@ -17,24 +16,32 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.5.0)
   - SCLAlertView (0.7.0)
+  - SwiftyUtils (1.0.0)
 
 DEPENDENCIES:
   - DoneToolbarSwift
-  - EZSwiftExtensions
   - Firebase
+  - RxCocoa
+  - RxSwift
   - SCLAlertView
+  - SwiftyUtils
 
 SPEC CHECKSUMS:
   DoneToolbarSwift: 5bb089476bd4949fca01b714a55bbeac76909d72
-  EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
   Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
   FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
   FirebaseCore: 1a8bf6c795ad07d2918278657954ffd2552e9c17
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SwiftyUtils: f48a22d2fa8eece42a11d8bbb4d01a9758dd0602
 
-PODFILE CHECKSUM: daf2f13a43b44f5ff514c86b36bc7aa9fc03fa0e
+PODFILE CHECKSUM: 06b6834163fedde1a83c6ea9b2b54075e3f58e8a
 
 COCOAPODS: 1.1.0.beta.1
