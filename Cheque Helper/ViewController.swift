@@ -36,15 +36,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
     
     func showRateMsg() {
-//        let alert = UIAlertController(title: NSLocalizedString("Enjoying Cheque Helper?", comment: ""), message: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: NSLocalizedString("Rate!", comment: ""), style: .default) { _ in
-//            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
-//            })
-//        alert.addAction(UIAlertAction(title: NSLocalizedString("Send Feedback", comment: ""), style: .default) { _ in
-//            UIApplication.shared.openURL(URL(string: "mailto:sumulang@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
-//            })
-//        alert.addAction(UIAlertAction(title: NSLocalizedString("Maybe Later", comment: ""), style: .default, handler: nil))
-//        self.present(alert, animated: true, completion: { [weak self] in self?.showRateMsgAlreadyCalled = false })
         
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton(NSLocalizedString("Rate!", comment: "")) {
@@ -86,22 +77,9 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
     }
     
-    @IBAction func changedLanguage(_ sender: UISegmentedControl) {
-        if languageChoice.selectedSegmentIndex == 0 {
-            displayEnglishResult()
-//            tfAmount.placeholder = "Enter Amount"
-//            btnConvert.setTitle("Convert!", forState: .Normal)
-//            btnConvert.setTitle("Convert!", forState: .Highlighted)
-//            btnConvert.setTitle("Convert!", forState: .Selected)
-//            title = "Cheque Helper"
             result.font = englishFont
         } else {
             displayChineseResult()
-//            tfAmount.placeholder = "輸入幣值"
-//            btnConvert.setTitle(" 轉換！", forState: .Normal)
-//            btnConvert.setTitle(" 轉換！", forState: .Highlighted)
-//            btnConvert.setTitle(" 轉換！", forState: .Selected)
-//            title = "支票小幫手"
             result.font = UIFont(name: "Helvetica", size: 25)
         }
         view.endEditing(true)
