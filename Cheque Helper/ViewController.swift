@@ -15,6 +15,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     
     var englishFont: UIFont!
     
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
         let request = GADRequest()
