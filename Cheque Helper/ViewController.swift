@@ -37,6 +37,20 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         tfAmount.inputAccessoryView = toolbar
         
         tfAmount.becomeFirstResponder()
+    func convertNumberString(_ x: String?) -> String {
+        let converter: Converter
+        if languageChoice.selectedSegmentIndex == 0 {
+            converter = EnglishChequeConverter()
+        } else {
+            converter = ChineseChequeConverter()
+        }
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let x = formatter.number(from: x!) {
+            return converter.convertNumberString(x.description)
+        } else {
+            return converter.convertNumberString("")
+        }
     }
     
     func showRateMsg() {
