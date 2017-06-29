@@ -37,6 +37,11 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         tfAmount.inputAccessoryView = toolbar
         
         tfAmount.becomeFirstResponder()
+        tfAmount.rx.text.throttle(0.7, scheduler: MainScheduler.instance)
+            .distinctUntilChanged { $0 == $1 }
+            .map(convertNumberString)
+            .bind(to: result.rx.text).disposed(by: disposeBag)
+        
     func convertNumberString(_ x: String?) -> String {
         let converter: Converter
         if languageChoice.selectedSegmentIndex == 0 {
