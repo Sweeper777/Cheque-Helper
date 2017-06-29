@@ -95,12 +95,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             }
         }
         
-        if languageChoice.selectedSegmentIndex == 0 {
-            displayEnglishResult()
-        } else {
-            displayChineseResult()
-        }
-        
         let randomNumber = arc4random_uniform(100)
         if randomNumber < 3 {
             if !showRateMsgAlreadyCalled {
@@ -114,38 +108,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
     }
     
-            result.font = englishFont
-        } else {
-            displayChineseResult()
-            result.font = UIFont(name: "Helvetica", size: 25)
-        }
-        view.endEditing(true)
-    }
-    
     @IBAction func swipedDown(_ sender: UISwipeGestureRecognizer) {
         view.endEditing(true)
-    }
-    
-    fileprivate func displayEnglishResult () {
-        let converter = EnglishChequeConverter()
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        if let x = formatter.number(from: tfAmount.text!) {
-            result.text = converter.convertNumberString(x.description)
-        } else {
-            result.text = converter.convertNumberString("")
-        }
-    }
-    
-    fileprivate func displayChineseResult () {
-        let converter = ChineseChequeConverter()
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        if let x = formatter.number(from: tfAmount.text!) {
-            result.text = converter.convertNumberString(x.description)
-        } else {
-            result.text = converter.convertNumberString("")
-        }
     }
     
     func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
