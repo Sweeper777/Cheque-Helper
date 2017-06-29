@@ -10,6 +10,7 @@ target 'Cheque Helper' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'SwiftyUtils'
+    pod 'SkyFloatingLabelTextField'
 end
 
 target 'Cheque HelperTests' do

@@ -20,6 +20,7 @@ PODS:
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
   - SCLAlertView (0.7.0)
+  - SkyFloatingLabelTextField (3.1.0)
   - SwiftyUtils (1.0.0)
 
 DEPENDENCIES:
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SCLAlertView
+  - SkyFloatingLabelTextField
   - SwiftyUtils
 
 SPEC CHECKSUMS:
@@ -40,8 +42,9 @@ SPEC CHECKSUMS:
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SkyFloatingLabelTextField: 26a92ad407044dd5a7c3e4e348738ff0991514fe
   SwiftyUtils: f48a22d2fa8eece42a11d8bbb4d01a9758dd0602
 
-PODFILE CHECKSUM: 06b6834163fedde1a83c6ea9b2b54075e3f58e8a
+PODFILE CHECKSUM: 082c1930ff69c90688a09d909a0ce2fb7678dd81
 
 COCOAPODS: 1.1.0.beta.1
