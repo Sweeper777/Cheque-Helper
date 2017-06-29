@@ -1,6 +1,6 @@
 import Foundation
 
-class EnglishChequeConverter {
+class EnglishChequeConverter: Converter {
         
     fileprivate func getTheWord(_ i: Int) -> String {
         switch i {

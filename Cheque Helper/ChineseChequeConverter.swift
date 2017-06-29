@@ -1,6 +1,6 @@
 import Foundation
 
-class ChineseChequeConverter {
+class ChineseChequeConverter: Converter {
     fileprivate func convertNumber (_ i: Int) -> String {
         switch i {
         case 0:
