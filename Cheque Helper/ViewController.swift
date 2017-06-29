@@ -42,6 +42,20 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             .map(convertNumberString)
             .bind(to: result.rx.text).disposed(by: disposeBag)
         
+        languageChoice.rx.value.distinctUntilChanged().subscribe(onNext: {
+            value in
+            self.result.text = self.convertNumberString(self.tfAmount.text)
+            if value == 0 {
+                self.result.font = self.englishFont
+            } else {
+                if #available(iOS 9.0, *) {
+                    self.result.font = UIFont(name: "Helvetica", size: UIFont.preferredFont(forTextStyle: .title2).pointSize)
+                }
+            }
+            self.view.endEditing(true)
+        }).disposed(by: disposeBag)
+    }
+    
     func convertNumberString(_ x: String?) -> String {
         let converter: Converter
         if languageChoice.selectedSegmentIndex == 0 {
