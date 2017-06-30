@@ -5,9 +5,10 @@ import SCLAlertView
 import SwiftyUtils
 import RxSwift
 import RxCocoa
+import SkyFloatingLabelTextField
 
 class ViewController: UIViewController, GADInterstitialDelegate {
-    @IBOutlet var tfAmount: UITextField!
+    @IBOutlet var tfAmount: SkyFloatingLabelTextField!
     @IBOutlet var languageChoice: UISegmentedControl!
     @IBOutlet var result: UITextView!
     var showRateMsgAlreadyCalled = false
