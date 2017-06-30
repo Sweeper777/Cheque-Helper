@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="afj-3W-iiz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="afj-3W-iiz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,21 +39,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WLm-jY-d2q">
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="YO3-X6-L8X"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="textChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="sR2-cH-4n0"/>
-                                </connections>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J7K-OX-Ry8">
+                                <rect key="frame" x="129" y="120" width="117" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="gru-tR-Vez"/>
                                 </constraints>
@@ -59,11 +52,9 @@
                                     <segment title="中文"/>
                                 </segments>
                                 <color key="tintColor" red="0.18484333157539368" green="0.41442197561264038" blue="0.17624093592166901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="changedLanguage:" destination="BYZ-38-t0r" eventType="valueChanged" id="Djj-bM-zSj"/>
-                                </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter a valid amount" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-aO-D2u">
+                                <rect key="frame" x="16" y="156" width="343" height="491"/>
                                 <color key="backgroundColor" red="0.792156862745098" green="1" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="25"/>
@@ -72,16 +63,46 @@
                                     <outletCollection property="gestureRecognizers" destination="bBk-fk-J5a" appends="YES" id="KnB-ef-Nh6"/>
                                 </connections>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WLm-jY-d2q" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="16" y="72" width="343" height="40"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZTL-54-1JX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.44486783610449898" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.23137254900000001" green="0.4823529412" blue="0.23137254900000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="0.44486783610000002" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" red="0.23137254900000001" green="0.4823529412" blue="0.23137254900000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Amount"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.23137254900000001" green="0.4823529412" blue="0.23137254900000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="textChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="sR2-cH-4n0"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.792156862745098" green="1" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WLm-jY-d2q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2N2-7Q-oOD"/>
                             <constraint firstItem="WLm-jY-d2q" firstAttribute="leading" secondItem="Dmd-aO-D2u" secondAttribute="leading" id="4If-hp-E0J"/>
                             <constraint firstItem="Dmd-aO-D2u" firstAttribute="top" secondItem="J7K-OX-Ry8" secondAttribute="bottom" constant="8" symbolic="YES" id="7ll-cs-0fI"/>
-                            <constraint firstItem="WLm-jY-d2q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="L9r-4r-EI4"/>
+                            <constraint firstItem="J7K-OX-Ry8" firstAttribute="top" secondItem="WLm-jY-d2q" secondAttribute="bottom" constant="8" symbolic="YES" id="Dvp-8d-64Q"/>
+                            <constraint firstItem="WLm-jY-d2q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="L9r-4r-EI4"/>
                             <constraint firstAttribute="bottom" secondItem="Dmd-aO-D2u" secondAttribute="bottom" constant="20" symbolic="YES" id="WTr-sr-Vb2"/>
                             <constraint firstItem="WLm-jY-d2q" firstAttribute="trailing" secondItem="Dmd-aO-D2u" secondAttribute="trailing" id="do7-dr-rqP"/>
-                            <constraint firstItem="J7K-OX-Ry8" firstAttribute="top" secondItem="WLm-jY-d2q" secondAttribute="bottom" constant="8" symbolic="YES" id="qhd-Gi-JXT"/>
                             <constraint firstItem="WLm-jY-d2q" firstAttribute="centerX" secondItem="J7K-OX-Ry8" secondAttribute="centerX" id="ymW-HG-mcn"/>
                             <constraint firstItem="WLm-jY-d2q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="z5S-e7-BYs"/>
                         </constraints>
@@ -102,7 +123,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-191.25" y="354.92957746478874"/>
+            <point key="canvasLocation" x="-192.80000000000001" y="354.87256371814095"/>
         </scene>
     </scenes>
 </document>
