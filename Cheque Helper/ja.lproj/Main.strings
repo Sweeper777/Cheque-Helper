@@ -16,3 +16,5 @@
 
 /* Class = "UITextField"; placeholder = "Enter Amount"; ObjectID = "WLm-jY-d2q"; */
 "WLm-jY-d2q.placeholder" = "金額を入力してください";
+
+"WLm-jY-d2q.title" = "金額";
