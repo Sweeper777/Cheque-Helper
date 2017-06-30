@@ -38,6 +38,9 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         tfAmount.inputAccessoryView = toolbar
         
         tfAmount.becomeFirstResponder()
+        
+        tfAmount.title = NSLocalizedString("Amount", comment: "")
+        
         tfAmount.rx.text.throttle(0.7, scheduler: MainScheduler.instance)
             .distinctUntilChanged { $0 == $1 }
             .map(convertNumberString)
