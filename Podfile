@@ -9,7 +9,7 @@ target 'Cheque Helper' do
     pod 'SCLAlertView'
     pod 'RxSwift'
     pod 'RxCocoa'
-    pod 'SwiftyUtils'
+    pod 'SwiftyUtils', '~> 1.0.0'
     pod 'SkyFloatingLabelTextField'
 end
 
