@@ -1,5 +1,6 @@
 PODS:
   - DoneToolbarSwift (1.0.0)
+  - EZLoadingActivity (1.01)
   - Firebase (4.6.0):
     - Firebase/Core (= 4.6.0)
   - Firebase/Core (4.6.0):
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - DoneToolbarSwift
+  - EZLoadingActivity
   - Firebase
   - RxCocoa
   - RxSwift
@@ -39,6 +41,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   DoneToolbarSwift: 5bb089476bd4949fca01b714a55bbeac76909d72
+  EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   Firebase: 27321a925aa85520618255a7c630859e0502ccbd
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
   FirebaseCore: 2a946ece8fbe3ce1fdeeb55324f273caade22df9
@@ -51,6 +54,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SwiftyUtils: f48a22d2fa8eece42a11d8bbb4d01a9758dd0602
 
-PODFILE CHECKSUM: b0655c5a6119f816b8e2b4d266172866e65726b9
+PODFILE CHECKSUM: 290e58172ec7a0ebad15bd20699d924bca759d59
 
 COCOAPODS: 1.3.1

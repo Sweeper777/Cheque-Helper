@@ -11,6 +11,7 @@ target 'Cheque Helper' do
     pod 'RxCocoa'
     pod 'SwiftyUtils', '~> 1.0.0'
     pod 'SkyFloatingLabelTextField'
+    pod 'EZLoadingActivity'
 end
 
 target 'Cheque HelperTests' do
