@@ -18,6 +18,19 @@ extension ViewController {
 }
 
 extension ViewController: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        EZLoadingActivity.hide()
+        if let product = response.products.first {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.formatterBehavior = .behavior10_4
+            numberFormatter.numberStyle = .currency
+            numberFormatter.locale = product.priceLocale
+            let price = numberFormatter.string(from: product.price)
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        } else {
+            showIAPError(message: "Unable to get product information. Please check your Internet connection.".localized)
+        }
+    }
     func showIAPError(message: String) {
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton("OK".localized, action: {})
