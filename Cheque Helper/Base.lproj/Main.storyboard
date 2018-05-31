@@ -111,6 +111,9 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="IYp-Di-UY8"/>
                         <barButtonItem key="rightBarButtonItem" title="Ads?" style="plain" id="N0k-my-B2T">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="promptRemoveAds" destination="BYZ-38-t0r" id="tMP-I2-6oV"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
