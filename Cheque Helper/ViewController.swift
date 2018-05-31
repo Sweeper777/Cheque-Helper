@@ -18,6 +18,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     
     let disposeBag = DisposeBag()
     
+    var productRequest: SKProductsRequest!
+    
     override func viewDidLoad() {
         interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
         let request = GADRequest()
