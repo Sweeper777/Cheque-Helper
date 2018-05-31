@@ -16,3 +16,11 @@ extension ViewController {
         alert.showInfo("Remove Ads".localized, subTitle: "Do you want to not see ads anymore?".localized)
     }
 }
+
+extension ViewController: SKProductsRequestDelegate {
+    func showIAPError(message: String) {
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        alert.addButton("OK".localized, action: {})
+        alert.showError("Oops!".localized, subTitle: message)
+    }
+}
