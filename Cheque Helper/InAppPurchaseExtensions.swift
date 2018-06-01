@@ -28,6 +28,16 @@ extension ViewController: SKProductsRequestDelegate {
             numberFormatter.locale = product.priceLocale
             let price = numberFormatter.string(from: product.price)
             let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+            alert.addButton(String(format: "Remove ads for %@".localized, price!)) { [weak self] in
+                guard let `self` = self else { return }
+                if SKPaymentQueue.canMakePayments() {
+                    SKPaymentQueue.default().add(self)
+                    SKPaymentQueue.default().add(SKPayment(product: product))
+                    EZLoadingActivity.show("Loading...".localized, disableUI: true)
+                } else {
+                    self.showIAPError(message: "Purchases are disabled on this device!".localized)
+                }
+            }
         } else {
             showIAPError(message: "Unable to get product information. Please check your Internet connection.".localized)
         }
