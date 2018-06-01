@@ -81,6 +81,21 @@ extension ViewController: SKPaymentTransactionObserver {
         EZLoadingActivity.hide()
         for transaction:AnyObject in transactions {
             if let trans = transaction as? SKPaymentTransaction {
+                switch trans.transactionState {
+                case .purchased:
+                    SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
+                    UserDefaults.standard.set(true, forKey: "adsRemoved")
+                    let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+                    alert.addButton("OK".localized, action: {})
+                    alert.showSuccess("Success!".localized, subTitle: "No more ads will be shown to you!".localized)
+                    navigationItem.rightBarButtonItems?.removeAll()
+                case .failed:
+                    SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
+                    showIAPError(message: "Unable to purchase. Please check your Internet connection.".localized)
+                case .restored:
+                    SKPaymentQueue.default().finishTransaction(transaction as! SKPaymentTransaction)
+                default: break
+                }
             }
         }
     }
