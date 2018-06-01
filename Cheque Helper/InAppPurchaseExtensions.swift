@@ -38,6 +38,14 @@ extension ViewController: SKProductsRequestDelegate {
                     self.showIAPError(message: "Purchases are disabled on this device!".localized)
                 }
             }
+            alert.addButton("Restore Purchase".localized) { [weak self] in
+                guard let `self` = self else { return }
+                SKPaymentQueue.default().add(self)
+                SKPaymentQueue.default().restoreCompletedTransactions()
+                EZLoadingActivity.show("Loading...".localized, disableUI: true)
+            }
+            alert.addButton("Cancel".localized, action: {})
+            alert.showInfo("Remove ads".localized, subTitle: String(format: "Do you want to remove ads for %@?".localized, price!))
         } else {
             showIAPError(message: "Unable to get product information. Please check your Internet connection.".localized)
         }
