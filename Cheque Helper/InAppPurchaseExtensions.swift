@@ -62,3 +62,19 @@ extension ViewController: SKProductsRequestDelegate {
         alert.showError("Oops!".localized, subTitle: message)
     }
 }
+
+extension ViewController: SKPaymentTransactionObserver {
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        EZLoadingActivity.hide()
+        if queue.transactions.isEmpty {
+            showIAPError(message: "You have not purcheased this yet, so you cannot restore this purchase!".localized)
+        } else {
+            UserDefaults.standard.set(true, forKey: "adsRemoved")
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+            alert.addButton("OK".localized, action: {})
+            alert.showSuccess("Success!".localized, subTitle: "No more ads will be shown to you!".localized)
+            navigationItem.rightBarButtonItems?.removeAll()
+        }
+    }
+    
+}
