@@ -77,4 +77,11 @@ extension ViewController: SKPaymentTransactionObserver {
         }
     }
     
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        EZLoadingActivity.hide()
+        for transaction:AnyObject in transactions {
+            if let trans = transaction as? SKPaymentTransaction {
+            }
+        }
+    }
 }
