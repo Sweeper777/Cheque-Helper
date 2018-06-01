@@ -5,6 +5,7 @@ import EZLoadingActivity
 
 extension ViewController {
     @IBAction func promptRemoveAds() {
+        view.endEditing(true)
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton("Yes".localized) { [weak self] in
             self?.productRequest = SKProductsRequest(productIdentifiers: [removeAdsProductID])
