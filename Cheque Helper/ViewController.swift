@@ -111,7 +111,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
                 perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
                 showRateMsgAlreadyCalled = true
             }
-        } else if randomNumber < 6 {
+        } else if randomNumber < 6 && !UserDefaults.standard.bool(forKey: "adsRemoved") {
             if interstitialAd.isReady {
                 interstitialAd.present(fromRootViewController: self)
             }
@@ -123,19 +123,23 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
     
     func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
-        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-        interstitialAd.load(request)
-        interstitialAd.delegate = self
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID]
+            interstitialAd.load(request)
+            interstitialAd.delegate = self
+        }
     }
     
     func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
-        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-        interstitialAd.load(request)
-        interstitialAd.delegate = self
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID]
+            interstitialAd.load(request)
+            interstitialAd.delegate = self
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
