@@ -11,3 +11,19 @@
 "你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！" = "入力された金額は小さすぎる、または大きすぎます。範囲は1〜9,999,999,999,999,999であります。";
 
 "Amount" = "金額";
+
+"Yes" = "はい";
+"Loading..." = "読み込み中...";
+"Cancel" = "キャンセル";
+"Remove Ads" = "広告を非表示";
+"Do you want to not see ads anymore?" = "広告を非表示しますか？";
+"Remove ads for %@" = "%@ で広告を非表示する";
+"Purchases are disabled on this device!" = "このデバイスではお支払いが禁止されています。";
+"Restore Purchase" = "購入を復元";
+"Do you want to remove ads for %@?" = "本当に %@ で広告を非表示しますか？";
+"Unable to get product information. Please check your Internet connection." = "ネットワーク接続エラーが発生しました。";
+"Oops!" = "エラー";
+"OK" = "OK";
+"You have not purcheased this yet, so you cannot restore this purchase!" = "購入されていないため、復元できませんでした。";
+"Success!" = "成功";
+"No more ads will be shown to you!" = "広告をもう表示しません";
