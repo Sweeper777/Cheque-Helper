@@ -5,3 +5,19 @@
 "Maybe Later" = "稍後再說";
 
 "Amount" = "幣值";
+
+"Yes" = "是的";
+"Loading..." = "載入中...";
+"Cancel" = "取消";
+"Remove Ads" = "移除廣告";
+"Do you want to not see ads anymore?" = "確定要移除廣告嗎？";
+"Remove ads for %@" = "以 %@ 移除廣告";
+"Purchases are disabled on this device!" = "這個裝置的付款功能已被停用！";
+"Restore Purchase" = "恢復購買";
+"Do you want to remove ads for %@?" = "你確定要以 %@ 移除廣告嗎？";
+"Unable to get product information. Please check your Internet connection." = "無法獲取產品資訊，請檢查網絡連結。";
+"Oops!" = "錯誤";
+"OK" = "確定";
+"You have not purcheased this yet, so you cannot restore this purchase!" = "你尚未購買過移除廣告！";
+"Success!" = "成功";
+"No more ads will be shown to you!" = "廣告將不會再顯示";
