@@ -83,7 +83,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
     
     func showRateMsg() {
-        
+        view.endEditing(true)
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton(NSLocalizedString("Rate!", comment: "")) {
             UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
