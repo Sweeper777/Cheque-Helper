@@ -21,11 +21,15 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     var productRequest: SKProductsRequest!
     
     override func viewDidLoad() {
-        interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-        interstitialAd.load(request)
-        interstitialAd.delegate = self
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID]
+            interstitialAd.load(request)
+            interstitialAd.delegate = self
+        } else {
+            navigationItem.rightBarButtonItems?.removeAll()
+        }
         
         if #available(iOS 9.0, *) {
             result.font = result.font?.withSize(UIFont.preferredFont(forTextStyle: .title2).pointSize)
