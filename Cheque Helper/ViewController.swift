@@ -99,9 +99,12 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     @IBAction func textChanged(_ sender: UITextField) {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        if let amount = Int(tfAmount.text?.replacingOccurrences(of: formatter.groupingSeparator, with: "") ?? "a") {
-            if let formatted = formatter.string(from: NSNumber(value: amount)) {
-                tfAmount.text = formatted
+        if !(tfAmount.text ?? "").hasSuffix(formatter.decimalSeparator) {
+            let amount = NSDecimalNumber(string: tfAmount.text?.replacingOccurrences(of: formatter.groupingSeparator, with: ""))
+            if !NSDecimalNumber.notANumber.isEqual(to: amount) {
+                if let formatted = formatter.string(from: amount) {
+                    tfAmount.text = formatted
+                }
             }
         }
         
