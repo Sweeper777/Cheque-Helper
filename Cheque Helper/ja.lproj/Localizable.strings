@@ -7,8 +7,8 @@
 "Please enter a valid amount" = "有効な金額を入力してください";
 "請輸入正確格式的幣值！" = "有効な金額を入力してください";
 
-"The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1" = "入力された金額は小さすぎる、または大きすぎます。範囲は1〜999,999,999,999,999,999であります。";
-"你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！" = "入力された金額は小さすぎる、または大きすぎます。範囲は1〜9,999,999,999,999,999であります。";
+"The amount entered is either too large or too small. Please enter an amount less than 999,999,999,999,999,999 and larger than or equal to 1" = "入力された金額は小さすぎて、または大きすぎます。範囲は1〜999,999,999,999,999,999であります。";
+"你所輸入的幣值過大或過小。請輸入一個小於 9,999,999,999,999,999 並大於或等於 1 的幣值！" = "入力された金額は小さすぎて、または大きすぎます。範囲は1〜9,999,999,999,999,999であります。";
 
 "Amount" = "金額";
 
