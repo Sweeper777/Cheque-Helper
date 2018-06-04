@@ -69,8 +69,9 @@ class InterfaceController: WKInterfaceController {
     func changeAmountText(_ closure: (String) -> String) {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        if let number = Double(closure(amountText)) {
-            if let formatted = formatter.string(from: number as NSNumber) {
+        let number = NSDecimalNumber(string: closure(amountText))
+        if !NSDecimalNumber.notANumber.isEqual(to: number) && !closure(amountText).hasSuffix(formatter.decimalSeparator) {
+            if let formatted = formatter.string(from: number) {
                 amountLbl.setText(formatted)
             }
         } else {
