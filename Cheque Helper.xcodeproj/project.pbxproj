@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A0810F81D580BDD005C585A /* DoneToolbarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */; };
 		5A19FDB61DB93E410022F794 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB41DB93E410022F794 /* Interface.storyboard */; };
 		5A19FDB81DB93E410022F794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB71DB93E410022F794 /* Assets.xcassets */; };
 		5A19FDBF1DB93E410022F794 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A19FDBE1DB93E410022F794 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -20,6 +19,10 @@
 		5A1ACC591DBB4D6500F93C65 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
 		5A237EF21EFE5E9200D24442 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A237EF11EFE5E9200D24442 /* Converter.swift */; };
 		5A237EF31EFE61F900D24442 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A237EF11EFE5E9200D24442 /* Converter.swift */; };
+		5A41CE8120BE929E00514EB2 /* InAppPurchaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41CE8020BE929D00514EB2 /* InAppPurchaseExtensions.swift */; };
+		5A41CE8320BE950A00514EB2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A41CE8220BE950A00514EB2 /* StoreKit.framework */; };
+		5A455F8420C2A02F001495EE /* ChequeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A455F8320C2A02F001495EE /* ChequeHelperTests.swift */; };
+		5A455F8C20C2A172001495EE /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */; };
 		5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A31C32C20000040A4E /* AppDelegate.swift */; };
 		5AE908A61C32C20000040A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908A51C32C20000040A4E /* ViewController.swift */; };
 		5AE908A91C32C20000040A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908A71C32C20000040A4E /* Main.storyboard */; };
@@ -29,7 +32,6 @@
 		5AE908D51C32D90100040A4E /* Chinese Check Converter Java Code.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE908D41C32D90100040A4E /* Chinese Check Converter Java Code.rtf */; };
 		5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D61C32D9A800040A4E /* StringUtils.swift */; };
 		5AE908D91C32DB3C00040A4E /* ChineseChequeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */; };
-		5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF4963F1C86ADD200CA116B /* GoogleMobileAds.framework */; };
 		5AF791B31CF068CC007165AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AF791B21CF068CC007165AF /* GoogleService-Info.plist */; };
 		5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF791B41CF06DF9007165AF /* SecretStuff.swift */; };
 		5AFB365F1D20ED2D00C7AF51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB36611D20ED2D00C7AF51 /* Localizable.strings */; };
@@ -53,6 +55,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5A19FDB11DB93E410022F794;
 			remoteInfo = WatchApp;
+		};
+		5A455F8620C2A02F001495EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AE908981C32C20000040A4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AE9089F1C32C20000040A4E;
+			remoteInfo = "Cheque Helper";
 		};
 		5AE908B51C32C20000040A4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -117,6 +126,11 @@
 		5A19FDC71DB93E410022F794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A19FDC91DB93E410022F794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A237EF11EFE5E9200D24442 /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		5A41CE8020BE929D00514EB2 /* InAppPurchaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseExtensions.swift; sourceTree = "<group>"; };
+		5A41CE8220BE950A00514EB2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5A455F8120C2A02F001495EE /* ChequeHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChequeHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A455F8320C2A02F001495EE /* ChequeHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeHelperTests.swift; sourceTree = "<group>"; };
+		5A455F8520C2A02F001495EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AE908A01C32C20000040A4E /* Cheque Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheque Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE908A31C32C20000040A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AE908A51C32C20000040A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,13 +171,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A455F7E20C2A02F001495EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AE9089D1C32C20000040A4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0810F81D580BDD005C585A /* DoneToolbarSwift.framework in Frameworks */,
-				5AF496401C86ADD200CA116B /* GoogleMobileAds.framework in Frameworks */,
+				5A455F8C20C2A172001495EE /* GoogleMobileAds.framework in Frameworks */,
 				75D3AC989233B3E214D79B9D /* Pods_Cheque_Helper.framework in Frameworks */,
+				5A41CE8320BE950A00514EB2 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +241,15 @@
 			path = "WatchApp Extension";
 			sourceTree = "<group>";
 		};
+		5A455F8220C2A02F001495EE /* ChequeHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A455F8320C2A02F001495EE /* ChequeHelperTests.swift */,
+				5A455F8520C2A02F001495EE /* Info.plist */,
+			);
+			path = ChequeHelperTests;
+			sourceTree = "<group>";
+		};
 		5AE908971C32C20000040A4E = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +258,7 @@
 				5AE908A21C32C20000040A4E /* Cheque Helper */,
 				5A19FDB31DB93E410022F794 /* WatchApp */,
 				5A19FDC21DB93E410022F794 /* WatchApp Extension */,
+				5A455F8220C2A02F001495EE /* ChequeHelperTests */,
 				5AE908A11C32C20000040A4E /* Products */,
 				51C798288CA17DC1F2C1DDAC /* Pods */,
 				EAB239AF9A15A0D447D67ED9 /* Frameworks */,
@@ -242,6 +273,7 @@
 				5AE908BF1C32C20000040A4E /* Cheque HelperUITests.xctest */,
 				5A19FDB21DB93E410022F794 /* WatchApp.app */,
 				5A19FDBE1DB93E410022F794 /* WatchApp Extension.appex */,
+				5A455F8120C2A02F001495EE /* ChequeHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +287,7 @@
 				5AFB36611D20ED2D00C7AF51 /* Localizable.strings */,
 				5AFB36671D20ED5000C7AF51 /* InfoPlist.strings */,
 				5AE908A51C32C20000040A4E /* ViewController.swift */,
+				5A41CE8020BE929D00514EB2 /* InAppPurchaseExtensions.swift */,
 				5AE908AA1C32C20000040A4E /* Assets.xcassets */,
 				5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */,
 				5AE908AF1C32C20000040A4E /* Info.plist */,
@@ -270,6 +303,7 @@
 		EAB239AF9A15A0D447D67ED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A41CE8220BE950A00514EB2 /* StoreKit.framework */,
 				5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */,
 				5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */,
 				42B9061555633924D6A1D726 /* Pods_Cheque_Helper.framework */,
@@ -316,6 +350,24 @@
 			productName = "WatchApp Extension";
 			productReference = 5A19FDBE1DB93E410022F794 /* WatchApp Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		5A455F8020C2A02F001495EE /* ChequeHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A455F8820C2A02F001495EE /* Build configuration list for PBXNativeTarget "ChequeHelperTests" */;
+			buildPhases = (
+				5A455F7D20C2A02F001495EE /* Sources */,
+				5A455F7E20C2A02F001495EE /* Frameworks */,
+				5A455F7F20C2A02F001495EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A455F8720C2A02F001495EE /* PBXTargetDependency */,
+			);
+			name = ChequeHelperTests;
+			productName = ChequeHelperTests;
+			productReference = 5A455F8120C2A02F001495EE /* ChequeHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		5AE9089F1C32C20000040A4E /* Cheque Helper */ = {
 			isa = PBXNativeTarget;
@@ -387,8 +439,8 @@
 		5AE908981C32C20000040A4E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Mulang Su";
 				TargetAttributes = {
 					5A19FDB11DB93E410022F794 = {
@@ -401,10 +453,21 @@
 						DevelopmentTeam = E9MW74DJ4Y;
 						ProvisioningStyle = Automatic;
 					};
+					5A455F8020C2A02F001495EE = {
+						CreatedOnToolsVersion = 9.3.1;
+						DevelopmentTeam = E9MW74DJ4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AE9089F1C32C20000040A4E;
+					};
 					5AE9089F1C32C20000040A4E = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = E9MW74DJ4Y;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					5AE908B31C32C20000040A4E = {
 						CreatedOnToolsVersion = 7.2;
@@ -437,6 +500,7 @@
 				5AE908BE1C32C20000040A4E /* Cheque HelperUITests */,
 				5A19FDB11DB93E410022F794 /* WatchApp */,
 				5A19FDBD1DB93E410022F794 /* WatchApp Extension */,
+				5A455F8020C2A02F001495EE /* ChequeHelperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -456,6 +520,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A19FDC81DB93E410022F794 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A455F7F20C2A02F001495EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +665,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cheque Helper/Pods-Cheque Helper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DoneToolbarSwift/DoneToolbarSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -605,6 +677,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoneToolbarSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -667,6 +740,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A455F7D20C2A02F001495EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A455F8420C2A02F001495EE /* ChequeHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AE9089C1C32C20000040A4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,6 +755,7 @@
 				5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */,
 				5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */,
 				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
+				5A41CE8120BE929E00514EB2 /* InAppPurchaseExtensions.swift in Sources */,
 				5A237EF21EFE5E9200D24442 /* Converter.swift in Sources */,
 				5AE908A61C32C20000040A4E /* ViewController.swift in Sources */,
 				5AE908A41C32C20000040A4E /* AppDelegate.swift in Sources */,
@@ -707,6 +789,11 @@
 			isa = PBXTargetDependency;
 			target = 5A19FDB11DB93E410022F794 /* WatchApp */;
 			targetProxy = 5A19FDCA1DB93E410022F794 /* PBXContainerItemProxy */;
+		};
+		5A455F8720C2A02F001495EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AE9089F1C32C20000040A4E /* Cheque Helper */;
+			targetProxy = 5A455F8620C2A02F001495EE /* PBXContainerItemProxy */;
 		};
 		5AE908B61C32C20000040A4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -869,6 +956,67 @@
 			};
 			name = Release;
 		};
+		5A455F8920C2A02F001495EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ChequeHelperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.ChequeHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper";
+			};
+			name = Debug;
+		};
+		5A455F8A20C2A02F001495EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ChequeHelperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.ChequeHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheque Helper.app/Cheque Helper";
+			};
+			name = Release;
+		};
 		5AE908C61C32C20000040A4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -882,12 +1030,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -936,12 +1086,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1095,6 +1247,15 @@
 			buildConfigurations = (
 				5A19FDCD1DB93E410022F794 /* Debug */,
 				5A19FDCE1DB93E410022F794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A455F8820C2A02F001495EE /* Build configuration list for PBXNativeTarget "ChequeHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A455F8920C2A02F001495EE /* Debug */,
+				5A455F8A20C2A02F001495EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
