@@ -1,6 +1,5 @@
 import Foundation
 
-class StringUtils {
     static func split (_ s: String, at c: Character) -> [String] {
         let sequence = s.characters.split {$0 == c}
         var finalResult: [String] = []
@@ -12,6 +11,7 @@ class StringUtils {
     
     static func substring (_ s: String, start: Int, end: Int) -> String{
         let ns = NSString(string: s)
+extension String {
         return String(ns.substring(with: NSRange(start..<end)))
     }
     
