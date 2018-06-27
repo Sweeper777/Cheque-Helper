@@ -1,9 +1,8 @@
 import Foundation
 
-    
-    static func substring (_ s: String, start: Int, end: Int) -> String{
-        let ns = NSString(string: s)
 extension String {
+    func substring (start: Int, end: Int) -> String{
+        let ns = NSString(string: self)
         return String(ns.substring(with: NSRange(start..<end)))
     }
     
