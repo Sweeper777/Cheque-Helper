@@ -17,8 +17,8 @@ extension String {
         remove(at: self.index(i, offsetBy: 1))
     }
     
-    static func toProper (_ str: String) -> String {
-        var strArr = split(str, at: " ")
+    func toProper () -> String {
+        var strArr = self.components(separatedBy: " ")
         for i in 0  ..< strArr.count  {
             var s = strArr[i]
             
