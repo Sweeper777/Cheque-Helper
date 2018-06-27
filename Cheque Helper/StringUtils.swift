@@ -41,8 +41,8 @@ extension String {
         return finalString
     }
     
-    static func getDigitFrom (_ str: String, at index: Int) -> Int {
-        let strArr = Array(str.characters)
+    func getDigit(at index: Int) -> Int {
+        let strArr = Array(self)
         let character = String(strArr[index])
         return Int(character)!
     }
