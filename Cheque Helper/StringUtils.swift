@@ -26,7 +26,7 @@ extension String {
                 continue
             }
             
-            var firstChar = String (s.characters.first!)
+            var firstChar = String (s.first!)
             firstChar = firstChar.uppercased()
             s.remove(at: s.startIndex)
             let newString = firstChar + s
