@@ -11,14 +11,10 @@ extension String {
         return String(ns.substring(from: start))
     }
     
-    static func setCharAt (_ index: Int, of str: String, to c: Character) -> String{
-        var charArr = Array (str.characters)
-        charArr[index] = c
-        var finalString = ""
-        for i in 0...charArr.endIndex - 1 {
-            finalString.append(charArr[i])
-        }
-        return finalString
+    mutating func setCharAt (index: Int, to c: Character) {
+        let i = self.index(startIndex, offsetBy: index)
+        insert(c, at: i)
+        remove(at: self.index(i, offsetBy: 1))
     }
     
     static func toProper (_ str: String) -> String {
