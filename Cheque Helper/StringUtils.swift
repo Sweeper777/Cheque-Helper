@@ -1,13 +1,5 @@
 import Foundation
 
-    static func split (_ s: String, at c: Character) -> [String] {
-        let sequence = s.characters.split {$0 == c}
-        var finalResult: [String] = []
-        for item in sequence {
-            finalResult.append(String(item))
-        }
-        return finalResult
-    }
     
     static func substring (_ s: String, start: Int, end: Int) -> String{
         let ns = NSString(string: s)
