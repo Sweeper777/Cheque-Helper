@@ -6,8 +6,8 @@ extension String {
         return String(ns.substring(with: NSRange(start..<end)))
     }
     
-    static func substring (_ s: String, start: Int) -> String {
-        let ns = NSString(string: s)
+    func substring (start: Int) -> String {
+        let ns = NSString(string: self)
         return String(ns.substring(from: start))
     }
     
