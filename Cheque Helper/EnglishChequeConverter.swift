@@ -54,13 +54,13 @@ class EnglishChequeConverter: Converter {
     }
     
     fileprivate func get2DigitString (_ i: Int) -> String{
-        if i % 10 == 0 || String(i).characters.count == 1 {
+        if i % 10 == 0 || String(i).count == 1 {
             return get1DigitString(i)
         }
         
         let s = String(i)
-        let tensDigit = StringUtils.getDigitFrom(s, at: 0)
-        let onesDigit = StringUtils.getDigitFrom(s, at: 1)
+        let tensDigit = s.getDigit(at: 0)
+        let onesDigit = s.getDigit(at: 1)
         
         if tensDigit != 1 {
             return get1DigitString (tensDigit * 10) + "-" + get1DigitString (onesDigit)
@@ -88,14 +88,14 @@ class EnglishChequeConverter: Converter {
     
     fileprivate func get3DigitString (_ number: String) -> String {
         let last2Digits = String ((number as NSString).substring(from: 1))
-        return get1DigitString(StringUtils.getDigitFrom(number, at: 0)) + " hundred " + get2DigitString(Int(last2Digits!)!)
+        return get1DigitString(number.getDigit(at: 0)) + " hundred " + get2DigitString(Int(last2Digits!)!)
     }
     
     fileprivate func get1To3DigitString (_ s: String) -> String{
         let i = Int(s)!
         let number = String(i)
         
-        switch number.characters.count {
+        switch number.count {
         case 1:
             return get1DigitString(Int(number)!)
         case 2:
@@ -123,33 +123,33 @@ class EnglishChequeConverter: Converter {
         formatter.maximumFractionDigits = 2
         number = formatter.string(from: parsedNumber)!
         
-        let twoParts = StringUtils.split(number, at: ".")
+        let twoParts = number.components(separatedBy: ".")
         var integerPart = twoParts[0]
         var decimalPart = twoParts.count == 1 ? "" : twoParts[1]
         
         var integerString: String
         var decimalString: String
         
-        if (0..<4).contains(integerPart.characters.count) {
+        if (0..<4).contains(integerPart.count) {
             integerString = get1To3DigitString(integerPart) + " "
         } else if integerPart == "" {
             integerString = ""
         } else {
-            var commaTimes = integerPart.characters.count / 3
-            if integerPart.characters.count % 3 == 0 {
+            var commaTimes = integerPart.count / 3
+            if integerPart.count % 3 == 0 {
                 commaTimes -= 1
             }
             
             var groups = [String](repeating: "", count: commaTimes + 1)
-            integerPart = String(integerPart.characters.reversed())
+            integerPart = String(integerPart.reversed())
             
             for i in 0  ..< groups.count  {
-                if integerPart.characters.count >= i * 3 + 3 {
-                    groups[i] = StringUtils.substring(integerPart, start: i * 3, end: i * 3 + 3)
+                if integerPart.count >= i * 3 + 3 {
+                    groups[i] = integerPart.substring(start: i * 3, end: i * 3 + 3)
                 } else {
-                    groups[i] = StringUtils.substring(integerPart, start: i * 3)
+                    groups[i] = integerPart.substring(start: i * 3)
                 }
-                groups[i] = String (groups[i].characters.reversed())
+                groups[i] = String (groups[i].reversed())
                 groups[i] = Int(groups[i]) == 0 ? "" : get1To3DigitString (groups[i]) + " " + getTheWord (i) + " "
             }
             groups = groups.reversed()
@@ -163,8 +163,8 @@ class EnglishChequeConverter: Converter {
         if decimalPart == "" || Int(decimalPart) == 0 || Int(decimalPart) == nil {
             decimalString = "and no cents only"
         } else {
-            if decimalPart.characters.count >= 2 {
-                decimalPart = StringUtils.substring(decimalPart, start: 0, end: 2)
+            if decimalPart.count >= 2 {
+                decimalPart = integerPart.substring(start: 0, end: 2)
             } else {
                 decimalPart += "0"
             }
@@ -172,6 +172,6 @@ class EnglishChequeConverter: Converter {
             decimalString = "and " + get2DigitString (Int(decimalPart)!) + (Int(decimalPart) == 1 ? " cent only" : " cents only")
         }
         
-        return StringUtils.toProper(integerString + (integerString == "one " ? "dollar " : "dollars ") + decimalString)
+        return (integerString + (integerString == "one " ? "dollar " : "dollars ") + decimalString).toProper()
     }
 }
