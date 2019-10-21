@@ -14,10 +14,11 @@ extension UILabel {
         paragraphStyle.lineSpacing = 1.0
         paragraphStyle.lineHeightMultiple = lineHeight
         paragraphStyle.alignment = textAlignment
+        paragraphStyle.lineBreakMode = lineBreakMode
 
         let attrString = NSMutableAttributedString(string: text!)
-        attrString.addAttribute(NSFontAttributeName, value: font, range: NSRange(location: 0, length: attrString.length))
-        attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range: NSRange(location: 0, length: attrString.length))
+        attrString.addAttribute(NSAttributedString.Key.font, value: font, range: NSRange(location: 0, length: attrString.length))
+        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attrString.length))
         attributedText = attrString
     }
 
@@ -30,8 +31,8 @@ extension UILabel {
     public func setText(_ text: String, truncatedText: String) {
         var text = text
         self.text = text
-        while isTruncated() && text.length > 0 {
-            text = String(text.characters.dropLast())
+        while isTruncated() && text.isNotEmpty {
+            text = String(text.dropLast())
             self.text = text + truncatedText
         }
     }
@@ -50,7 +51,7 @@ extension UILabel {
         let rectSize = CGSize(width: self.width, height: .greatestFiniteMagnitude)
         let size: CGSize = (string as NSString).boundingRect(with: rectSize,
                                                              options: .usesLineFragmentOrigin,
-                                                             attributes: [NSFontAttributeName: font],
+                                                             attributes: [NSAttributedString.Key.font: font],
                                                              context: nil).size
         return (size.height > self.bounds.size.height)
     }

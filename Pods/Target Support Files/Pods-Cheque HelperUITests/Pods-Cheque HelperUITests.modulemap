@@ -1,6 +1,0 @@
-framework module Pods_Cheque_HelperUITests {
-  umbrella header "Pods-Cheque HelperUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

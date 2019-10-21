@@ -73,11 +73,12 @@ class InterfaceController: WKInterfaceController {
         if !NSDecimalNumber.notANumber.isEqual(to: number) && !closure(amountText).hasSuffix(formatter.decimalSeparator) {
             if let formatted = formatter.string(from: number) {
                 amountLbl.setText(formatted)
+                amountText = formatted
             }
         } else {
             amountLbl.setText(closure(amountText))
+            amountText = closure(amountText)
         }
-        amountText = closure(amountText)
         let englishConverter = EnglishChequeConverter()
         let chineseChequeConverter = ChineseChequeConverter()
         if let x = formatter.number(from: amountText) {

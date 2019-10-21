@@ -5,7 +5,7 @@
 
 import Foundation
 
-// MARK - Subscript
+// MARK: - Subscript
 
 extension String {
 
@@ -16,18 +16,14 @@ extension String {
     public subscript(integerRange: Range<Int>) -> String {
         let start = index(startIndex, offsetBy: integerRange.lowerBound)
         let end = index(startIndex, offsetBy: integerRange.upperBound)
-        return self[start..<end]
+        return String(self[start..<end])
     }
 
 }
 
-// MARK - Misc
+// MARK: - Misc
 
 extension String {
-
-    public var length: Int {
-        return self.characters.count
-    }
 
     public func contains(_ text: String, compareOption: NSString.CompareOptions) -> Bool {
         return self.range(of: text, options: compareOption) != nil
@@ -35,7 +31,7 @@ extension String {
 
 }
 
-// MARk - Validator
+// MARK: - Validator
 
 extension String {
 
@@ -48,6 +44,28 @@ extension String {
     public var isEmail: Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
+    }
+
+    public var isIP4Address: Bool {
+        return confirmIP4isValid(ip4: self)
+    }
+    
+    public var isIP6Address: Bool {
+        return confirmIP6isValid(ip6: self)
+    }
+    
+    public var isIPAddress: Bool {
+        return confirmIP4isValid(ip4: self) || confirmIP6isValid(ip6: self)
+    }
+
+    private func confirmIP4isValid(ip4: String) -> Bool {
+        var sin = sockaddr_in()
+        return ip4.withCString({ cstring in inet_pton(AF_INET, cstring, &sin.sin_addr)}) == 1
+    }
+    
+    private func confirmIP6isValid(ip6: String) -> Bool {
+        var sin6 = sockaddr_in6()
+        return ip6.withCString({ cstring in inet_pton(AF_INET6, cstring, &sin6.sin6_addr)}) == 1
     }
 
 }
@@ -64,8 +82,9 @@ extension String {
     }
 
     public var capitalizedFirst: String {
-        let result = replacingCharacters(in: Range(startIndex..<startIndex), with: String(self[startIndex]).capitalized)
-        return result
+        let first = prefix(1).capitalized
+        let other = dropFirst()
+        return first + other
     }
 
     public mutating func trim() {
@@ -87,7 +106,7 @@ extension String {
     }
 
     public func truncated(limit: Int) -> String {
-        if self.length > limit {
+        if self.count > limit {
             var truncatedString = self[0..<limit]
             truncatedString = truncatedString.appending("...")
             return truncatedString
@@ -97,7 +116,7 @@ extension String {
 
     public func split(intoChunksOf chunkSize: Int) -> [String] {
         var output = [String]()
-        let splittedString = characters
+        let splittedString = self
             .map { $0 }
             .split(intoChunksOf: chunkSize)
         splittedString.forEach {

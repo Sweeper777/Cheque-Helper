@@ -1,0 +1,22 @@
+{
+  "name": "EZLoadingActivity",
+  "version": "1.2",
+  "summary": "Lightweight Swift loading activity for iOS8+",
+  "description": "Lightweight Swift loading activity for iOS8+. Really simple to use, just add the class and write 1 line of code.",
+  "homepage": "https://github.com/goktugyil/EZLoadingActivity",
+  "license": "MIT",
+  "authors": {
+    "goktugyil": "gok-2@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/goktugyil/EZLoadingActivity.git",
+    "tag": "1.2"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_versions": "4.2",
+  "requires_arc": true,
+  "source_files": "EZLoadingActivity.swift",
+  "swift_version": "4.2"
+}
