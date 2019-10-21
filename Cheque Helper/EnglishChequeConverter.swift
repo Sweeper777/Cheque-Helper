@@ -88,7 +88,7 @@ class EnglishChequeConverter: Converter {
     
     fileprivate func get3DigitString (_ number: String) -> String {
         let last2Digits = String ((number as NSString).substring(from: 1))
-        return get1DigitString(number.getDigit(at: 0)) + " hundred " + get2DigitString(Int(last2Digits!)!)
+        return get1DigitString(number.getDigit(at: 0)) + " hundred " + get2DigitString(Int(last2Digits)!)
     }
     
     fileprivate func get1To3DigitString (_ s: String) -> String{

@@ -82,17 +82,17 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
     }
     
-    func showRateMsg() {
+    @objc func showRateMsg() {
         view.endEditing(true)
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton(NSLocalizedString("Rate!", comment: "")) {
             UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
         }
         alert.addButton(NSLocalizedString("Send Feedback", comment: "")) {
-            UIApplication.shared.openURL(URL(string: "mailto:sumulang.apps@gmail.com?subject=Cheque Helper Feedback".addingPercentEscapes(using: String.Encoding.utf8)!)!)
+            UIApplication.shared.openURL(URL(string: "mailto:sumulang.apps@gmail.com?subject=Cheque Helper Feedback".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)!)!)
         }
         alert.addButton(NSLocalizedString("Maybe Later", comment: ""), action: {})
-        _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hex: "5abb5a"), icon: UIImage())
+        _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hex: "5abb5a"), circleIconImage: UIImage())
         self.showRateMsgAlreadyCalled = false
     }
 
