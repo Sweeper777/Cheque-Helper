@@ -143,7 +143,7 @@ class ChineseChequeConverter: Converter {
             }
             
             if fen != "0" {
-                decimalString += convertNumber(fen.getDigit(at: 1)) + "分"
+                decimalString += convertNumber(fen.getDigit(at: 0)) + "分"
             }
         }
         
