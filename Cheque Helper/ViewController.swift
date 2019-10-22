@@ -1,6 +1,5 @@
 import UIKit
 import GoogleMobileAds
-import DoneToolbarSwift
 import SCLAlertView
 import SwiftyUtils
 import RxSwift
@@ -21,6 +20,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     var productRequest: SKProductsRequest!
     
     override func viewDidLoad() {
+        
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
@@ -37,11 +37,15 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         englishFont = result.font
         
-        let toolbar = ToolbarWithDone(viewsWithToolbar: [tfAmount])
-        toolbar.barTintColor = UIColor(hex: "5abb5a")
-        toolbar.tintColor = UIColor.white
-        
-        tfAmount.inputAccessoryView = toolbar
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.isTranslucent = false
+        keyboardToolbar.items = [
+            UIBarButtonItem(barButtonSystemItem: .done, target: tfAmount, action: #selector(UITextField.resignFirstResponder))
+        ]
+        keyboardToolbar.sizeToFit()
+        keyboardToolbar.barTintColor = UIColor(hex: "5abb5a")
+        keyboardToolbar.tintColor = UIColor.white
+        tfAmount.inputAccessoryView = keyboardToolbar
         
         tfAmount.becomeFirstResponder()
         
