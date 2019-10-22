@@ -1,6 +1,6 @@
 {
   "name": "SwiftyUtils",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "summary": "Swifty utils regroups all the boilerplate code reusable in each project.",
   "description": "Swifty utils regroups all the boilerplate code reusable in each project, available for iOS, OSX and tvOS",
   "homepage": "https://github.com/tbaranes/SwiftyUtils",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/tbaranes/SwiftyUtils.git",
-    "tag": "3.0.0"
+    "tag": "4.0.0"
   },
   "platforms": {
     "ios": "8.0",

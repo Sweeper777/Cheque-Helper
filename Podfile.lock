@@ -65,21 +65,24 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - RxCocoa (4.3.1):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.3.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
   - SCLAlertView (0.8.1)
   - SkyFloatingLabelTextField (3.7.0)
-  - SwiftyUtils (3.0.0)
+  - SwiftyUtils (4.0.0)
 
 DEPENDENCIES:
   - EZLoadingActivity (from `https://github.com/hons82/EZLoadingActivity.git`)
   - Firebase
-  - RxCocoa (= 4.3.1)
-  - RxSwift (= 4.3.1)
-  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`, commit `86ea7613c99cd4896765fabfa773b39b40bc8590`)
+  - RxCocoa
+  - RxSwift
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SkyFloatingLabelTextField
-  - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `c8860e783819333743a0f3b9ea791fa0692c9cb1`)
+  - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `adf37824622a46190aef33be686163311888a3c9`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -95,6 +98,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - RxCocoa
+    - RxRelay
     - RxSwift
     - SkyFloatingLabelTextField
 
@@ -102,10 +106,9 @@ EXTERNAL SOURCES:
   EZLoadingActivity:
     :git: https://github.com/hons82/EZLoadingActivity.git
   SCLAlertView:
-    :commit: 86ea7613c99cd4896765fabfa773b39b40bc8590
     :git: https://github.com/vikmeup/SCLAlertView-Swift.git
   SwiftyUtils:
-    :commit: c8860e783819333743a0f3b9ea791fa0692c9cb1
+    :commit: adf37824622a46190aef33be686163311888a3c9
     :git: https://github.com/tbaranes/SwiftyUtils.git
 
 CHECKOUT OPTIONS:
@@ -113,10 +116,10 @@ CHECKOUT OPTIONS:
     :commit: 204b413faa8980c957ee3ed3f60ee0ae9db15eab
     :git: https://github.com/hons82/EZLoadingActivity.git
   SCLAlertView:
-    :commit: 86ea7613c99cd4896765fabfa773b39b40bc8590
+    :commit: d98c3e647ad77ed537d021e7d6ad07bb71f83186
     :git: https://github.com/vikmeup/SCLAlertView-Swift.git
   SwiftyUtils:
-    :commit: c8860e783819333743a0f3b9ea791fa0692c9cb1
+    :commit: adf37824622a46190aef33be686163311888a3c9
     :git: https://github.com/tbaranes/SwiftyUtils.git
 
 SPEC CHECKSUMS:
@@ -132,12 +135,13 @@ SPEC CHECKSUMS:
   GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
-  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
-  SCLAlertView: f46fff9c4f44cf06bd60e17370b020428a0d964a
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
   SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
-  SwiftyUtils: b7097cc60b92a39e0eaa41c703e9ef695a919506
+  SwiftyUtils: e2c0b1fd674684e1083c894f6a71a64bb9617402
 
-PODFILE CHECKSUM: f2ee14c4c9222e64bd464ac2cd48cec90de0a4ab
+PODFILE CHECKSUM: efe29fa23818ddd7c30f9c760366830f6b3785c6
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.7.5
