@@ -164,7 +164,7 @@ class EnglishChequeConverter: Converter {
             decimalString = "and no cents only"
         } else {
             if decimalPart.count >= 2 {
-                decimalPart = integerPart.substring(start: 0, end: 2)
+                decimalPart = decimalPart.substring(start: 0, end: 2)
             } else {
                 decimalPart += "0"
             }
