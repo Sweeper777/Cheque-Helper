@@ -353,10 +353,9 @@
 			};
 			buildConfigurationList = 5AE9089B1C32C20000040A4E /* Build configuration list for PBXProject "Cheque Helper" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				ja,
