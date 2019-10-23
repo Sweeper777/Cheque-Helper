@@ -88,6 +88,15 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
         return nonNilText
     }
+    
+    func removeFormatting(_ text: String?) -> String {
+        guard let nonNilText = text else { return "" }
+        
+        return nonNilText
+            .replacingOccurrences(of: Locale.current.groupingSeparator ?? "", with: "")
+            .replacingOccurrences(of: Locale.current.decimalSeparator ?? ".", with: ".")
+    }
+    
     func convertNumberString(_ x: String?) -> String {
         let converter: Converter
         if languageChoice.selectedSegmentIndex == 0 {
