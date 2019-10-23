@@ -24,7 +24,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID]
+            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         } else {
@@ -51,7 +51,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         tfAmount.title = NSLocalizedString("Amount", comment: "")
         
-        tfAmount.rx.text.throttle(0.7, scheduler: MainScheduler.instance)
+        tfAmount.rx.text.throttle(.milliseconds(700), scheduler: MainScheduler.instance)
             .distinctUntilChanged { $0 == $1 }
             .map(convertNumberString)
             .bind(to: result.rx.text).disposed(by: disposeBag)
@@ -133,7 +133,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID]
+            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         }
@@ -143,7 +143,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID]
+            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         }
