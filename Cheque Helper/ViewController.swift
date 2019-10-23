@@ -70,6 +70,24 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }).disposed(by: disposeBag)
     }
     
+    func formatTextFieldText(_ text: String?) -> String {
+        guard let nonNilText = text else { return "" }
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if !nonNilText.hasSuffix(formatter.decimalSeparator) {
+            let amount = NSDecimalNumber(string:
+                nonNilText.replacingOccurrences(of: formatter.groupingSeparator, with: "")
+                    .replacingOccurrences(of: formatter.decimalSeparator ?? ".", with: ".")
+            )
+            if !NSDecimalNumber.notANumber.isEqual(to: amount) {
+                if let formatted = formatter.string(from: amount) {
+                    return formatted
+                }
+            }
+        }
+        return nonNilText
+    }
     func convertNumberString(_ x: String?) -> String {
         let converter: Converter
         if languageChoice.selectedSegmentIndex == 0 {
@@ -101,16 +119,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     }
 
     @IBAction func textChanged(_ sender: UITextField) {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        if !(tfAmount.text ?? "").hasSuffix(formatter.decimalSeparator) {
-            let amount = NSDecimalNumber(string: tfAmount.text?.replacingOccurrences(of: formatter.groupingSeparator, with: ""))
-            if !NSDecimalNumber.notANumber.isEqual(to: amount) {
-                if let formatted = formatter.string(from: amount) {
-                    tfAmount.text = formatted
-                }
-            }
-        }
         
         let randomNumber = arc4random_uniform(100)
         if randomNumber < 3 {
