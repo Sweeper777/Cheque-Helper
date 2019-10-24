@@ -65,8 +65,12 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             }).disposed(by: disposeBag)
         
         languageChoice.rx.value.distinctUntilChanged().subscribe(onNext: {
+            [weak self]
             value in
-            self.result.text = self.convertNumberString(self.tfAmount.text)
+            guard let `self` = self else { return }
+            self.result.text = self.convertNumberString(
+                self.removeFormatting(self.tfAmount.text)
+            )
             if value == 0 {
                 self.result.font = self.englishFont
             } else {
