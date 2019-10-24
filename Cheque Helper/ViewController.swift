@@ -51,8 +51,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         tfAmount.title = NSLocalizedString("Amount", comment: "")
         
-        tfAmount.rx.text.throttle(.milliseconds(700), scheduler: MainScheduler.instance)
             .distinctUntilChanged { $0 == $1 }
+        tfAmount.rx.text.debounce(.milliseconds(700), scheduler: MainScheduler.instance)
             .map(convertNumberString)
             .bind(to: result.rx.text).disposed(by: disposeBag)
         
