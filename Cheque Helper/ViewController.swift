@@ -116,10 +116,8 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         } else {
             converter = ChineseChequeConverter()
         }
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        if let x = formatter.number(from: x!) {
-            return converter.convertNumberString(x.description)
+        if NSDecimalNumber(string: x) != NSDecimalNumber.notANumber {
+            return converter.convertNumberString(x ?? "")
         } else {
             return converter.convertNumberString("")
         }
