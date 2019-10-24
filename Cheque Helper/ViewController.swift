@@ -53,6 +53,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         
         tfAmount.rx.text.debounce(.milliseconds(700), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
+            .map(removeFormatting)
             .map(convertNumberString)
             .bind(to: result.rx.text).disposed(by: disposeBag)
         
