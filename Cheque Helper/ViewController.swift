@@ -140,12 +140,12 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     @IBAction func textChanged(_ sender: UITextField) {
         
         let randomNumber = arc4random_uniform(100)
-        if randomNumber < 3 {
+        if randomNumber < 1 {
             if !showRateMsgAlreadyCalled {
-                perform(#selector(showRateMsg), with: self, afterDelay: Double(arc4random_uniform(10)))
+                perform(#selector(showRateMsg), with: self, afterDelay: 10)
                 showRateMsgAlreadyCalled = true
             }
-        } else if randomNumber < 6 && !UserDefaults.standard.bool(forKey: "adsRemoved") {
+        } else if randomNumber < 4 && !UserDefaults.standard.bool(forKey: "adsRemoved") {
             if interstitialAd.isReady {
                 interstitialAd.present(fromRootViewController: self)
             }
