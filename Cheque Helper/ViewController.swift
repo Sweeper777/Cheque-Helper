@@ -56,6 +56,13 @@ class ViewController: UIViewController, GADInterstitialDelegate {
             .map(removeFormatting)
             .map(convertNumberString)
             .bind(to: result.rx.text).disposed(by: disposeBag)
+        tfAmount.rx.text.debounce(.seconds(1), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .map(formatTextFieldText)
+            .subscribe(onNext: {
+                [weak self] formatted in
+                self?.tfAmount.text = formatted
+            }).disposed(by: disposeBag)
         
         languageChoice.rx.value.distinctUntilChanged().subscribe(onNext: {
             value in
