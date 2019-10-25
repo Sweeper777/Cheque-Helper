@@ -118,6 +118,7 @@ class ChineseChequeConverter: Converter {
         }
         
         let formatter = NumberFormatter()
+        formatter.locale = Locale.init(identifier: "en-US")
         formatter.maximumFractionDigits = 2
         number = formatter.string(from: parsedNumber)!
         
