@@ -67,24 +67,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     func changeAmountText(_ closure: (String) -> String) {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        let number = NSDecimalNumber(string: closure(amountText))
-        if !NSDecimalNumber.notANumber.isEqual(to: number) && !closure(amountText).hasSuffix(formatter.decimalSeparator) {
-            if let formatted = formatter.string(from: number) {
-                amountLbl.setText(formatted)
-                amountText = formatted
-            }
+        amountLbl.setText(closure(amountText))
+        amountText = closure(amountText)
+        if Double(amountText) != nil {
+            let englishConverter = EnglishChequeConverter()
+            let chineseChequeConverter = ChineseChequeConverter()
+            convertedLbl.setText("\(englishConverter.convertNumberString(amountText))\n\n\(chineseChequeConverter.convertNumberString(amountText))")
         } else {
-            amountLbl.setText(closure(amountText))
-            amountText = closure(amountText)
-        }
-        let englishConverter = EnglishChequeConverter()
-        let chineseChequeConverter = ChineseChequeConverter()
-        if let x = formatter.number(from: amountText) {
-            convertedLbl.setText("\(englishConverter.convertNumberString(x.description))\n\n\(chineseChequeConverter.convertNumberString(x.description))")
-        } else {
-            convertedLbl.setText(englishConverter.convertNumberString(""))
+            convertedLbl.setText(NSLocalizedString("Please enter a valid amount", comment: ""))
         }
     }
 }
