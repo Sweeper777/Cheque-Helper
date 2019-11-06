@@ -11,3 +11,9 @@ struct MainView_Previews: PreviewProvider {
     }
 }
 
+class MainViewController: UIHostingController<MainView> {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder, rootView: MainView())
+        
+    }
+}
