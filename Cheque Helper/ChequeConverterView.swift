@@ -33,6 +33,11 @@ struct ChequeConverterView_Previews: PreviewProvider {
 class ChequeConverterStateStore: ObservableObject {
     @Published var amountString = ""
     @Published var selectedLanguage = 0
+    {
+        didSet {
+            UIApplication.shared.endEditing()
+        }
+    }
     @Published var convertedString = ""
     var disposeBag = [AnyCancellable]()
     
