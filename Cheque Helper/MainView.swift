@@ -2,6 +2,16 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
+        NavigationView {
+            ChequeConverterView()
+                .navigationBarTitle(Text(NSLocalizedString("Cheque Helper", comment: "")), displayMode: .inline)
+                .navigationBarItems(trailing:
+                    Button(
+                        action: {},
+                        label: { Text(NSLocalizedString("Ads?", comment: "")) }
+                    )
+                )
+        }
     }
 }
 
