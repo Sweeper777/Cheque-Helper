@@ -75,6 +75,11 @@ class ChequeConverterStateStore: ObservableObject {
         return text
     }
     
+    func removeFormatting(_ text: String) -> String {
+        return text
+            .replacingOccurrences(of: Locale.current.groupingSeparator ?? "", with: "")
+            .replacingOccurrences(of: Locale.current.decimalSeparator ?? ".", with: ".")
+    }
 }
 
 extension UIApplication {
