@@ -41,6 +41,11 @@ class ChequeConverterStateStore: ObservableObject {
     @Published var convertedString = ""
     var disposeBag = [AnyCancellable]()
     
+    
+    deinit {
+        disposeBag.forEach { $0.cancel() }
+    }
+    
 }
 
 extension UIApplication {
