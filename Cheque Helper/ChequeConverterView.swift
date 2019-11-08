@@ -58,6 +58,23 @@ class ChequeConverterStateStore: ObservableObject {
         }
     }
     
+    func formatTextFieldText(_ text: String) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if !text.hasSuffix(formatter.decimalSeparator) {
+            let amount = NSDecimalNumber(string:
+                text.replacingOccurrences(of: formatter.groupingSeparator, with: "")
+                    .replacingOccurrences(of: formatter.decimalSeparator ?? ".", with: ".")
+            )
+            if !NSDecimalNumber.notANumber.isEqual(to: amount) {
+                if let formatted = formatter.string(from: amount) {
+                    return formatted
+                }
+            }
+        }
+        return text
+    }
+    
 }
 
 extension UIApplication {
