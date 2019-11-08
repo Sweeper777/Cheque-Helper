@@ -41,6 +41,14 @@ class ChequeConverterStateStore: ObservableObject {
     @Published var convertedString = ""
     var disposeBag = [AnyCancellable]()
     
+    init() {
+        disposeBag.append($amountString
+            .debounce(for: 0.7, scheduler: DispatchQueue.main)
+            .removeDuplicates()
+            .map(removeFormatting(_:))
+            .map(convertNumberString(_:))
+            .sink(receiveValue: { self.convertedString = $0 }))
+        
     
     deinit {
         disposeBag.forEach { $0.cancel() }
