@@ -49,6 +49,12 @@ class ChequeConverterStateStore: ObservableObject {
             .map(convertNumberString(_:))
             .sink(receiveValue: { self.convertedString = $0 }))
         
+        disposeBag.append($amountString
+            .debounce(for: 1, scheduler: DispatchQueue.main)
+            .removeDuplicates()
+            .map(formatTextFieldText(_:))
+            .sink { self.amountString = $0 })
+        
     
     deinit {
         disposeBag.forEach { $0.cancel() }
