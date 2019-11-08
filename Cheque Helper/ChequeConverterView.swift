@@ -46,6 +46,9 @@ class ChequeConverterStateStore: ObservableObject {
         disposeBag.forEach { $0.cancel() }
     }
     
+    func convertNumberString(_ str: String) -> String {
+        convertNumberString(str, language: selectedLanguage)
+    }
     
     func convertNumberString(_ str: String, language: Int) -> String {
         if language == 0 {
