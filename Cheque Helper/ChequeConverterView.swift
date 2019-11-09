@@ -55,6 +55,14 @@ class ChequeConverterStateStore: ObservableObject {
             .map(formatTextFieldText(_:))
             .sink { self.amountString = $0 })
         
+        disposeBag.append($selectedLanguage
+            .removeDuplicates()
+            .sink { lang in
+                self.convertedString = self.convertNumberString(
+                    self.removeFormatting(self.amountString), language: lang
+                )
+        })
+    }
     
     deinit {
         disposeBag.forEach { $0.cancel() }
