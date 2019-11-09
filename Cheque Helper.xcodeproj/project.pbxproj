@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A026309236EE27C001306C6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A026308236EE27B001306C6 /* MainView.swift */; };
+		5A02630B236EEC5A001306C6 /* ChequeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02630A236EEC5A001306C6 /* ChequeConverterView.swift */; };
 		5A19FDB61DB93E410022F794 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB41DB93E410022F794 /* Interface.storyboard */; };
 		5A19FDB81DB93E410022F794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB71DB93E410022F794 /* Assets.xcassets */; };
 		5A19FDBF1DB93E410022F794 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A19FDBE1DB93E410022F794 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -90,6 +92,8 @@
 		5A00DF431DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5A00DF441DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5A00DF451DA8FA0700AD83A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A026308236EE27B001306C6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5A02630A236EEC5A001306C6 /* ChequeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeConverterView.swift; sourceTree = "<group>"; };
 		5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DoneToolbarSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Cheque_Helper-aeiqqxztchxtzidacugqifgodwxv/Build/Products/Release-iphonesimulator/DoneToolbarSwift/DoneToolbarSwift.framework"; sourceTree = "<group>"; };
 		5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "Pods/../build/Release-iphoneos/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
 		5A19FDB21DB93E410022F794 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +238,8 @@
 				5AFB36611D20ED2D00C7AF51 /* Localizable.strings */,
 				5AFB36671D20ED5000C7AF51 /* InfoPlist.strings */,
 				5AE908A51C32C20000040A4E /* ViewController.swift */,
+				5A026308236EE27B001306C6 /* MainView.swift */,
+				5A02630A236EEC5A001306C6 /* ChequeConverterView.swift */,
 				5A41CE8020BE929D00514EB2 /* InAppPurchaseExtensions.swift */,
 				5AE908AA1C32C20000040A4E /* Assets.xcassets */,
 				5AE908AC1C32C20000040A4E /* LaunchScreen.storyboard */,
@@ -481,6 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE908D71C32D9A800040A4E /* StringUtils.swift in Sources */,
+				5A026309236EE27C001306C6 /* MainView.swift in Sources */,
+				5A02630B236EEC5A001306C6 /* ChequeConverterView.swift in Sources */,
 				5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */,
 				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
 				5A41CE8120BE929E00514EB2 /* InAppPurchaseExtensions.swift in Sources */,
@@ -789,7 +797,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos/EZSwiftExtensions",
 				);
 				INFOPLIST_FILE = "Cheque Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper;
@@ -818,7 +826,7 @@
 					"$(PROJECT_DIR)/build/Release-iphoneos/EZSwiftExtensions",
 				);
 				INFOPLIST_FILE = "Cheque Helper/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CheckHelper;
