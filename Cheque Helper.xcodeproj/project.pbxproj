@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A026309236EE27C001306C6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A026308236EE27B001306C6 /* MainView.swift */; };
 		5A02630B236EEC5A001306C6 /* ChequeConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02630A236EEC5A001306C6 /* ChequeConverterView.swift */; };
+		5A09DE9E2376D9EE0082E0FA /* Disposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09DE9D2376D9EE0082E0FA /* Disposer.swift */; };
 		5A19FDB61DB93E410022F794 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB41DB93E410022F794 /* Interface.storyboard */; };
 		5A19FDB81DB93E410022F794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A19FDB71DB93E410022F794 /* Assets.xcassets */; };
 		5A19FDBF1DB93E410022F794 /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A19FDBE1DB93E410022F794 /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -96,6 +97,7 @@
 		5A02630A236EEC5A001306C6 /* ChequeConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeConverterView.swift; sourceTree = "<group>"; };
 		5A0810F71D580BDD005C585A /* DoneToolbarSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DoneToolbarSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Cheque_Helper-aeiqqxztchxtzidacugqifgodwxv/Build/Products/Release-iphonesimulator/DoneToolbarSwift/DoneToolbarSwift.framework"; sourceTree = "<group>"; };
 		5A0810F91D580C8D005C585A /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "Pods/../build/Release-iphoneos/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
+		5A09DE9D2376D9EE0082E0FA /* Disposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposer.swift; sourceTree = "<group>"; };
 		5A19FDB21DB93E410022F794 /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A19FDB51DB93E410022F794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		5A19FDB71DB93E410022F794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				5AE908D21C32C26D00040A4E /* EnglishChequeConverter.swift */,
 				5AE908D81C32DB3C00040A4E /* ChineseChequeConverter.swift */,
 				5AE908D61C32D9A800040A4E /* StringUtils.swift */,
+				5A09DE9D2376D9EE0082E0FA /* Disposer.swift */,
 				5AF791B41CF06DF9007165AF /* SecretStuff.swift */,
 			);
 			path = "Cheque Helper";
@@ -490,6 +493,7 @@
 				5A026309236EE27C001306C6 /* MainView.swift in Sources */,
 				5A02630B236EEC5A001306C6 /* ChequeConverterView.swift in Sources */,
 				5AF791B51CF06DF9007165AF /* SecretStuff.swift in Sources */,
+				5A09DE9E2376D9EE0082E0FA /* Disposer.swift in Sources */,
 				5AE908D31C32C26D00040A4E /* EnglishChequeConverter.swift in Sources */,
 				5A41CE8120BE929E00514EB2 /* InAppPurchaseExtensions.swift in Sources */,
 				5A237EF21EFE5E9200D24442 /* Converter.swift in Sources */,
