@@ -40,6 +40,7 @@ class ChequeConverterViewModel: ObservableObject {
     }
     @Published var convertedString = ""
     let disposer = Disposer()
+    var interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
     
     init() {
         $amountString
