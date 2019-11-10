@@ -75,6 +75,12 @@ class ChequeConverterViewModel: ObservableObject {
             }
             .disposed(by: disposer)
         
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID!]
+            interstitialAd?.load(request)
+            interstitialAd?.delegate = self
+        }
     }
     
     func convertNumberString(_ str: String) -> String {
