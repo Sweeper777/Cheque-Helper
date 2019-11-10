@@ -143,6 +143,57 @@ extension UIApplication {
 }
 
 extension ChequeConverterViewModel : GADInterstitialDelegate {
+    func isEqual(_ object: Any?) -> Bool {
+        fatalError()
+    }
+    
+    var hash: Int {
+        fatalError()
+    }
+    
+    var superclass: AnyClass? {
+        fatalError()
+    }
+    
+    func `self`() -> Self {
+        fatalError()
+    }
+    
+    func perform(_ aSelector: Selector!) -> Unmanaged<AnyObject>! {
+        fatalError()
+    }
+    
+    func perform(_ aSelector: Selector!, with object: Any!) -> Unmanaged<AnyObject>! {
+        fatalError()
+    }
+    
+    func perform(_ aSelector: Selector!, with object1: Any!, with object2: Any!) -> Unmanaged<AnyObject>! {
+        fatalError()
+    }
+    
+    func isProxy() -> Bool {
+        fatalError()
+    }
+    
+    func isKind(of aClass: AnyClass) -> Bool {
+        fatalError()
+    }
+    
+    func isMember(of aClass: AnyClass) -> Bool {
+        fatalError()
+    }
+    
+    func conforms(to aProtocol: Protocol) -> Bool {
+        fatalError()
+    }
+    
+    func responds(to aSelector: Selector!) -> Bool {
+        fatalError()
+    }
+    
+    var description: String {
+        fatalError()
+    }
     
     
     func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
