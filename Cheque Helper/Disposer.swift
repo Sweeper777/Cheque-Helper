@@ -15,3 +15,9 @@ class Disposer {
         cancellables.forEach { $0.cancel() }
     }
 }
+
+extension AnyCancellable {
+    func disposed(by disposer: Disposer) {
+        disposer.append(self)
+    }
+}
