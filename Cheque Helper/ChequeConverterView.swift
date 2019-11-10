@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 struct ChequeConverterView: View {
-    @ObservedObject var stateStore = ChequeConverterStateStore()
+    @ObservedObject var stateStore = ChequeConverterViewModel()
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct ChequeConverterView_Previews: PreviewProvider {
     }
 }
 
-class ChequeConverterStateStore: ObservableObject {
+class ChequeConverterViewModel: ObservableObject {
     @Published var amountString = ""
     @Published var selectedLanguage = 0
     {
