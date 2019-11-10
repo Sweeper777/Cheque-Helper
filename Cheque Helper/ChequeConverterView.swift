@@ -141,3 +141,27 @@ extension UIApplication {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
+
+extension ChequeConverterViewModel : GADInterstitialDelegate {
+    
+    
+    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID!]
+            interstitialAd?.load(request)
+            interstitialAd?.delegate = self
+        }
+    }
+    
+    func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
+        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
+            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+            let request = GADRequest()
+            request.testDevices = [kGADSimulatorID!]
+            interstitialAd?.load(request)
+            interstitialAd?.delegate = self
+        }
+    }
+}
