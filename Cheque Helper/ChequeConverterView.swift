@@ -39,33 +39,32 @@ class ChequeConverterViewModel: ObservableObject {
         }
     }
     @Published var convertedString = ""
-    var disposeBag = [AnyCancellable]()
+    let disposer = Disposer()
     
     init() {
-        disposeBag.append($amountString
+        $amountString
             .debounce(for: 0.7, scheduler: DispatchQueue.main)
             .removeDuplicates()
             .map(removeFormatting(_:))
             .map(convertNumberString(_:))
-            .sink(receiveValue: { self.convertedString = $0 }))
+            .sink(receiveValue: { self.convertedString = $0 })
+            .disposed(by: disposer)
         
-        disposeBag.append($amountString
+        $amountString
             .debounce(for: 1, scheduler: DispatchQueue.main)
             .removeDuplicates()
             .map(formatTextFieldText(_:))
-            .sink { self.amountString = $0 })
+            .sink { self.amountString = $0 }
+            .disposed(by: disposer)
         
-        disposeBag.append($selectedLanguage
+        $selectedLanguage
             .removeDuplicates()
             .sink { lang in
                 self.convertedString = self.convertNumberString(
                     self.removeFormatting(self.amountString), language: lang
                 )
-        })
-    }
-    
-    deinit {
-        disposeBag.forEach { $0.cancel() }
+            }
+        .disposed(by: disposer)
     }
     
     func convertNumberString(_ str: String) -> String {
