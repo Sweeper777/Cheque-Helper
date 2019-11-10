@@ -65,6 +65,15 @@ class ChequeConverterViewModel: ObservableObject {
                 )
             }
         .disposed(by: disposer)
+        
+        $amountString
+            .removeDuplicates()
+            .filter { _ in Int.random(in: 0..<100) == 0 }
+            .sink {
+                _ in self.showRateMsg()
+            }
+            .disposed(by: disposer)
+        
     }
     
     func convertNumberString(_ str: String) -> String {
