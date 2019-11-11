@@ -5,6 +5,9 @@ import GoogleMobileAds
 
 struct ChequeConverterView: View {
     @ObservedObject var stateStore = ChequeConverterViewModel()
+    @Binding var amountText: String
+    
+    let disposer = Disposer()
     
     var body: some View {
         VStack {
