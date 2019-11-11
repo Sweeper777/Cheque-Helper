@@ -26,6 +26,12 @@ struct ChequeConverterView: View {
                 .lineLimit(nil)
             Spacer()
         }.padding()
+        .onAppear {
+            self.stateStore.$amountString.removeDuplicates().sink {
+                newText in
+                self.amountText = newText
+            }.disposed(by: self.disposer)
+        }
     }
 }
 
