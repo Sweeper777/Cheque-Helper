@@ -1,9 +1,11 @@
 import SwiftUI
+import SCLAlertView
 
 struct MainView: View {
+    @Published var amountText = ""
     var body: some View {
         NavigationView {
-            ChequeConverterView()
+            ChequeConverterView(amountText: $amountText)
                 .navigationBarTitle(Text(NSLocalizedString("Cheque Helper", comment: "")), displayMode: .inline)
                 .navigationBarItems(trailing:
                     Button(
