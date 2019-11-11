@@ -1,5 +1,7 @@
 import SwiftUI
 import Combine
+import SCLAlertView
+import GoogleMobileAds
 
 struct ChequeConverterView: View {
     @ObservedObject var stateStore = ChequeConverterViewModel()
