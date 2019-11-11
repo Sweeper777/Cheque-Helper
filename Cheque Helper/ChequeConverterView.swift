@@ -36,8 +36,10 @@ struct ChequeConverterView: View {
 }
 
 struct ChequeConverterView_Previews: PreviewProvider {
+    
+    @State static var previewText = ""
     static var previews: some View {
-        ChequeConverterView()
+        ChequeConverterView(amountText: $previewText)
     }
 }
 
