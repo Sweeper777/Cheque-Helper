@@ -3,6 +3,8 @@ import SCLAlertView
 
 struct MainView: View {
     @Published var amountText = ""
+    let disposer = Disposer()
+    
     var body: some View {
         NavigationView {
             ChequeConverterView(amountText: $amountText)
@@ -13,6 +15,13 @@ struct MainView: View {
                         label: { Text(NSLocalizedString("Ads?", comment: "")) }
                     )
                 )
+        }.onAppear() {
+            $amountText
+                .filter { _ in Int.random(in: 0..<100) == 0 }
+                .sink {
+                    _ in self.showRateMsg()
+                }
+                .disposed(by: disposer)
         }
     }
     
