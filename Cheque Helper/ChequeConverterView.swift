@@ -5,7 +5,6 @@ import GoogleMobileAds
 
 struct ChequeConverterView: View {
     @ObservedObject var stateStore = ChequeConverterViewModel()
-    @Binding var amountText: String
     
     let disposer = Disposer()
     
@@ -26,12 +25,6 @@ struct ChequeConverterView: View {
                 .lineLimit(nil)
             Spacer()
         }.padding()
-        .onAppear {
-            self.stateStore.$amountString.removeDuplicates().sink {
-                newText in
-                self.amountText = newText
-            }.disposed(by: self.disposer)
-        }
     }
 }
 
@@ -39,7 +32,7 @@ struct ChequeConverterView_Previews: PreviewProvider {
     
     @State static var previewText = ""
     static var previews: some View {
-        ChequeConverterView(amountText: $previewText)
+        ChequeConverterView()
     }
 }
 
@@ -53,7 +46,6 @@ class ChequeConverterViewModel: ObservableObject {
     }
     @Published var convertedString = ""
     let disposer = Disposer()
-    var interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
     
     init() {
         $amountString
@@ -83,8 +75,6 @@ class ChequeConverterViewModel: ObservableObject {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             let request = GADRequest()
             request.testDevices = [kGADSimulatorID!]
-            interstitialAd?.load(request)
-            interstitialAd?.delegate = self
         }
     }
     
@@ -127,80 +117,5 @@ class ChequeConverterViewModel: ObservableObject {
 extension UIApplication {
     func endEditing() {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-
-extension ChequeConverterViewModel : GADInterstitialDelegate {
-    func isEqual(_ object: Any?) -> Bool {
-        fatalError()
-    }
-    
-    var hash: Int {
-        fatalError()
-    }
-    
-    var superclass: AnyClass? {
-        fatalError()
-    }
-    
-    func `self`() -> Self {
-        fatalError()
-    }
-    
-    func perform(_ aSelector: Selector!) -> Unmanaged<AnyObject>! {
-        fatalError()
-    }
-    
-    func perform(_ aSelector: Selector!, with object: Any!) -> Unmanaged<AnyObject>! {
-        fatalError()
-    }
-    
-    func perform(_ aSelector: Selector!, with object1: Any!, with object2: Any!) -> Unmanaged<AnyObject>! {
-        fatalError()
-    }
-    
-    func isProxy() -> Bool {
-        fatalError()
-    }
-    
-    func isKind(of aClass: AnyClass) -> Bool {
-        fatalError()
-    }
-    
-    func isMember(of aClass: AnyClass) -> Bool {
-        fatalError()
-    }
-    
-    func conforms(to aProtocol: Protocol) -> Bool {
-        fatalError()
-    }
-    
-    func responds(to aSelector: Selector!) -> Bool {
-        fatalError()
-    }
-    
-    var description: String {
-        fatalError()
-    }
-    
-    
-    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
-        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
-            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-            let request = GADRequest()
-            request.testDevices = [kGADSimulatorID!]
-            interstitialAd?.load(request)
-            interstitialAd?.delegate = self
-        }
-    }
-    
-    func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
-        if !UserDefaults.standard.bool(forKey: "adsRemoved") {
-            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-            let request = GADRequest()
-            request.testDevices = [kGADSimulatorID!]
-            interstitialAd?.load(request)
-            interstitialAd?.delegate = self
-        }
     }
 }
