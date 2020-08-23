@@ -4,7 +4,8 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Cheque Helper' do
-    pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
     pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
     pod 'RxSwift'
     pod 'RxCocoa'
