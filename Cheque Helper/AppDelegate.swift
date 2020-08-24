@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         window?.tintColor = UIColor(hex: "3b7b3b")
         FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [
+            kGADSimulatorID as! String
+        ]
         return true
     }
 
