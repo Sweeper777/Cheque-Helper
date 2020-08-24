@@ -24,7 +24,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         } else {
@@ -160,7 +159,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         }
@@ -170,7 +168,6 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
-            request.testDevices = [kGADSimulatorID!]
             interstitialAd.load(request)
             interstitialAd.delegate = self
         }
