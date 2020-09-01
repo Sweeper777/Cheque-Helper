@@ -126,10 +126,10 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         view.endEditing(true)
         let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
         alert.addButton(NSLocalizedString("Rate!", comment: "")) {
-            UIApplication.shared.openURL(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/pocket-cheque-helper/id1072718086?mt=8")!)
         }
         alert.addButton(NSLocalizedString("Send Feedback", comment: "")) {
-            UIApplication.shared.openURL(URL(string: "mailto:sumulang.apps@gmail.com?subject=Cheque Helper Feedback".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)!)!)
+            UIApplication.shared.open(URL(string: "mailto:sumulang.apps@gmail.com?subject=Cheque Helper Feedback".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)!)!)
         }
         alert.addButton(NSLocalizedString("Maybe Later", comment: ""), action: {})
         _ = alert.showCustom(NSLocalizedString("Enjoying Cheque Helper?", comment: ""), subTitle: NSLocalizedString("You can rate this app, or send me feedback!", comment: ""), color: UIColor(hex: "5abb5a"), circleIconImage: UIImage())
@@ -155,7 +155,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         view.endEditing(true)
     }
     
-    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
@@ -164,7 +164,7 @@ class ViewController: UIViewController, GADInterstitialDelegate {
         }
     }
     
-    func interstitial(_ ad: GADInterstitial!, didFailToReceiveAdWithError error: GADRequestError!) {
+    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
             interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
             let request = GADRequest()
