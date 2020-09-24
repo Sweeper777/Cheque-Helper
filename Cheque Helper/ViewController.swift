@@ -5,6 +5,7 @@ import SwiftyUtils
 import RxSwift
 import RxCocoa
 import SkyFloatingLabelTextField
+import AppTrackingTransparency
 
 class ViewController: UIViewController, GADInterstitialDelegate {
     @IBOutlet var tfAmount: SkyFloatingLabelTextField!
@@ -22,10 +23,21 @@ class ViewController: UIViewController, GADInterstitialDelegate {
     override func viewDidLoad() {
         
         if !UserDefaults.standard.bool(forKey: "adsRemoved") {
-            interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
-            let request = GADRequest()
-            interstitialAd.load(request)
-            interstitialAd.delegate = self
+            if #available(iOS 14, *) {
+                ATTrackingManager.requestTrackingAuthorization { (status) in
+                    self.interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+                    let request = GADRequest()
+                    self.interstitialAd.delegate = self
+                    DispatchQueue.main.async {
+                        self.interstitialAd.load(request)
+                    }
+                }
+            } else {
+                interstitialAd = GADInterstitial(adUnitID: interstitialAdID)
+                let request = GADRequest()
+                interstitialAd.load(request)
+                interstitialAd.delegate = self
+            }
         } else {
             navigationItem.rightBarButtonItems?.removeAll()
         }
