@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="afj-3W-iiz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="afj-3W-iiz">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,14 +27,6 @@
             </objects>
             <point key="canvasLocation" x="-921" y="347"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="oMZ-sg-Wf8">
-            <objects>
-                <hostingController id="tJ9-1E-IMr" customClass="MainViewController" customModule="Cheque_Helper" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="guA-TO-XxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-558" y="1047"/>
-        </scene>
         <!--Cheque Helper-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -47,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="J7K-OX-Ry8">
-                                <rect key="frame" x="123" y="100" width="129" height="29"/>
+                                <rect key="frame" x="124" y="100" width="127" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="gru-tR-Vez"/>
                                 </constraints>
@@ -136,4 +129,9 @@
             <point key="canvasLocation" x="-192.80000000000001" y="354.87256371814095"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="WLm-jY-d2q">
+            <size key="intrinsicContentSize" width="343" height="41.607421875"/>
+        </designable>
+    </designables>
 </document>
